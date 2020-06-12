@@ -299,20 +299,57 @@ label[for] {
 
 /* 탑바 시작 */
 .top-bar {
-  background-color: lavender;
-  color: lightskyblue;
+  background-color:lavender;
+  color:lightsteelblue;
   height: 100px;
 }
 
-.top-bar .menu-box-1>ul>li:hover>a {
-  background-color: white;
-  color:lightblue;
+.top-bar .logo {
+  padding:0 50px;
+  font-size:2rem;
+}
+
+.top-bar .menu-box-1 > ul > li {
+  position: relative;
+}
+
+.top-bar .menu-box-1 ul > li > a {
   font-weight: bold;
 }
 
-/* 탑바 끝 */
-
-.top-bar>.menu-box-1>ul ul {
-  display: none;
-
+.top-bar .menu-box-1 > ul > li:hover > a {
+  background-color:lemonchiffon;
+  color:yellowgreen;
+  font-weight: bold;
+  text-decoration: underline;
 }
+/* 탑바 끝 */ 
+
+.top-bar .menu-box-1 > ul ul {
+  display: none;
+  position: absolute;
+  top:100%;
+  left:-2px;
+  width:100%;
+  background-color:lavender;
+  color:black;
+  border:2px solid plum;
+  border-top:0;
+}
+
+.top-bar .menu-box-1 > ul > li:hover > ul {
+  display:block;
+}
+
+.top-bar .menu-box-1 > ul ul > li > a {
+  display: block;
+  text-align: center;
+  padding:20px 0;
+}
+
+.top-bar .menu-box-1 > ul ul > li:hover > a {
+  background-color:black;
+  color:lavender;
+}
+
+/* 탑바 끝 */
