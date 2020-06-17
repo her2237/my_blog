@@ -19,27 +19,52 @@
       <div></div>
     </a>
   </div>
-  <div class="mobile-side-bar">
-      <ul>
-          <li><a href="#" class="block">메뉴</a></li>
-          <li><a href="#" class="block">메뉴</a></li>
-          <li><a href="#" class="block">메뉴</a></li>
-      </ul>
+  <div class="mobile-side-bar-bg visible-sm-down"></div>
+  <div class="mobile-side-bar visible-sm-down">
+    <ul>
+      <li><a href="#" class="block">Home</a></li>
+      <li><a href="#" class="block">Articles</a></li>
+      <li><a href="#" class="block">About Me</a></li>
+      <li>
+        <a href="#" class="block">SNS</a>
+        <ul>
+          <li>
+            <a href="https://github.com/jhs512" target="_blank" class="block">
+              GITHUB
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/jhs512" target="_blank" class="block">
+              FACEBOOK
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/jhs512" target="_blank" class="block">
+              INSTA
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </div>
   <div class="top-bar visible-md-up">
     <div class="con height-100p flex">
       <a href="/" class="logo flex flex-ai-c">
         <i class="fas fa-clone"></i>
       </a>
-      <nav class="menu-box-1 flex flex-1-0-0">
-        <ul class="flex flex-1-0-0">
-          <li class="flex-1-0-0 flex"><a href="/" class="flex flex-1-0-0 flex-ai-c flex-jc-c">Home</a></li>
-          <li class="flex-1-0-0 flex"><a href="/list.php" class="flex flex-1-0-0 flex-ai-c flex-jc-c">Articles</a>
+      <nav class="menu-box-1 flex-grow-1">
+        <ul class="height-100p flex">
+          <li class="flex-1-0-0">
+            <a href="/" class="height-100p flex flex-ai-c flex-jc-c">Home</a>
           </li>
-          <li class="flex-1-0-0 flex"><a href="/aboutMe.php" class="flex flex-1-0-0 flex-ai-c flex-jc-c">About Me</a>
+          <li class="flex-1-0-0">
+            <a href="/list.php" class="height-100p flex flex-ai-c flex-jc-c">Articles</a>
           </li>
-          <li class="flex-1-0-0 flex">
-            <a href="#" class="flex flex-1-0-0 flex-ai-c flex-jc-c">SNS</a>
+          <li class="flex-1-0-0">
+            <a href="/aboutMe.php" class="height-100p flex flex-ai-c flex-jc-c">About Me</a>
+          </li>
+          <li class="flex-1-0-0">
+            <a href="#" class="height-100p flex flex-ai-c flex-jc-c">SNS</a>
             <ul>
               <li>
                 <a href="https://github.com/jhs512" target="_blank">
@@ -62,4 +87,3 @@
       </nav>
     </div>
   </div>
-</body>
