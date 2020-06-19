@@ -31,3 +31,10 @@ function MobileSideBar__init() {
 $(function () {
   MobileSideBar__init();
 });
+
+$(function () {
+
+  $('.main-slider > .side-bars > div').click( function () {
+  });
+
+});

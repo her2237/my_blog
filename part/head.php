@@ -7,6 +7,8 @@
   <title>블로그</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
   <link rel="stylesheet" href="/resource/common.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="/resource/common.js"></script>
 </head>
@@ -87,3 +89,23 @@
       </nav>
     </div>
   </div>
+
+
+  <div class="main-slider">
+    <div class="slides">
+        <div class="active" style="background-color:red;"></div>
+        <div style="background-color:green;"></div>
+        <div style="background-color:blue;"></div>
+    </div>
+    
+    <div class="side-bars">
+        <div>
+            <span>
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </span>
+        </div>
+        <div>
+            <span><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+    </div>
+</div>
