@@ -52,7 +52,7 @@
   <div class="top-bar visible-md-up">
     <div class="con height-100p flex">
       <a href="/" class="logo flex flex-ai-c">
-        <i class="fas fa-clone"></i>
+        <img src="../resource/img/logo.png" alt="">
       </a>
       <nav class="menu-box-1 flex-grow-1">
         <ul class="height-100p flex">
@@ -91,11 +91,11 @@
   </div>
 
 
-  <div class="main-slider">
+  <div class="sbs-slider">
     <div class="slides">
-        <div class="active" style="background-color:red;"></div>
-        <div style="background-color:green;"></div>
-        <div style="background-color:blue;"></div>
+        <div style="background-image:url(../resource/img/main-slide-1.jpg);" class="active"></div>
+        <div style="background-image:url(../resource/img/main-slide-2.jpg);"></div>
+        <div style="background-image:url(../resource/img/main-slide-3.jpg);"></div>
     </div>
     
     <div class="side-bars">

@@ -359,9 +359,8 @@ label[for] {
     height: 100px;
 }
 
-.top-bar .logo {
-    padding: 0 50px;
-    font-size: 2rem;
+.top-bar > div > .logo > img {
+    width: 80px;
 }
 
 .top-bar .menu-box-1>ul>li {
@@ -499,13 +498,13 @@ html, body {
     height:100%;
 }
 
-.main-slider {
-    height:50%;
+.sbs-slider {
+    height:60%;
     position:relative;
     user-select:none;
 }
 
-.main-slider .side-bars > div {
+.sbs-slider .side-bars > div {
     position:absolute;
     top:0;
     left:0;
@@ -515,12 +514,12 @@ html, body {
     cursor:pointer;
 }
 
-.main-slider .side-bars > div:last-child {
+.sbs-slider .side-bars > div:last-child {
     left:auto;
     right:0;
 }
 
-.main-slider .side-bars > div > span {
+.sbs-slider .side-bars > div > span {
     position:absolute;
     top:50%;
     transform:translateY(-50%);
@@ -531,11 +530,11 @@ html, body {
     margin:0 10px;
 }
 
-.main-slider .side-bars > div:active > span {
+.sbs-slider .side-bars > div:active > span {
     transform:translateY(-40%);
 }
 
-.main-slider > .slides > div {
+.sbs-slider > .slides > div {
     position:absolute;
     top:0;
     left:0;
@@ -544,9 +543,12 @@ html, body {
     /* 완전투명하게 만든다. */
     opacity:0;
     transition:opacity 0.5s;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
 }
 
-.main-slider > .slides > div.active {
+.sbs-slider > .slides > div.active {
     opacity:1;
 }
 
