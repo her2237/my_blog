@@ -499,7 +499,7 @@ html, body {
 }
 
 .sbs-slider {
-    height:60%;
+    height:100%;
     position:relative;
     user-select:none;
 }
