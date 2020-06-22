@@ -354,21 +354,28 @@ label[for] {
 
 /* 탑바 시작 */
 .top-bar {
-    background-color: lightblue;
-    color: white;
-    height: 100px;
+    color:white;
+    position: absolute;
+    top:0;
+    height:100px;
+    display: block;
+    
 }
 
 .top-bar > div > .logo > img {
-    width: 80px;
+    width: 100px;
 }
 
 .top-bar .menu-box-1>ul>li {
     position: relative;
+
 }
 
 .top-bar .menu-box-1 ul>li>a {
     font-weight: bold;
+    padding: 20px;
+    top: 0;
+
 }
 
 .top-bar .menu-box-1>ul>li:hover>a {
@@ -502,6 +509,7 @@ html, body {
     height:100%;
     position:relative;
     user-select:none;
+    z-index:-10;
 }
 
 .sbs-slider .side-bars > div {
@@ -528,6 +536,7 @@ html, body {
     font-size:5rem;
     transition: transform 0.2s;
     margin:0 10px;
+    color: white;
 }
 
 .sbs-slider .side-bars > div:active > span {
