@@ -355,11 +355,12 @@ label[for] {
 /* 탑바 시작 */
 .top-bar {
     color:white;
-    position: absolute;
+    position: fixed;
+    width:100%;
     top:0;
     height:100px;
     display: block;
-    
+    z-index: 10;
 }
 
 .top-bar > div > .logo > img {
@@ -379,7 +380,7 @@ label[for] {
 }
 
 .top-bar .menu-box-1>ul>li:hover>a {
-    background-color: white;
+   
     color: lightskyblue;
     text-decoration: underline;
 }
@@ -390,9 +391,8 @@ label[for] {
     top: 100%;
     left: -2px;
     width: 100%;
-    background-color: white;
     color: lightskyblue;
-    border: 2px solid lightskyblue;
+
     border-top: 0;
 }
 
@@ -405,11 +405,11 @@ label[for] {
     text-align: center;
     padding: 20px 0;
 }
-
-.top-bar .menu-box-1>ul ul>li:hover>a {
-    background-color: lightgrey;
-    color: white;
+.top-bar .menu-box-1>ul ul>li>a:hover {
+    color:blue;
 }
+
+
 
 /* 탑바 끝 */
 /* 모바일 탑바 시작 */
@@ -509,7 +509,6 @@ html, body {
     height:100%;
     position:relative;
     user-select:none;
-    z-index:-10;
 }
 
 .sbs-slider .side-bars > div {
@@ -562,3 +561,4 @@ html, body {
 }
 
 /* 슬라이더 끝 */
+
