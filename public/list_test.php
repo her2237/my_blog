@@ -1,17 +1,42 @@
 <?php
-$dbConn = mysqli_connect("site10.blog.oa.gg", "site10", "sbs123414", "site10", 3306) or die("DB CONNECTION ERROR");
-
-$cateItemId = $_GET['cateItemId'];
-
 $sql = "
-SELECT `name` 
-FROM cateItem
-WHERE id = {$cateItemId};
+SELECT *
+FROM article
+ORDER BY id DESC
 ";
 
+$dbHost = "site10.blog.oa.gg"; // 컴퓨터 까지 접근 가능
+$dbPort = 3306; // 컴퓨터 안에 있는 MySQL에게 까지 접근가능
+$dbId = 'site10';
+$dbPw = 'sbs123414'; //' MySQL안으로 통과까지 가능
+$dbName = 'site10'; // 알맞은 DB까지 접근가능
+
+$dbConn = mysqli_connect($dbHost, $dbId, $dbPw, $dbName, $dbPort) or die("DB CONNECTION ERROR");
+
+
 $rs = mysqli_query($dbConn, $sql);
-$row = mysqli_fetch_assoc($rs);
+$rows = [];
 
+while ( true ) {
+    $row = mysqli_fetch_assoc($rs);
+    if ( $row == null )  {
+    break;
+    }
+    $rows[] = $row;
+}
 
-echo $row['name'];
+include '../part/head.php';
 ?>
+
+<div class="con">
+    <ul>
+        <?php foreach ( $rows as $row ) { ?>
+        <li><a href="#"><?=$row['title']?></a></li>
+        <?php } ?>
+    
+    </ul>
+</div>
+
+<?php
+include '../part/foot.php';
+?> 

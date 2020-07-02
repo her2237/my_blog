@@ -63,16 +63,16 @@
       <nav class="menu-box-1 flex-grow-1">
         <ul class="height-100p flex">
           <li class="flex-1-0-0">
-            <a href="/" class="height-100p flex flex-ai-c flex-jc-c">Home</a>
+            <a href="/" class="height-100p flex flex-ai-c flex-jc-c">HOME</a>
           </li>
           <li class="flex-1-0-0">
-            <a href="/list.php" class="height-100p flex flex-ai-c flex-jc-c">Articles</a>
+            <a href="/list.php" class="height-100p flex flex-ai-c flex-jc-c">PROFILE</a>
           </li>
           <li class="flex-1-0-0">
-            <a href="/aboutMe.php" class="height-100p flex flex-ai-c flex-jc-c">About Me</a>
+            <a href="/detail_test.php" class="height-100p flex flex-ai-c flex-jc-c">PORTFOLIO</a>
           </li>
           <li class="flex-1-0-0">
-            <a href="#" class="height-100p flex flex-ai-c flex-jc-c">SNS</a>
+            <a href="#" class="height-100p flex flex-ai-c flex-jc-c">CONTACT</a>
             <ul>
               <li>
                 <a href="https://github.com/jhs512" target="_blank">

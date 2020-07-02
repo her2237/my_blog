@@ -69,3 +69,8 @@ $ (function () {
   });
 });
 
+function a() {
+  $('.sbs-slider > .side-bars >div:last-child').click();
+}
+
+setInterval(a, 5000);

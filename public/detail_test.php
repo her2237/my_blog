@@ -1,37 +1,25 @@
-<?php 
-include "../part/head.php";
-?>
 <?php
 $id = $_GET['id'];
 
 $sql = "
-SELECT * 
-FROM article 
+SELECT *
+FROM article
 WHERE id = {$id}
 ";
 
-$dbHost = "site10.blog.oa.gg";
-$dbPort = 3306;
+$dbHost = "site10.blog.oa.gg"; // 컴퓨터 까지 접근 가능
+$dbPort = 3306; // 컴퓨터 안에 있는 MySQL에게 까지 접근가능
 $dbId = 'site10';
-$dbPw = 'sbs123414';
-$dbName = 'site10';
-$dbConn = mysqli_connect($dbHost,$dbId,$dbPw,$dbName, $dbPort)or die ("DB CONNECTION ERROR");
+$dbPw = 'sbs123414'; //' MySQL안으로 통과까지 가능
+$dbName = 'site10'; // 알맞은 DB까지 접근가능
+
+$dbConn = mysqli_connect($dbHost, $dbId, $dbPw, $dbName, $dbPort) or die("DB CONNECTION ERROR");
 
 $rs = mysqli_query($dbConn, $sql);
 $row = mysqli_fetch_assoc($rs);
+
+include '../part/head.php';
 ?>
-
-<div class="con">
-    번호 : <?=$row['id']?>
-</div>
-<div class="con">
-    제목 : <?=$row['title']?>
-</div>
-
-<?php  
-include "../part/foot.php";
-?>
-
 
 <!-- 하이라이트 라이브러리 추가, 토스트 UI 에디터에서 사용됨 -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
@@ -67,16 +55,16 @@ include "../part/foot.php";
 <div id="viewer1" class="con"></div>
 
 <script>
-  var editor1__initialValue = $('#origin1').html();
-  var editor1 = new toastui.Editor({
+var editor1__initialValue = $('#origin1').html();
+var editor1 = new toastui.Editor({
   el: document.querySelector('#viewer1'),
   height: '600px',
   initialValue: editor1__initialValue,
   viewer:true,
   plugins: [toastui.Editor.plugin.codeSyntaxHighlight]
-  });
+});
 </script>
 
 <?php
 include '../part/foot.php';
-?>
+?> 
