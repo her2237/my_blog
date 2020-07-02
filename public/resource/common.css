@@ -359,8 +359,8 @@ label[for] {
     width:100%;
     top:0;
     height:100px;
-    display: block;
     z-index: 10;
+    background-color:black;
 }
 
 .top-bar > div > .logo > img {
@@ -438,6 +438,7 @@ label[for] {
     background-color: lightblue;
     transition: left .3s;
     color:white;
+    z-index: 10;
 }
 
 .mobile-side-bar.active {
@@ -487,6 +488,10 @@ label[for] {
     html.mobile-side-bar-actived>body {
         overflow-y: hidden;
     }
+
+    body {
+        padding-top:50px !important;
+    }
 }
 
 /* 모바일 사이드 바 끝 */
@@ -509,6 +514,12 @@ html, body {
     height:100%;
     position:relative;
     user-select:none;
+}
+
+@media (max-width:799px) {
+    .sbs-slider {
+        height: calc(100% - 50px);
+    }
 }
 
 .sbs-slider .side-bars > div {
