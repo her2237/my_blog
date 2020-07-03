@@ -520,20 +520,16 @@ html, body {
     position: absolute;
     z-index:10;
     position: absolute;
-    top:55%;
+    top:40%;
     left:50%;
     transform: translateX(-50%) translateY(-50%);
-    width:700px;
-    height:800px;
-    border-radius: 50px;
-    border: 5px solid white;
+    width:500px;
+    height:500px;
+    border: 3px solid white;
 }
 .sbs-slider > .slides > div > .center > .profile >ul> li   {
     position: relative;
-    left: 100px;
-    top:120px;
-    font-size:1.5rem;
-    margin: 20px; 
+     
     color: white;
 }
 .sbs-slider > .slides > div > .center > .profile >ul> li:first-child {
@@ -575,7 +571,7 @@ html, body {
     font-size:5rem;
     transition: transform 0.2s;
     margin:0 10px;
-    color: white;
+    color:transparent;
 }
 
 .sbs-slider .side-bars > div:active > span {
