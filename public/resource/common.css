@@ -352,6 +352,10 @@ label[for] {
     max-width: 800px;
 }
 
+body{
+    padding-top: 100px;
+}
+
 /* 탑바 시작 */
 .top-bar {
     color:white;
@@ -363,8 +367,10 @@ label[for] {
     background-color:lightblue;
 }
 
+
 .top-bar > div > .logo > img {
     width: 100px;
+
 }
 
 .top-bar .menu-box-1>ul>li {
@@ -499,21 +505,45 @@ label[for] {
 html, body {
     height: 100%;
 }
-body, ul, li {
-    margin:0;
-    padding:0;
-    list-style:none;
-}
 
-html, body {
-    height:100%;
-}
 
 .sbs-slider {
     height:100%;
     position:relative;
     user-select:none;
 }
+
+/* 개인정보 꾸미기 */
+/* .sbs-slider > .slides > div > .center, .sbs-slider::before */
+.sbs-slider > .slides > div > .center {
+    content:"";
+    position: absolute;
+    z-index:10;
+    position: absolute;
+    top:55%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    width:700px;
+    height:800px;
+    border-radius: 50px;
+    border: 5px solid white;
+}
+.sbs-slider > .slides > div > .center > .profile >ul> li   {
+    position: relative;
+    left: 100px;
+    top:120px;
+    font-size:1.5rem;
+    margin: 20px; 
+    color: white;
+}
+.sbs-slider > .slides > div > .center > .profile >ul> li:first-child {
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    top:40px;
+} 
+
+
 
 @media (max-width:799px) {
     .sbs-slider {
@@ -537,7 +567,7 @@ html, body {
 }
 
 .sbs-slider .side-bars > div > span {
-    position:absolute;
+    position: fixed;
     top:50%;
     transform:translateY(-50%);
     left:inherit;
@@ -553,7 +583,7 @@ html, body {
 }
 
 .sbs-slider > .slides > div {
-    position:absolute;
+    position: fixed;;
     top:0;
     left:0;
     width:100%;
@@ -570,5 +600,9 @@ html, body {
     opacity:1;
 }
 
+
 /* 슬라이더 끝 */
 
+/*창문 시작*/
+
+/* 창문 끝 */

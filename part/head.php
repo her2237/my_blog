@@ -30,23 +30,23 @@
   <div class="mobile-side-bar visible-sm-down">
     <ul>
       <li><a href="#" class="block">Home</a></li>
-      <li><a href="#" class="block">Articles</a></li>
-      <li><a href="#" class="block">About Me</a></li>
+      <li><a href="#" class="block">PROFILE</a></li>
+      <li><a href="#" class="block">PORTFOLIO</a></li>
       <li>
         <a href="#" class="block">SNS</a>
         <ul>
           <li>
-            <a href="https://github.com/her2237" target="_blank" class="block">
+            <a href="https://github.com/her2237/my_blog.git" target="_blank" class="block">
               GITHUB
             </a>
           </li>
           <li>
-            <a href="https://github.com/her2237" target="_blank" class="block">
+            <a href="https://github.com/her2237/my_blog.git" target="_blank" class="block">
               FACEBOOK
             </a>
           </li>
           <li>
-            <a href="https://github.com/her2237" target="_blank" class="block">
+            <a href="https://github.com/her2237/my_blog.git" target="_blank" class="block">
               INSTA
             </a>
           </li>
@@ -95,6 +95,3 @@
       </nav>
     </div>
   </div>
-
-
-  

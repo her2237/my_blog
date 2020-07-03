@@ -20,20 +20,20 @@ $rows = [];
 while ( true ) {
     $row = mysqli_fetch_assoc($rs);
     if ( $row == null )  {
-    break;
+        break;
     }
     $rows[] = $row;
 }
 
 include '../part/head.php';
 ?>
+<link rel="stylesheet" href="resource/list_test.css">
 
 <div class="con">
     <ul>
         <?php foreach ( $rows as $row ) { ?>
-        <li><a href="#"><?=$row['title']?></a></li>
+        <li><a href="detail.php?id=<?=$row['id']?>"><?=$row['title']?></a></li>
         <?php } ?>
-    
     </ul>
 </div>
 

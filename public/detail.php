@@ -7,7 +7,7 @@ $id = $_GET['id'];
 $sql = "
 SELECT * 
 FROM article 
-whre id = {$id}
+WHERE id = {$id}
 ";
 
 $dbHost = "site10.blog.oa.gg";
@@ -15,10 +15,11 @@ $dbPort = 3306;
 $dbId = 'site10';
 $dbPw = 'sbs123414';
 $dbName = 'site10';
-$dbConn = mysqli_connect($dbHost,$dbPort,$dbId,$dbPw,$dbName)or die ("DB CONNECTION ERROR");
+
+$dbConn = mysqli_connect($dbHost,$dbId,$dbPw,$dbName,$dbPort)or die ("DB CONNECTION ERROR");
 
 $rs = mysqli_query($dbConn, $sql);
-$row = mysql_fetch_assoc($rs);
+$row = mysqli_fetch_assoc($rs);
 ?>
 
 <div class="con">
