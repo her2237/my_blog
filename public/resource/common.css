@@ -527,6 +527,12 @@ html, body {
     height:500px;
     border: 3px solid white;
 }
+.sbs-slider > .slides > div > .heart {
+    bottom: 50px;
+    padding:10px;
+    position: absolute;
+    
+}
 .sbs-slider > .slides > div > .center > .profile >ul> li   {
     position: relative;
      

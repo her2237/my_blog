@@ -26,6 +26,10 @@ include "../part/head.php";
             <li>주소</li>
           </ul>
         </div>
+        
+      </div>
+      <div style="color:white;"class="heart">
+          <i class="far fa-heart"></i>
       </div>
     </div>
     <div style="background-image:url(../resource/img/main-slide-3.jpg);">
