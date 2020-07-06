@@ -66,7 +66,7 @@
             <a href="/" class="height-100p flex flex-ai-c flex-jc-c">HOME</a>
           </li>
           <li class="flex-1-0-0">
-            <a href="/list.php" class="height-100p flex flex-ai-c flex-jc-c">PROFILE</a>
+            <a href="/list.php" class="height-100p flex flex-ai-c flex-jc-c">BLOG</a>
           </li>
           <li class="flex-1-0-0">
             <a href="/detail_test.php" class="height-100p flex flex-ai-c flex-jc-c">PORTFOLIO</a>
