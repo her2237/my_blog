@@ -30,7 +30,32 @@
   <div class="mobile-side-bar visible-sm-down">
     <ul>
       <li><a href="#" class="block">Home</a></li>
-      <li><a href="#" class="block">PROFILE</a></li>
+      <li>
+        <a href="#" class="block">BLOG</a>
+        <ul>
+          <li>
+            <a href="/list.php?cateItemId=1" target="_blank">
+              DALIY 
+            </a>
+          </li>
+          <li>
+            <a href="/list.php?cateItemId=2" target="_blank">
+               IT / 일반
+            </a>
+          </li>
+          <li>
+            <a href="/list.php?cateItemId=3" target="_blank">
+               IT / 프론트앤드
+            </a>
+          </li>
+          <li>
+            <a href="/list.php?cateItemId=4" target="_blank">
+               DESIGN
+            </a>
+          </li>
+        </ul>
+      </li>
+
       <li><a href="#" class="block">PORTFOLIO</a></li>
       <li>
         <a href="#" class="block">SNS</a>
@@ -55,6 +80,10 @@
     </ul>
   </div>
 
+
+
+  
+    
   <div class="top-bar visible-md-up">
     <div class="con height-100p flex">
       <a href="/" class="logo flex flex-ai-c">
@@ -67,6 +96,28 @@
           </li>
           <li class="flex-1-0-0">
             <a href="/list.php" class="height-100p flex flex-ai-c flex-jc-c">BLOG</a>
+            <ul>
+              <li>
+                <a href="/list.php?cateItemId=1" target="_blank">
+                  DALIY 
+                </a>
+              </li>
+              <li>
+                <a href="/list.php?cateItemId=2" target="_blank">
+                  IT / 일반
+                </a>
+              </li>
+              <li>
+                <a href="/list.php?cateItemId=3" target="_blank">
+                  IT / 프론트앤드
+                </a>
+              </li>
+              <li>
+                <a href="/list.php?cateItemId=4" target="_blank">
+                  DESIGN
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="flex-1-0-0">
             <a href="/detail.php" class="height-100p flex flex-ai-c flex-jc-c">PORTFOLIO</a>
@@ -95,3 +146,5 @@
       </nav>
     </div>
   </div>
+
+ 

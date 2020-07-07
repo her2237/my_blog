@@ -267,6 +267,10 @@ label[for] {
     justify-content: center;
 }
 
+*>.flex-jc-sb {
+    justify-content: space-between;
+}
+
 *>.flex-ai-c {
     align-items: center;
 }
@@ -425,6 +429,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 10;
 }
 
 .mobile-top-bar .btn-toggle-mobile-side-bar {
@@ -501,6 +506,15 @@ body{
 
 /* 모바일 사이드 바 끝 */
 
+/*왼쪽 슬라이드 바 시작 */
+.left-side-bar {
+    z-index:100;
+}
+
+
+/*왼쪽 슬라이드 바 끝*/
+
+
 /* 슬라이더 시작 */
 html, body {
     height: 100%;
@@ -523,10 +537,30 @@ html, body {
     top:40%;
     left:50%;
     transform: translateX(-50%) translateY(-50%);
-    width:500px;
+    width:90%;
+    max-width:500px;
     height:500px;
     border: 3px solid white;
 }
+
+ .left {
+    position: fixed;
+    z-index: 20;
+    top:50%;
+    left:10px;
+    transform: translateY(-50%);
+}
+ .left > .left-side-bar > ul > li  {
+     padding : 15px;
+     margin-top : 10px;
+
+}
+.left > .left-side-bar > ul > li > a {
+    font-size: 1.2rem;
+    color: rgb(23, 159, 238);
+    font-weight: bold; 
+}
+
 .sbs-slider > .slides > div > .heart {
     bottom: 50px;
     padding:10px;
@@ -605,6 +639,3 @@ html, body {
 
 /* 슬라이더 끝 */
 
-/*창문 시작*/
-
-/* 창문 끝 */

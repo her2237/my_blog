@@ -1,14 +1,13 @@
 
 
 .article{
-    display: flex;
     padding-top:50px;
 }
 
 .article > ul > li {
     border:2px solid blue;
-    padding: 100px 500px;
 }
-.article > ul > li > a {
-    left: 40%;
+
+.article > ul > li > a > img {
+    width:200px;
 }

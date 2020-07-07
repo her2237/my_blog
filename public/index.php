@@ -9,10 +9,23 @@ include "../part/head.php";
 </style>
 
 
+<div class="left">
+  <div class="left-side-bar con">
+    <ul>
+      <li><a href="#" class="block">HOME</a></li>
+      <li><a href="#" class="block">BLOG</a></li>
+      <li><a href="#" class="block">PORTFOLIO</a></li>
+      <li><a href="#" class="block">SNS</a></li>
+    </ul>
+  </div>
+</div>
+
 
 <div class="sbs-slider">
   <div class="slides">
-    <div style="background-image:url(../resource/img/main-slide-1.jpg);" class="active"></div>
+    <div style="background-image:url(../resource/img/main-slide-1.jpg);" class="active">
+      
+    </div>
     <div style="background-image:url(../resource/img/main-slide-2.jpg);">
       <div class="center">
         <div class="profile">
@@ -49,6 +62,7 @@ include "../part/head.php";
     </div>
   </div>
 </div>
+
 
 
 <?php
