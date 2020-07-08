@@ -533,7 +533,6 @@ html, body {
     content:"";
     position: absolute;
     z-index:10;
-    position: absolute;
     top:40%;
     left:50%;
     transform: translateX(-50%) translateY(-50%);
