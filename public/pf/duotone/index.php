@@ -14,7 +14,7 @@
 
 <div class="top-page">
     <div class="menu-bar">
-        <ul class ="list-bar">
+        <ul class="list-bar">
             <li><a href="#">Intro</a></li>
             <li><a href="#">Salmons</a></li>
             <li><a href="#">Design</a></li>
@@ -26,16 +26,44 @@
 </div>
 
 <body>
-    <div class="top-bar flex">
-        <a href="#" class="btn-toggle-top-bar flex-as-c">
-            <div></div>
-            <div></div>
-            <div></div>
-        </a>
+    <div class="top-bar">
+        <div class="flex flex-jc-end con height-100p">
+            <a href="#" class="btn-toggle-top-bar flex-as-c">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+        </div>
     </div>
+
+
     <div class="main-bar">
-        <a href="#">
-            <img src="" alt="">
-        </a>
+        <div class="box-1 height-100p con flex flex-jc-c flex-ai-c relative">
+            <div class="text-box flex flex-ai-c">
+                <div class="img-box"><img src="https://her2237.github.io/img1/pf/duotone/duotone-text-1-d.b166af26.png"
+                        alt=""></div>
+
+                <div class="img-box"><img src="https://her2237.github.io/img1/pf/duotone/duotone-text-2-u.8aede628.png"
+                        alt=""></div>
+
+                <div class="img-box"><img src="https://her2237.github.io/img1/pf/duotone/duotone-text-3-o.57d60f55.png"
+                        alt=""></div>
+
+                <div class="img-box"><img src="https://her2237.github.io/img1/pf/duotone/duotone-text-4-t.6fab23af.png"
+                        alt=""></div>
+
+                <div class="img-box"><img src="https://her2237.github.io/img1/pf/duotone/duotone-text-5-o.1d38b4a8.png"
+                        alt=""></div>
+
+                <div class="img-box"><img src="https://her2237.github.io/img1/pf/duotone/duotone-text-6-n.f9ef26d9.png"
+                        alt=""></div>
+
+                <div class="img-box"><img src="https://her2237.github.io/img1/pf/duotone/duotone-text-7-e.b7152df6.png"
+                        alt=""></div>
+            </div>
+            <div class="img-box">
+                <img src="https://duotone.io/dist/top-visual.69f52cd7.jpg" alt="">
+            </div>
+        </div>
     </div>
 </body>
