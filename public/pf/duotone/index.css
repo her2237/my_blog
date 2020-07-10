@@ -320,12 +320,6 @@ label[for] {
     height: 30px;
     position: fixed;
 }
-.btn-toggle-top-bar:hover {
-    width: 50px;
-    height: 50px;
-    border: 2px solid black;
-
-}
 
 
 .btn-toggle-top-bar >div {
@@ -365,7 +359,7 @@ label[for] {
     right:0;
     width:100%;
     height: 100%;
-    background-color:blue;
+    background-color:#ff6565;
     z-index: 100;
     transition: top 1s;
 }
@@ -383,22 +377,62 @@ label[for] {
     transform: translateX(-50%) translateY(-50%);
     width:90%;
     height:700px;
-    border: 5px solid white; 
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.top-page > .menu-bar > ul > li {
+}
+.top-page > .menu-bar > .list-bar > .ani  {
     position: relative;
     color: transparent;
-}
-.top-page > .menu-bar > ul > li > a{
-    padding: 25px;
-    margin-top: 10px;
-    font-size: 4rem;
-    font-weight: bold;
-    text-decoration: none;
     -webkit-text-stroke: 1px white;
+    
+}
+
+.top-page > .menu-bar > .list-bar > .ani > a  {
+    font-size: 56px;
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+}
+
+
+.top-page > .menu-bar > .top-page-img  {
+    position: absolute;
+    top: calc(50% 440px);
+    left: calc(50% 189px);
+    width: 500px;
+    height: 880px;
+    padding-top: 238px;
+}
+
+@media (max-width: 767px){
+    .top-page-img {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 312px;
+        margin: 0 auto;
+        height: 600px;
+        padding-top: 39px;
+    }  
+}
+
+.top-page > .menu-bar > .top-page-img >.top-page-img-bg {
+    position:fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(30px);
+    width: 100%;
+    height: 100%;
+    background-image:url(https://her2237.github.io/img1/pf/duotone/gnb-salmon.d0464d65.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition-property: transform ,opacity;
+    transition-duration:  .4s.4s;
+    transition-timing-function: cubic-bezier(.645,.045,.355,1) cubic-bezier(.645,.045,.355,1);
+}
+@media (max-width: 767px){
+    .top-page-img-bg {
+        background-size: 204px 600px;
+        background-position: 68px bottom; 
+    }
 }
 
 /*메인페이지 이미지 꾸미기*/
@@ -433,8 +467,4 @@ label[for] {
     top:0;
     bottom:0;
     mix-blend-mode: multiply;
-  }
-
-  .top-page > .menu-bar > .list-bar {
-      text-align: center;
   }

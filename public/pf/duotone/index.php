@@ -7,20 +7,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Duotone</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-    <link rel="stylesheet" href="./duotone/index.css">
+    <link rel="stylesheet" href="/pf/duotone/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./duotone/index.js"></script>
+    <script src="/pf/duotone/index.js"></script>
 </head>
 
 <div class="top-page">
     <div class="menu-bar">
+        <nav class="top-page-img">
+            <div class="top-page-img-bg ani">
+            </div>
+        </nav>
         <ul class="list-bar">
-            <li><a href="#">Intro</a></li>
-            <li><a href="#">Salmons</a></li>
-            <li><a href="#">Design</a></li>
-            <li><a href="#">Case Study</a></li>
-            <li><a href="#">Openpath</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="ani">
+                <h3>01</h3>
+                <a href="#">Intro</a>
+
+            </li>
+            <li class="ani">
+                <h3>02</h3>
+                <a href="#">Salmon</a>
+
+            </li>
+            <li class="ani">
+                <h3>03</h3>
+                <a href="#">Design</a>
+
+            </li>
+            <li class="ani">
+                <h3>04</h3>
+                <a href="#">Case Study</a>
+
+            </li>
+            <li class="ani">
+                <h3>05</h3>
+                <a href="#">Openpath</a>
+
+            </li>
+            <li class="ani">
+                <h3></h3>
+                <a href="#">Contact</a>
+
+            </li>
         </ul>
     </div>
 </div>
