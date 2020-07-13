@@ -12,5 +12,15 @@
             <a href="/pf/duotone">듀오톤</a>
         </li>
     </ul>
+    <ul>
+        <li>
+           <a href="/pf/HYUNDAI">현대자동차</a>
+        </li>
+    </ul>
+    <ul>
+        <li>
+           <a href="/pf/밀알복지재단">밀알복지재단</a>
+        </li>
+    </ul>
 </body>
 </html>
