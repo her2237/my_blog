@@ -50,7 +50,7 @@
         </div>
         <div class="list-img flex flex-jc-c flex-ai-c">
             <div class="flex">
-                <div class="img-box"> 
+                <div class="img-box">
                     <a href="#">
                         <img src="https://her2237.github.io/img1/pf/mile/20200414BQ4ZCHUA453IIU9UO2BNQAFU.jpg" alt=""
                             srcset="">
@@ -84,6 +84,76 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-2">
+            <div class="inside">
+                <div class="title">어울림이 하나되는 세상</div>
+                <div class="little-title">밀알복지재단은 소외된 이웃과 더불어 살아가는 사회를 꿈꿉니다.</div>
+            </div>
+            <div class="icon-list">
+                <img src="https://her2237.github.io/img1/pf/mile/icon_business.png" alt="">
+                <ul class="flex flex-jc-c flex-ai-c">
+                    <li>
+                        <a href="#">
+                            정기후원
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            일시후원
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            국내아동결연
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            해동아동결연
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            장애아동결연
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            독거노인후원
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page-3">
+            <div class="main-banner">
+                <div class="img-box">
+                    <img src="https://her2237.github.io/img1/pf/mile/20200515BKTQ1Z9MED7GBKR3H14XTQ9I.jpg " alt="">
+                </div>
+            </div>
+        </div>
+        <div class="page-4">
+            <div class="story-list">
+                <div class="bx-wrapper" style="max-width:1240px;">
+                    <ul class="story-slide"
+                        style="width:9215%; position:relative; transitin-duration:0s; transform:translate3d(-1200px,0px,0px);">
+                        <li style="float:left; list-style:none; position:relative; width:380px; margin-right:20px;"
+                            class="bx-clone" aria-hidden="true"></li>
+                        <a href="#">
+                            <div class="img-wrap" style="background-image:url(https://her2237.github.io/img1/pf/mile/20200626B436NK59U43M1CHEP4SY72FP.jpg);"></div>
+                            <div class="stroy-info">
+                                <div> 2020년 1분기 운영시설 소식</div>
+                                <div> 2020년 1분기, 밀알 복지재단의 여려 운영시설의 소긱을 전해드립니다.</div>
+                                <div class="date">스토리</div>
+                            </div>
+                        </a>
+                    </ul>
                 </div>
             </div>
         </div>

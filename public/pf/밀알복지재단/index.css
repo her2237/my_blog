@@ -408,3 +408,52 @@ label[for] {
 
 
 /*리스트 이미지 끝*/
+
+/*두번째 페이지 시작*/
+.page-2 > div {
+    text-align: center;
+    padding: 35px;
+}
+.page-2 > div > .title {
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+.page-2 > div > .little-title {
+    font-size: 18px;
+    margin: 5px 0 0;
+}
+
+.page-2 > .icon-list {
+    background-color: blue;
+}
+
+/*두번째 페이지 끝*/
+
+/*세번째 페이지 시작*/
+
+.page-3 > .main-banner {
+    display: block;
+    position: relative;
+    text-align: center;
+    height: 160px;
+}
+
+.page-3 > .main-banner > .img-box > img {
+    position: absolute;
+    left: 50%;
+    margin-left: -700px;
+}
+
+.page-4>.story-list>ul>li >.img_wrap {
+    width: 380px;
+    height: 214px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #eee;
+    background-size: cover;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    border: 2px solid red;
+}
