@@ -247,7 +247,7 @@ label[for] {
 }
 
 .con {
-    max-width:1000px;
+    max-width: 1000px;
 }
 
 /* 라이브러리 - flex */
@@ -304,94 +304,101 @@ label[for] {
 /* 탑바 시작*/
 .top-bar {
     position: absolute;
-    top:0;
+    top: 0;
     width: 100%;
     height: 35px;
     background-color: #afafaf;
 }
 
-.top-bar > ul > li > a {
-    font-size:13px;
+.top-bar>ul>li>a {
+    font-size: 13px;
 }
 
 /* 탑바 끝*/
 /* 두번째 바 시작*/
 .twice-bar {
     position: absolute;
-    top:35px;
+    top: 35px;
     width: 100%;
     height: 81px;
     background-color: #ffffff;
 }
-.twice-bar > ul > li {
+
+.twice-bar>ul>li {
     padding: 0 28px;
 }
 
-.twice-bar > ul > li > a {
+.twice-bar>ul>li>a {
     font-size: 18px;
     font-weight: bold;
-    
+
 }
 
 
 /* 두번째 바 끝 */
 
 /* 상단 로고 */
-.twice-bar > .logo {
-}
+.twice-bar>.logo {}
+
 /* 상단 로고 끝*/
 
 
-.main-slider > .slides > div {
+.main-slider>.slides>div {
     z-index: 20;
-    margin-top:116px;
-    height:588px;
-    background-position:center;
-    background-repeat:no-repeat;
+    margin-top: 116px;
+    height: 588px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* 타이틀 페이지 시작*/
 
-.page-1 > div {
+.page-1>div {
     text-align: center;
     padding: 35px;
 }
-.page-1 > div > .title {
+
+.page-1>div>.title {
     font-size: 32px;
     font-weight: bold;
 
 }
 
-.page-1 > div > .little-title {
+.page-1>div>.little-title {
     font-size: 18px;
     margin: 5px 0 0;
 }
+
 /* 타이틀 페이지 끝 */
 
 /*리스트 이미지 시작*/
-.page-1 > .list-img > div > .img-box {
+.page-1>.list-img>div>.img-box {
     padding: 0 10px;
 }
-.page-1 > .list-img > div > .img-box > .img-hand {
+
+.page-1>.list-img>div>.img-box>.img-hand {
     height: 340px;
     width: 280px;
 }
-.page-1 > .list-img > div > .img-box > .img-hand > div {
+
+.page-1>.list-img>div>.img-box>.img-hand>div {
     position: relative;
-    top:10px;
+    top: 10px;
     font-size: 17px;
-    font-family: font_ns,sans-serif;
+    font-family: font_ns, sans-serif;
     letter-spacing: -0.05em;
     font-weight: 100;
     line-height: 1.52;
-    color:white;
+    color: white;
 
 }
-.page-1 > .list-img > div > .img-box > .img-hand > .text-1 {
+
+.page-1>.list-img>div>.img-box>.img-hand>.text-1 {
     font-size: 20px;
     font-weight: bold;
 }
-.page-1 > .list-img > div > .img-box > .img-hand > .btn-middle {
+
+.page-1>.list-img>div>.img-box>.img-hand>.btn-middle {
     display: inline-block;
     vertical-align: middle;
     border: 1px solid #cccccc;
@@ -399,10 +406,11 @@ label[for] {
     border-radius: 48px;
     width: 100px;
 }
-.page-1 > .list-img > div > .img-box > .img-hand > .btn-middle > .btn-cricle {
-    
+
+.page-1>.list-img>div>.img-box>.img-hand>.btn-middle>.btn-cricle {
+
     margin: 5px 0px 0px;
-    padding : 0 19px;
+    padding: 0 19px;
 }
 
 
@@ -410,22 +418,23 @@ label[for] {
 /*리스트 이미지 끝*/
 
 /*두번째 페이지 시작*/
-.page-2 > div {
+.page-2>div {
     text-align: center;
     padding: 35px;
 }
-.page-2 > div > .title {
+
+.page-2>div>.title {
     font-size: 32px;
     font-weight: bold;
 
 }
 
-.page-2 > div > .little-title {
+.page-2>div>.little-title {
     font-size: 18px;
     margin: 5px 0 0;
 }
 
-.page-2 > .icon-list {
+.page-2>.icon-list {
     background-color: blue;
 }
 
@@ -433,27 +442,127 @@ label[for] {
 
 /*세번째 페이지 시작*/
 
-.page-3 > .main-banner {
+.page-3>.main-banner {
     display: block;
     position: relative;
     text-align: center;
     height: 160px;
 }
 
-.page-3 > .main-banner > .img-box > img {
+.page-3>.main-banner>.img-box>img {
     position: absolute;
     left: 50%;
     margin-left: -700px;
 }
 
-.page-4>.story-list>ul>li >.img_wrap {
-    width: 380px;
-    height: 214px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-color: #eee;
-    background-size: cover;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-    border: 2px solid red;
+
+/*슬라이드 시작*/
+
+.my-slider-1 .item {
+    border: 10px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.my-slider-1 .item >img {
+    height: 280px;
+    width: 340px;
+}
+
+/*슬라이드 끝*/
+
+
+/* 공지사항 시작 페이지4*/
+
+.page-4 > .list-article > ul > li {
+    border: 5px solid orange;
+    width: 700px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.page-4 > .list-article > .list-title >ul {
+    border: 2px solid blueviolet; 
+  
+    
+}
+.page-4 > .list-article > .list-title > ul > li {
+    border: 2px solid blue;
+    padding: 12px 65px 14px 55px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    
+}
+   
+
+.page-4 > .list-article > .list-title >ul >.won {
+    display: block;
+    width: 52px;
+    height: 22px;
+    border-radius: 100px;
+    background-color: white;
+    line-height: 40px;
+    color: grey;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/*공지사항 끝*/
+/* 그린 후원자 시작*/
+.page-5 >.green-aide {
+    background-color: #01B552;
+    height: 500px;
+    width: 100%;
+
+}
+/* 그린 후원자 끝*/
+/*페이지 6  공고 시작*/
+.page-6 {
+    height: 300px;
+    width: 100%;
+    background-color: aliceblue;
+}
+.page-6 > .news-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+}
+.page-6 > .apply >.per {
+    display: block;
+    width: 200px;
+    height: 46px;
+    border-radius: 20px;
+    background-color: white;
+    line-height: 40px;
+    color:gray;
+    font-size: 17px;
+    text-align: center;
+    margin-right: 30px;
+    text-align: center;
+    align-items: center;
+}
+.page-6 > .apply >.per:nth-child(3){
+    display: flex;
+    width: 550px;
+}
+.page-6 > .apply >.per>div{
+    margin-right:50px; 
+}
+/*페이지 6  공고 끝*/
+/*페이지 7 관련기업 로고 시작*/
+.page-7 > .company > div > ul > li:nth-child(1){
+    font-size: 18px;
+    margin-right: 50px;
+    margin-top:15px; 
+    font-weight: bold;
+    
+}
+
+/*페이지 7 관련기업 로고 끝*/

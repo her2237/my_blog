@@ -6,9 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>밀알복지재단</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-    <link rel="stylesheet" href="/pf/밀알복지재단/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/pf/밀알복지재단/index.css">
+
     <script src="/pf/밀알복지재단/index.js"></script>
 </head>
 
@@ -138,27 +143,108 @@
                 </div>
             </div>
         </div>
+
+        <div class="my-slider-1">
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="https://her2237.github.io/img1/pf/mile/20200626B436NK59U43M1CHEP4SY72FP.jpg"
+                        alt=""></div>
+                <div class="item"><img src="https://her2237.github.io/img1/pf/mile/20200623PMIHMDYJOUWGNSHX8TX43CVU.jpg"
+                        alt=""></div>
+                <div class="item"><img src="https://her2237.github.io/img1/pf/mile/20200515MW753T0TSTPGVOK05PP07HTY.jpg"
+                        alt=""></div>
+            </div>
+        </div>
         <div class="page-4">
-            <div class="story-list">
-                <div class="bx-wrapper" style="max-width:1240px;">
-                    <ul class="story-slide"
-                        style="width:9215%; position:relative; transitin-duration:0s; transform:translate3d(-1200px,0px,0px);">
-                        <li style="float:left; list-style:none; position:relative; width:380px; margin-right:20px;"
-                            class="bx-clone" aria-hidden="true"></li>
-                        <a href="#">
-                            <div class="img-wrap" style="background-image:url(https://her2237.github.io/img1/pf/mile/20200626B436NK59U43M1CHEP4SY72FP.jpg);"></div>
-                            <div class="stroy-info">
-                                <div> 2020년 1분기 운영시설 소식</div>
-                                <div> 2020년 1분기, 밀알 복지재단의 여려 운영시설의 소긱을 전해드립니다.</div>
-                                <div class="date">스토리</div>
-                            </div>
-                        </a>
+            <div class="list-article">
+                <ul class=" flex flex-jc-c flex-ai-c ">
+                    <li>공지사항</li>
+                    <li>언론보도</li>
+                </ul>
+                <div class="list-title  flex flex-jc-c flex-ai-c">
+                    <ul>
+                        <li class="won">
+                            후원자
+                        </li>
+                        <li class="won">
+                            후원자
+                        </li>
+                        <li class="won">
+                            후원자
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#">외부교육으로 인한 상담시간 변경 안내</a></li>
+                        <li><a href="">2020년 코트디부아르 해외결연 아동편지 우편 발송 안내</a></li>
+                        <li><a href="">서버 정기점검으로 인한 홈페이지 일시 중단 안내</a></li>
+                    </ul>
+                    <ul>
+                        <li>2020.07.15</li>
+                        <li>2020.07.14</li>
+                        <li>2020.07.13</li>
+                    </ul>
+                    <ul>
+                        <li class="won">
+                            후원자
+                        </li>
+                        <li class="won">
+                            후원자
+                        </li>
+                        <li class="won">
+                            후원자
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#">외부교육으로 인한 상담시간 변경 안내</a></li>
+                        <li><a href="">2020년 코트디부아르 해외결연 아동편지 우편 발송 안내</a></li>
+                        <li><a href="">서버 정기점검으로 인한 홈페이지 일시 중단 안내</a></li>
+                    </ul>
+                    <ul>
+                        <li>2020.07.15</li>
+                        <li>2020.07.14</li>
+                        <li>2020.07.13</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="page-5">
+            <div class="main-img-af">
+                <img src="https://her2237.github.io/img1/pf/mile/20200714LONNLSAH6QNIHQKLUND789LP.jpg" alt="">
+            </div>
+            <div class="green-aide">
+
+            </div>
+        </div>
+        <div class="page-6">
+            <div class="news-title">뉴스레터 신청하기</div>
+            <div class="apply flex flex-jc-c flex-ai-c">
+                <div class="per">이름</div>
+                <div class="per">메일아이디</div>
+                <div class="per flex">
+                    <div>메일주소</div>
+                    <div>직접입력</div>
+                </div>
+                <div class="per">신청하기</div>
+            </div>
+        </div>
+        <div class="page-7">
+            <div class="company">
+                <div class="flex flex-jc-c flex-ai-c">
+                    <ul class="flex">
+                        <li> 밀알과 함께하는 기업</li>
+                        <li><img src="https://her2237.github.io/img1/pf/mile/20180422DEXDY1EFQ2282TRJ1NQPO6WL.jpg"
+                                alt=""></li>
+                        <li><img src="https://her2237.github.io/img1/pf/mile/20180422FDBM4BZJZFOKFBL5BT94NGRN (1).jpg" alt=""></li>
+                        <li><img src="https://her2237.github.io/img1/pf/mile/20180422HFKZEJMQI6TLTXI4KBQQ8A9I (1).jpg" alt=""></li>
+                        <li><img src="https://her2237.github.io/img1/pf/mile/20180422G7LYBYOS0YQMLD2IV5QBJRG0 (1).jpg" alt=""></li>
+                        <li><img src="https://her2237.github.io/img1/pf/mile/20180422J79L588XFQ2LYCM0CJIFNS1O.jpg" alt=""></li>
+                        <li><img src="https://her2237.github.io/img1/pf/mile/20180422V37H3L40FAT1W2MA647AQ4RY.jpg" alt=""></li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
