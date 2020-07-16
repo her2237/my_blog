@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>밀알복지재단</title>
+    <!-- 구글 폰트 불러오기 -->
+    <!-- rotobo(400/700/900), notosanskr(400/600/900) -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -212,10 +220,10 @@
             <div class="main-img-af">
                 <img src="https://her2237.github.io/img1/pf/mile/20200714LONNLSAH6QNIHQKLUND789LP.jpg" alt="">
             </div>
-            <div class="green-aide">
-
-            </div>
         </div>
+
+
+
         <div class="page-6">
             <div class="news-title">뉴스레터 신청하기</div>
             <div class="apply flex flex-jc-c flex-ai-c">
@@ -235,16 +243,98 @@
                         <li> 밀알과 함께하는 기업</li>
                         <li><img src="https://her2237.github.io/img1/pf/mile/20180422DEXDY1EFQ2282TRJ1NQPO6WL.jpg"
                                 alt=""></li>
-                        <li><img src="https://her2237.github.io/img1/pf/mile/20180422FDBM4BZJZFOKFBL5BT94NGRN (1).jpg" alt=""></li>
-                        <li><img src="https://her2237.github.io/img1/pf/mile/20180422HFKZEJMQI6TLTXI4KBQQ8A9I (1).jpg" alt=""></li>
-                        <li><img src="https://her2237.github.io/img1/pf/mile/20180422G7LYBYOS0YQMLD2IV5QBJRG0 (1).jpg" alt=""></li>
-                        <li><img src="https://her2237.github.io/img1/pf/mile/20180422J79L588XFQ2LYCM0CJIFNS1O.jpg" alt=""></li>
-                        <li><img src="https://her2237.github.io/img1/pf/mile/20180422V37H3L40FAT1W2MA647AQ4RY.jpg" alt=""></li>
+                        <li><img src="https://her2237.github.io/img1/pf/mile/20180422FDBM4BZJZFOKFBL5BT94NGRN.jpg"
+                                alt=""></li>
+                        <li><img src="https://her2237.github.io/img1/pf/mile/20180422HFKZEJMQI6TLTXI4KBQQ8A9I.jpg"
+                                alt=""></li>
+                        <li><img src="https://her2237.github.io/img1/pf/mile/20180422G7LYBYOS0YQMLD2IV5QBJRG0.jpg"
+                                alt=""></li>
+                        <li><img src="https://her2237.github.io/img1/pf/mile/20180422J79L588XFQ2LYCM0CJIFNS1O.jpg"
+                                alt=""></li>
+                        <li><img src="https://her2237.github.io/img1/pf/mile/20180422V37H3L40FAT1W2MA647AQ4RY.jpg"
+                                alt=""></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="page-8">
+            <div class="black-bottom-1">
+                <div class="intro">
+                    <ul class="flex">
+                        <li>밀알복지재단 소개</li>
+                        <li>이용약관</li>
+                        <li>개인정보처리방침</li>
+                        <li>이메일무단수집거부</li>
+                        <li>오시는 길</li>
+                    </ul>
+                </div>
+                <div>
+                    1111
+                    <div class="icon-1"></div>
+                    <div class="icon-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="page-end">
+            <div class="last-list">
+                <ul class="flex">
+                    <li>사회복지밀알복지 재단</li>
+                    <li>대표자 홍정길</li>
+                    <li> 사업자등록번호213-82-04651</li>
+                </ul>
+                <ul>
+                    <li>(우)06349 서울특별시 강남구 밤고개로 1길 34 (수서동)
+                    </li>
+                </ul>
+                <ul class="flex">
+                    <li>
+                        대표전화 02-3411-4664
+                    </li>
+                    <li>
+                        후원자전용번호 1600-0966 (평일 AM 9:00 ~ PM 6:00)
+                    </li>
+                </ul>
+                <ul>
+                    <li>COPYRIGHTⒸ 2018 MIRAL ALL RIGHTS RESERVED.</li>
+                </ul>
+                <div class="money">
+                    <ul>
+                        <li>후원전용계좌</li>
+                        <li>KEB하나은행810-213140-01605(예금주: 사회복지법인 밀알복지재단)</li>
+                        <li>기부금 영수증 등 후원내역 관리를 위해서 계좌입금 후 연락부탁드립니다.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="box-1 active-on-visible con flex" data-active-on-visible-callback-func-name="count">
+                <div class="flex-1-0-0 flex border-red">
+                    <div class="border-green relative flex flex-jc-e">
+                        <div class="border-gold relative flex flex-ai-e flex-jc-c">
+                            <div>
+                                <span class="num" data-num-ani-slow-point="0.9" data-num-ani-slow-add-interval="10"
+                                    data-num-ani-interval="40" data-num-ani-stride="41" data-num-ani-start="0"
+                                    data-num-ani-end="8785"></span>명
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="icon-circle"></div>
+                </div>
+                <div class="flex-1-0-0 flex flex-jc-e border-red">
+                    <div class="border-green relative flex">
+                        <div class="border-gold relative flex flex-ai-e flex-jc-c">
+                            <div>
+                                <span class="num" data-num-ani-slow-point="0.9" data-num-ani-slow-add-interval="10"
+                                    data-num-ani-interval="40" data-num-ani-stride="41" data-num-ani-start="0"
+                                    data-num-ani-end="8785"></span>명
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>

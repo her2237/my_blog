@@ -465,7 +465,7 @@ label[for] {
     align-items: center;
 }
 
-.my-slider-1 .item >img {
+.my-slider-1 .item>img {
     height: 280px;
     width: 340px;
 }
@@ -475,7 +475,7 @@ label[for] {
 
 /* 공지사항 시작 페이지4*/
 
-.page-4 > .list-article > ul > li {
+.page-4>.list-article>ul>li {
     border: 5px solid orange;
     width: 700px;
     height: 40px;
@@ -485,22 +485,23 @@ label[for] {
     align-items: center;
 }
 
-.page-4 > .list-article > .list-title >ul {
-    border: 2px solid blueviolet; 
-  
-    
+.page-4>.list-article>.list-title>ul {
+    border: 2px solid blueviolet;
+
+
 }
-.page-4 > .list-article > .list-title > ul > li {
+
+.page-4>.list-article>.list-title>ul>li {
     border: 2px solid blue;
     padding: 12px 65px 14px 55px;
     height: 51px;
     display: flex;
     align-items: center;
-    
-}
-   
 
-.page-4 > .list-article > .list-title >ul >.won {
+}
+
+
+.page-4>.list-article>.list-title>ul>.won {
     display: block;
     width: 52px;
     height: 22px;
@@ -515,13 +516,84 @@ label[for] {
 }
 
 /*공지사항 끝*/
-/* 그린 후원자 시작*/
-.page-5 >.green-aide {
-    background-color: #01B552;
-    height: 500px;
-    width: 100%;
 
-}
+/* 그린 후원자 시작*/
+/* 커스텀 */
+.con-min-width {
+    min-width:1356px;
+  }
+  
+  .con {
+    width:1356px;
+  }
+  
+  .box-1 {
+    margin-top:1000px;
+  }
+  
+  .box-1 .icon-circle {
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    background-color:green;
+    background-image:url(http://www.miral.org/images/main/icon_infograph.png);
+    background-position:center;
+    transform:scale(0);
+    transition:transform 0.3s cubic-bezier(0.390, 0.575, 0.175, 1.270);
+  }
+  
+  .box-1.active .icon-circle {
+    transform:scale(1);
+  }
+  
+  .box-1 > :not(:nth-child(2)) > div {
+    width:0;
+    transition:width 1s;
+  }
+  
+  .box-1 > :not(:nth-child(2)) > div::before {
+    content:"";
+    position:absolute;
+    top:50%;
+    left:0;
+    width:100%;
+    height:1px;
+    background-color:black;
+  }
+  
+  .box-1.active > :not(:nth-child(2)) > div {
+    width:100%;
+  }
+  
+  .box-1 > :not(:nth-child(2)) > div > div {
+    width:100px;
+  }
+  
+  .box-1 > :not(:nth-child(2)) > div > div::before, .box-1 > :not(:nth-child(2)) > div > div::after {
+    content:"";
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background-color:black;
+  }
+  
+  .box-1 > :not(:nth-child(2)) > div > div::after {
+    transform:translateY(-50%);
+    left:auto;
+    right:0;
+  }
+  
+  .box-1 > :last-child > div > div::after {
+    transform:translateY(-50%);
+    left:0;
+    right:auto;
+  }
+
+
 /* 그린 후원자 끝*/
 /*페이지 6  공고 시작*/
 .page-6 {
@@ -529,40 +601,96 @@ label[for] {
     width: 100%;
     background-color: aliceblue;
 }
-.page-6 > .news-title {
+
+.page-6>.news-title {
     font-size: 24px;
     font-weight: bold;
     padding: 20px;
 }
-.page-6 > .apply >.per {
+
+.page-6>.apply>.per {
     display: block;
     width: 200px;
     height: 46px;
     border-radius: 20px;
     background-color: white;
     line-height: 40px;
-    color:gray;
+    color: gray;
     font-size: 17px;
     text-align: center;
     margin-right: 30px;
     text-align: center;
     align-items: center;
 }
-.page-6 > .apply >.per:nth-child(3){
+
+.page-6>.apply>.per:nth-child(3) {
     display: flex;
     width: 550px;
 }
-.page-6 > .apply >.per>div{
-    margin-right:50px; 
+
+.page-6>.apply>.per>div {
+    margin-right: 50px;
 }
+
 /*페이지 6  공고 끝*/
 /*페이지 7 관련기업 로고 시작*/
-.page-7 > .company > div > ul > li:nth-child(1){
+.page-7>.company>div>ul>li:nth-child(1) {
     font-size: 18px;
     margin-right: 50px;
-    margin-top:15px; 
+    margin-top: 15px;
     font-weight: bold;
-    
+
 }
 
 /*페이지 7 관련기업 로고 끝*/
+
+/*페이지 8 하단바 -1 시작*/
+.page-8 {
+    height: 500px;
+}
+
+.page-8>.black-bottom-1>.sns>ul li>.img-box {
+    height: 200px;
+    widows: 100px;
+    border: 1px solid red;
+}
+
+/*페이지 8 하단바 -1 끝*/
+
+.page-end {
+    height: 169px;
+    width: 100%;
+    background-color: #999;
+}
+
+.page-end>.last-list {
+    position: absolute;
+    text-align: left;
+}
+
+.page-end>.last-list>ul {
+    color: white;
+    font-size: 14px;
+}
+
+.page-end>.last-list>.money {
+    position: absolute;
+    top: 30px;
+    left: 300%;
+}
+
+.icon-1 {
+    background-image: url(https://her2237.github.io/img1/pf/mile/sp_common.png);
+    background-position-x: 0px;
+    background-position-y: -72px;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-2 {
+    background-image: url(https://her2237.github.io/img1/pf/mile/sp_common.png);
+    background-position-x: -26px;
+    background-position-y: -72px;
+    width: 24px;
+    height: 24px;
+}

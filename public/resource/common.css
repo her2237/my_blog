@@ -321,7 +321,7 @@ label[for] {
     left: 0;
     width: 100%;
     height: 20%;
-    background-color: rgba(255, 255, 255, 0.822);
+    background-color:black;
     transition: top .15s .15s, transform .15s, opacity .15s .15s;
 }
 
@@ -362,13 +362,14 @@ body{
 
 /* 탑바 시작 */
 .top-bar {
-    color:white;
+    color:black;
     position: fixed;
     width:100%;
     top:0;
     height:100px;
     z-index: 10;
-    background-color:lightblue;
+    background-color:white;
+    border-bottom :2px solid black; 
 }
 
 
@@ -392,7 +393,7 @@ body{
 
 .top-bar .menu-box-1>ul>li:hover>a {
    
-    color: rgb(21, 69, 99);
+    color:red;
    
 }
 
@@ -402,7 +403,7 @@ body{
     top: 100%;
     left: -2px;
     width: 100%;
-    color: rgb(21, 69, 99);
+    color: black;
     border-top: 0;
 }
 
@@ -416,7 +417,7 @@ body{
     padding: 20px 0;
 }
 .top-bar .menu-box-1>ul ul>li>a:hover {
-    color:blue;
+    color:red;
 }
 /* 탑바 끝 */
 
@@ -424,7 +425,8 @@ body{
 /* 모바일 탑바 시작 */
 .mobile-top-bar {
     height: 50px;
-    background-color: lightblue;
+    background-color: white;
+    border-bottom:2px solid black;
     position: fixed;
     top: 0;
     left: 0;
@@ -445,11 +447,13 @@ body{
     left: -320px;
     width: 320px;
     bottom: 0;
-    background-color: lightblue;
+    background-color: black;
+    border: 2px solid black;
     transition: left .3s;
     color:white;
     z-index: 10;
 }
+
 
 .mobile-side-bar.active {
     left: 0;
@@ -463,7 +467,7 @@ body{
 }
 
 .mobile-side-bar ul>li.active>a:not(:only-child) {
-    color: lightskyblue;
+    color: black;
     text-decoration: underline;
     background-color:white;
 }
