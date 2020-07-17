@@ -155,6 +155,7 @@
     </div>
 
     <!-- 슬라이더 1 -->
+    <!-- 슬라이더 1 -->
     <div class="my-slider-1">
         <div class="owl-carousel owl-theme">
             <div class="item"><img src="https://her2237.github.io/img1/pf/mile/20200626B436NK59U43M1CHEP4SY72FP.jpg"
@@ -214,11 +215,12 @@
         </div>
     </div>
     <div class="box-green">
+        <div class="slider-title flex flex-ai-c flex-jc-c">후원자님 덕분에 오늘 하루 몇 명이 도움을 받고 있을까요?</div>
         <div class="box-1 active-on-visible con flex" data-active-on-visible-callback-func-name="count">
-            <div class="flex-1-0-0 flex border-red">
-                <div class="border-green relative flex flex-jc-e">
-                    <div class="border-gold relative flex flex-ai-e flex-jc-c">
-                        <div>
+            <div class="flex-1-0-0 flex ">
+                <div class=" relative flex flex-jc-e">
+                    <div class="relative flex flex-ai-e flex-jc-c">
+                        <div class="left-num flex flex-ai-c">
                             <span class="num" data-num-ani-slow-point="0.9" data-num-ani-slow-add-interval="10"
                                 data-num-ani-interval="40" data-num-ani-stride="41" data-num-ani-start="0"
                                 data-num-ani-end="8785"></span>명
@@ -229,10 +231,10 @@
             <div>
                 <div class="icon-circle"></div>
             </div>
-            <div class="flex-1-0-0 flex flex-jc-e border-red">
-                <div class="border-green relative flex">
-                    <div class="border-gold relative flex flex-ai-e flex-jc-c">
-                        <div>
+            <div class="flex-1-0-0 flex flex-jc-e">
+                <div class="relative flex">
+                    <div class="relative flex flex-ai-e flex-jc-c">
+                        <div class="right-num flex flex-ai-c">
                             <span class="num" data-num-ani-slow-point="0.9" data-num-ani-slow-add-interval="10"
                                 data-num-ani-interval="40" data-num-ani-stride="41" data-num-ani-start="0"
                                 data-num-ani-end="8785"></span>명
@@ -241,6 +243,7 @@
                 </div>
             </div>
         </div>
+        <div class="box-bg"></div>
     </div>
 
     <div class="page-6">
@@ -285,16 +288,17 @@
                 <li>이메일무단수집거부</li>
                 <li>오시는 길</li>
             </ul>
+            <div class="sns-logo">
+                <ul class="flex flex flex-jc-c flex-ai-c">
+                    <div class="icon-1"></div>
+                    <div class="icon-2"></div>
+                    <div class="icon-3"></div>
+                    <div class="icon-4"></div>
+                    <div class="icon-5"></div>
+                </ul>
+            </div>
         </div>
-        <div class="sns-logo">
-            <ul class="flex flex-jc-c flex-ai-c">
-                <div class="icon-1"></div>
-                <div class="icon-2"></div>
-                <div class="icon-3"></div>
-                <div class="icon-4"></div>
-                <div class="icon-5"></div>
-            </ul>
-        </div>
+
     </div>
     <div class="page-end flex flex-ai-c flex-jc-c">
         <div class="last-list ">

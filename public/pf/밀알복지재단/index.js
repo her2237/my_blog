@@ -1,6 +1,4 @@
-console.clear();
-
-function MobileSideBar__toggle() {
+ function MobileSideBar__toggle() {
   var $btn = $(".btn-toggle-mobile-side-bar");
 
   if ($btn.hasClass("active")) {
@@ -75,7 +73,7 @@ function a() {
 
 setInterval(a, 5000);
 
-
+$(function(){
 function MySlider1__init() {
   $('.my-slider-1 > .owl-carousel').owlCarousel({
     responsive:{
@@ -89,6 +87,8 @@ function MySlider1__init() {
   });
 }
 MySlider1__init();
+})
+
 
 
 /* 숫자 카운트 라이브러리 시작 */

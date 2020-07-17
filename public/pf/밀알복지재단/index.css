@@ -560,7 +560,9 @@ label[for] {
 
 /*슬라이드 시작*/
 
+
 .my-slider-1 .item {
+  padding-top:30px;
   border: 10px solid red;
   font-size: 15rem;
   display: flex;
@@ -590,7 +592,6 @@ label[for] {
 
 
 .list-title {
-  postion:absolute;
   margin-left:50px;
   margin:50px;
 }
@@ -609,23 +610,53 @@ label[for] {
 
 /*공지사항 끝*/
 /* 그린 후원자 시작*/
-
+.box-green {
+  position: relative;
+  background-color: #01b552;
+}
+.box-green > .box-bg {
+  position: absolute;
+  background-image: url(http://www.miral.org/images/main/bg_infographic.jpg);
+  width: 100%;
+  height: 57px;
+  bottom: 0;
+  left: 0;
+}
+.box-green > .slider-title {
+  font-size: 30px;
+  padding-top:50px; 
+  color:white; 
+}
 .box-1 {
-  margin-top: 200px;
-  background-color: green;
+  position: relative;
+  margin-top:0;
+  width: 1920px;
+  height: 300px;
+  z-index: 3;
 }
 .box-1 > div > div > div > div {
   color: #fff0a3;
 }
+.box-1 > div > div > div > .left-num {
+   padding-right:100px;
+   margin-top:50px; 
+}
+.box-1 > div > div > div > .right-num{
+  padding-left:100px; 
+  margin-top:10px;
+}
 .box-1 > div > div > div > div > span {
-  font-size: 60px;
+  font-size: 50px;
+  margin: 30px;
 }
 
 .box-1 .icon-circle {
+  position: relative;
+  top: 70px;
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background-color: darkgreen;
+  background-color:#159850;
   background-image: url(http://www.miral.org/images/main/icon_infograph.png);
   background-position: center;
   transform: scale(0);
@@ -789,14 +820,17 @@ label[for] {
   margin-left: 30px;
 }
 .sns-bar > .intro > ul > li {
-  margin: 10px;
+  margin: 20px;
 }
 .sns-bar > .intro > ul > li:nth-child(3) {
   color: white;
 }
 /*sns 바 시작*/
-.sns-bar > .sns-logo {
- maright:0;
+.sns-logo > ul {
+  padding: 20px;
+}
+.sns-logo > ul > div {
+  margin-left: 30px;
 }
 .icon-1 {
   background-image: url(https://her2237.github.io/img1/pf/mile/sp_common.png);
@@ -805,7 +839,6 @@ label[for] {
   width: 24px;
   height: 24px;
 }
-
 
 .icon-2 {
   background-image: url(https://her2237.github.io/img1/pf/mile/sp_common.png);

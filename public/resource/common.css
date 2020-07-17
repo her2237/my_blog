@@ -366,7 +366,7 @@ body{
     position: fixed;
     width:100%;
     top:0;
-    height:100px;
+    height:50%;
     z-index: 10;
     background-color:white;
     border-bottom :2px solid black; 
@@ -375,7 +375,7 @@ body{
 
 .top-bar > div > .logo > img {
     width: 100px;
-
+    margin-left:50px; 
 }
 
 .top-bar .menu-box-1>ul>li {
