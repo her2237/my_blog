@@ -87,7 +87,8 @@
   <div class="top-bar visible-md-up">
     <div class="con height-100p flex">
       <a href="/" class="logo flex flex-ai-c">
-        <img src="../resource/img/logo.png" alt="">
+        <img src="../resource/img/logo-1.png" alt="">
+        <img src="../resource/img/logo-2.png" alt="">
       </a>
       <nav class="menu-box-1 flex-grow-1">
         <ul class="height-100p flex">
