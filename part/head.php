@@ -94,11 +94,11 @@
     </div>
     <nav class="menu-box-1 flex-grow-1">
       <ul class="height-100p flex">
-        <li class="flex-1-0-0">
-          <a href="/" class="height-100p flex flex-ai-c flex-jc-c">HOME</a>
+        <li class="flex">
+          <a href="#" class="flex flex-ai-c flex-jc-c">HOME</a>
         </li>
-        <li class="flex-1-0-0">
-          <a href="/list.php" class="height-100p flex flex-ai-c flex-jc-c">BLOG</a>
+        <li class="flex">
+          <a href="/list.php" class="flex flex-ai-c flex-jc-c">BLOG</a>
           <ul>
             <li>
               <a href="/list.php?cateItemId=1" target="_blank">
@@ -122,24 +122,24 @@
             </li>
           </ul>
         </li>
-        <li class="flex-1-0-0">
-          <a href="/detail.php" class="height-100p flex flex-ai-c flex-jc-c">PORTFOLIO</a>
+        <li class="flex">
+          <a href="/pf/index.php" class="flex flex-ai-c flex-jc-c">PORTFOLIO</a>
         </li>
-        <li class="flex-1-0-0">
-          <a href="#" class="height-100p flex flex-ai-c flex-jc-c">CONTACT</a>
+        <li class="flex">
+          <a href="#" class="flex flex-ai-c flex-jc-c">CONTACT</a>
           <ul>
             <li>
-              <a href="https://github.com/jhs512" target="_blank">
+              <a href="https://github.com/her2237" target="_blank">
                 GITHUB
               </a>
             </li>
             <li>
-              <a href="https://github.com/jhs512" target="_blank">
+              <a href="https://github.com/her2237" target="_blank">
                 FACEBOOK
               </a>
             </li>
             <li>
-              <a href="https://github.com/jhs512" target="_blank">
+              <a href="https://github.com/her2237" target="_blank">
                 INSTA
               </a>
             </li>
