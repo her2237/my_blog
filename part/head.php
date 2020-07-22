@@ -84,21 +84,17 @@
 
 
 
-  <div class="top-bar visible-md-up">
-    <div class="con height-100p flex flex-ai-c flex-jc-c">
-      <a href="/" class="logo flex flex-ai-c">
-        <img src="../resource/img/logo-1.png" alt="">
-        <img src="../resource/img/logo-2.png" alt="">
-        <img src="../resource/img/logo-3.png" alt="">
-      </a>
+  <div class="top-bar">
+    <div class="logo-bar">
+      <img src="https://her2237.github.io/img1/h-logo/logo-1.png">
+      <img src="https://her2237.github.io/img1/h-logo/logo-2.png">
+      <img src="https://her2237.github.io/img1/h-logo/logo-3.png">
     </div>
-    <nav class="menu-box-1 flex-grow-1">
-      <ul class="height-100p flex">
-        <li class="flex">
-          <a href="#" class="flex flex-ai-c flex-jc-c">HOME</a>
-        </li>
-        <li class="flex">
-          <a href="/list.php" class="flex flex-ai-c flex-jc-c">BLOG</a>
+    <div class="menu-box-1">
+      <ul class="flex flex-jc-c flex-ai-c">
+        <li><a href="#">profilo</a></li>
+        <li>
+          <a href="/list.php" class="flex flex-ai-c flex-jc-c">blog</a>
           <ul>
             <li>
               <a href="/list.php?cateItemId=1" target="_blank">
@@ -121,30 +117,11 @@
               </a>
             </li>
           </ul>
+
         </li>
-        <li class="flex">
-          <a href="/pf/index.php" class="flex flex-ai-c flex-jc-c">PORTFOLIO</a>
-        </li>
-        <li class="flex">
-          <a href="#" class="flex flex-ai-c flex-jc-c">CONTACT</a>
-          <ul>
-            <li>
-              <a href="https://github.com/her2237" target="_blank">
-                GITHUB
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/her2237" target="_blank">
-                FACEBOOK
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/her2237" target="_blank">
-                INSTA
-              </a>
-            </li>
-          </ul>
+        <li>
+          <a href="/pf/index.php" class="flex flex-ai-c flex-jc-c">portfolio</a>
         </li>
       </ul>
-    </nav>
+    </div>
   </div>

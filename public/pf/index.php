@@ -25,9 +25,15 @@
         </ul>
         <ul>
             <li>
-                <a href="/pf/밀알복지재단">밀알복지재단</a>
+                <a href="/pf/mile">밀알복지재단</a>
             </li>
             <ul><li><a href="http://www.miral.org/main/main.asp">밀알복지재단 원본</a></li></ul>
+        </ul>
+        <ul>
+            <li>
+                <a href="/pf/bada">bada platform</a>
+            </li>
+            <ul><li><a href="http://www.badaplatform.org/"> bada flatform 원본 </a></li></ul>
         </ul>
     </nav>
 
