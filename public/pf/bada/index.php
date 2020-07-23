@@ -24,37 +24,33 @@
     <script src="/pf/bada/index.js"></script>
 </head>
 
-<div class="top-bar">
-    <div class="con">
-        <div class="logo-bar flex flex-ai-c">
-            <img src="https://her2237.github.io/img1/pf/bada/logo.png" alt="">
-        </div>
-        <div class="menu-box-1">
-            <ul class="flex flex-ai-c flex-jc-end">
-                <li>
-                    <a href="#">Bada Platform</a>
-                </li>
-                <li>
-                    <a href="#">Developers</a>
-                </li>
-                <li>
-                    <a href="#">Notice</a>
-                </li>
-                <li>
-                    <a href="#">About Us</a>
-                </li>
-            </ul>
-            <div class="lang">
-                <ul>
-                    <li>
-                        <a href="">KOR</a>
-                    </li>
-                    <li>
-                        <span>ENG</span>
-
-                    </li>
-                </ul>
-            </div>
-        </div>
+<div class="top-bar flex">
+    <div class="logo-bar flex flex-ai-c">
+        <img src="https://her2237.github.io/img1/pf/bada/logo.png" alt="">
     </div>
+    <nav class="menu-box-1 flex flex-1-0-0 flex-jc-end">
+        <ul class="flex height-100p ">
+            <li><a href="#" class="height-100p flex flex-ai-c">Bada Platform</a>
+                <ul></ul>
+            </li>
+            <li><a href="#" class="height-100p flex flex-ai-c">Developers</a>
+                <ul></ul>
+            </li>
+            <li><a href="#" class="height-100p flex flex-ai-c">Notice</a></li>
+            <li>
+                <a href="#" class="height-100p flex flex-ai-c">About Us</a>
+
+            </li>
+        </ul>
+        <div class="lang-select flex-as-c">
+            <ul class="flex flex-column-nowrap">
+                <li><a class="flex flex-ai-c flex-jc-c"><span>KOR</span><span>▼</span></a></li>
+                <li class="flex-order-m1"><a class="flex flex-ai-c flex-jc-c"><span>ENG</span><span>▼</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+</div>
+<div class="main-page">
+
 </div>
