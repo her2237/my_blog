@@ -314,6 +314,10 @@ label[for] {
 }
 
 /*언어 선택바*/
+.lang-select {
+    position: relative;
+    top: 55px;
+}
 .lang-select > ul > li {
     padding: 5px;
 }
@@ -329,8 +333,7 @@ label[for] {
 .lang-select > ul > li:not(.flex-order-m1) > a > span:last-child {
     visibility: hidden;
 }
-.lang-select.active > ul > li > a > span {
-}
+
 .lang-select.active > ul > li > a > span:last-child {
     transform: rotate(180deg);
 }
@@ -339,7 +342,7 @@ label[for] {
     display: inline-block;
     border-radius: 14px;
     height: 36px;
-    margin:0 30px;
+    margin: 0 30px;
     width: 80px;
     overflow: hidden;
     transition: height 1s;
@@ -359,16 +362,15 @@ label[for] {
     max-width: 1350px;
 }
 .top-bar {
-    box-sizing:border-box;
-    padding:0 80px;
+    position: absolute;
     top: 0;
-    position:absolute;
+    width: 100%;
     height: 137px;
-    width:100%;
+    padding: 0 80px;
+    box-sizing: border-box;
+    z-index: 100;
 }
-.logo-bar {
-   
-}
+
 /*1차 메뉴 꾸미기*/
 .top-bar > .menu-box-1 {
     position: relative;
@@ -418,9 +420,10 @@ label[for] {
     top: 100%;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 200px;
     position: absolute;
     border: 2px solid grey;
+    z-index:10;
 }
 
 .top-bar .menu-box-1 > ul > li > ul::before {
@@ -438,22 +441,473 @@ label[for] {
 }
 
 /*2차메뉴바 올리면 보이게 하는 방법*/
-.top-bar .menu-box-1 > ul > li > ul{
-    display:none;
+.top-bar .menu-box-1 > ul > li > ul {
+    display: none;
     /* 유령화 */
-    position:absolute;
-    top:100%;
-    left:0;
+    position: absolute;
+    top: 100%;
+    left: 0;
 }
-.top-bar .menu-box-1 > ul > li:hover > ul{
-    display:block;
+.top-bar .menu-box-1 > ul > li:hover > ul {
+    display: block;
 }
 /*탑바 끝*/
+
 .main-page {
-    top:0;
-    height:969px;
-    width:1920px;
-    min-width:1196px;padding: 0 80px;
+    top: 0;
+    height: 1000px;
+    min-width: 1196px;
+    padding: 0 80px;
     background-image: linear-gradient(to bottom right, #2e3797, #18b4e6);
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
+.main-page > .main-icon{
+    position: relative;
+    padding:10px;
+    height:698px;
+}
+.main-page > .main-icon > .main-img{
+    position:absolute;
+    height:500px;
+    width:660px;
+    right:0;
+    top:35%;
+    
+}
+
+
+.main-page > .main-icon> .main-text {
+    position: relative;;
+    top:50%;
+    color:white;
+     
+}
+
+.main-page > .main-icon > .main-text >div:nth-child(1){
+    font-size:95px;
+    font-weight:700;
+}
+.main-page > .main-icon> .main-text >div:nth-child(2),
+.main-page > .main-icon > .main-text >div:nth-child(3){
+    font-size:20px;
+    font-weight:500;
+    color:#45aad8;
+}
+
+.main-page > .bodo {
+    bottom:0;
+    color:white;
+}
+
+.main-page > .bodo > .text-box > ul {
+    padding:60px;
+    border: 2px solid white;
+}
+.btn-icon .img-box{
+    width:54px;
+    height:54px;
+}
+
+
+/*페이지 -2 시작*/
+.page-2 > .sub-page-1 {
+    padding:135px 0px;
+}
+
+.page-2 > .sub-page-1 >.big-title > div:nth-child(1){
+    display: block;
+    font-size: 38px;
+    line-height: 48px;
+    color: #1f6bbb;
+    font-weight: 700;
+}
+.page-2 > .sub-page-1>.big-title > div:nth-child(2){
+    display: block;
+    margin-top: 0px;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 0;
+    font-size: 16px;
+    line-height: 60px;
+    color: #293459;
+    text-align:center;
+}
+.page-2 >.sub-page-2 > .menu >.line > .sub-title {
+    display: block;
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #2f2f2f;
+}
+.page-2 >.sub-page-2 > .menu >.line >.sub-text{
+    display: block;
+    margin-top: 23px;
+    font-size: 15px;
+    line-height: 27px;
+    color: #333;
+}
+
+/*ship-ani-box 시작*/
+
+.ship-ani-box {
+  position: relative;
+  width: 476px;
+  height: 267px;
+  margin:0 auto;
+}
+
+.page-2 > .sub-page-2 >.ship-ani-box > .outerWrapper {
+  width:100%;
+  height:100%;
+  position: relative;
+}
+
+.page-2 > .sub-page-2 >.ship-ani-box > .follow-path {
+  position: absolute;
+  width: 51px;
+  height: 20px;
+  top: -12px;
+  left: -23px;
+  z-index: 99;
+}
+
+/*ship-ani-box 끝*/
+
+.img-box-1 {
+  opacity:0;
+  transform:translateY(-100px);
+  transition:opacity 3s, transform 3s 1s;
+}
+
+.img-box-1.active {
+  opacity:1;
+  transform:translateY(0);
+}
+/*페이지 -2 끝*/
+
+
+
+/* 3번째 페이지 시작*/
+
+/* 3번째 페이지 시작*/
+.page-3 {
+    background-color:#e9f2f7;
+}
+.side {
+    padding: 135px 0;
+}
+.page-3 > .in-page {
+    margin: 0 auto;
+    width: 1196px;
+    padding: 0 20px;
+}
+
+.page-3 > .in-page {
+    text-align: center;
+    padding-bottom: 95px;
+}
+.grey-title {
+    width:1190px;
+}
+.grey-title > div {
+    display: block;
+    margin-bottom: 34px;
+    text-align: center;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 0;
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 700;
+    color: rgba(47,47,47,.3);
+    text-transform: uppercase;
+}
+
+.page-3 >.menu-bar > .list-bar {
+    width:1190px;
+    height:663px;
+}
+
+.page-3 > .menu-bar > .list-bar > .list {
+    position: relative;
+    width: 238px;
+    margin-left: 35px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.page-3 > .menu-bar > .list-bar > .list > ul li:nth-child(n+2) {
+    margin-top:18px;
+}
+.page-3 > .menu-bar > .list-bar >.list-1 > ul li:nth-child(1)::after{
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: -25px;
+    left: 50%;
+    margin-left: -4.5px;
+    width: 9px;
+    height: 25px;
+    background: url(https://her2237.github.io/img1/pf/bada/proc01_t_arrow_down.png) no-repeat 50%;
+    z-index:5;
+}
+
+.page-3 > .menu-bar > .list-bar > .list-1{
+    margin-left:0;
+    width: 268px;
+    z-index: 3;
+}
+.list-1::after {
+    position: absolute;
+    display: block;
+    content: '';
+    left: 100%;
+    top: 61%;
+    width: 144px;
+    height: 11px;
+    background: url(https://her2237.github.io/img1/pf/bada/proc01_t_arrow_next.png) no-repeat;
+    z-index:20;
+}
+
+.list-2 > div {
+    height: 100%;
+    text-align: center;
+}
+
+.list-2 {
+    position: relative;
+    width: 141px;
+    height: 663px;
+    z-index: 4;
+    text-align:center;
+}
+.list-2::before {
+    position: absolute;
+    display: block;
+    content: '';
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: url(https://her2237.github.io/img1/pf/bada/dash_line.png) repeat-y;
+    z-index: -1;
+}
+.list-2 > div {
+    margin: 260px -5px 0;
+}
+.list-2 > div > li {
+    width: 100%;
+    margin-bottom: 7px;
+    border: 1px solid #dadada;
+    background-color: #f5f5f5;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.list-2 > div >li >div{
+    font-size: 12px;
+    line-height: 38px;
+    color: #a5a9ab;
+}
+
+.blue-title {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0;
+    font-size: 16px;
+    line-height: 37px;
+    font-weight: 700;
+    text-align: center;
+    background-color:#fff;
+    padding: 24px 20px 25px;
+    text-align: center;
+}
+
+.page-3 > .menu-bar > .list-bar >.list > ul {
+    padding: 24px 16px 25px;
+    height: 591px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.img {
+    width:54px;
+    height:54px;
+}
+.a-box {
+    position: relative;
+    width: 100%;
+    display: block;
+    padding: 30px 10px;
+    border: 1px dashed #ddd;
+    border-radius: 9px;
+    box-sizing: border-box;
+    transition: all 0.15s ease-in-out;
+    -webkit-transition: all 0.15s ease-in-out;
+}
+.list > ul:hover > .a-box {
+    border: 2px solid #6297cf;
+    background-color: rgba(243,251,255,.7);
+}
+.page-3 > .menu-bar > .list-bar >.list-1 > ul li:nth-child(1)::after{
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: -25px;
+    left: 50%;
+    margin-left: -4.5px;
+    width: 9px;
+    height: 25px;
+    background: url(https://her2237.github.io/img1/pf/bada/proc01_t_arrow_down.png) no-repeat 50%;
+    z-index:10;
+}
+
+.txt-box {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #484b54;
+    text-align: center;
+}
+.page-3 dl{
+    display: inline-block;
+    text-align: left;
+    margin-top: 25px;
+}
+.page-3 dd{
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #77797e;
+}
+.article {
+    position: relative;
+    display: block;
+    padding-left: 10px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #77797e;
+}
+.page-3 dd::before {
+    position: absolute;
+    content: '';
+    left: 4px;
+    top: 8px;
+    width: 2px;
+    height: 2px;
+    background: #77797e;
+}
+
+.b-box {
+    padding: 25px 10px;
+    margin-top: 18px;
+}
+
+.b-box .img-box {
+    width: 33.333%;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #77797e;
+    vertical-align: top;
+    text-align:center;
+}
+.page-3 > .menu-bar > .list-bar >.list:nth-child(3) {
+    margin-left: 0;
+}
+.page-3 > .menu-bar > .list-bar >.list:nth-child(3) >ul li {
+    margin-top: 20px;
+    height: 460px;
+}
+.page-3 > .menu-bar > .list-bar >.list:nth-child(3) >ul li > div{
+   text-align: center;
+
+}
+.page-3 > .menu-bar > .list-bar >.list:nth-child(3)::after {
+    position: absolute;
+    display: block;
+    content: '';
+    left: 100%;
+    bottom: 133px;
+    width: 39px;
+    height: 269px;
+    background: url(https://her2237.github.io/img1/pf/bada/proc02_t_arrow_next.png) no-repeat;
+} 
+
+.page-3 > .menu-bar > .list-bar >.list:nth-child(4)::after{
+    position: absolute;
+    display: block;
+    content: '';
+    left: 100%;
+    bottom: 133px;
+    width: 39px;
+    height: 269px;
+    background: url(https://her2237.github.io/img1/pf/bada/proc03_t_arrow_next.png) no-repeat;
+}
+
+.list-5 > ul li {
+    padding: 22.5px 5px;
+}
+.list-5 > ul li {
+    padding: 22.5px 5px;
+}
+
+.list-5 > div >li > div >.txt-box {
+    text-align:left;
+}
+}
+
+/* 3번째 페이지 끝*/
+
+/*맨아래 바 시작*/
+.bottom-bar {
+    height: 182px;
+    padding: 56px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.bottom-bar > .in-text {
+    margin: 0 auto;
+    width: 1196px;
+    padding:20px;
+}
+.bottom-bar > .in-text > .menu-1 li {
+    display: block;
+    padding: 0 7.5px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #585a62;
+    font-weight: 500;
+}
+
+.bottom-bar > .in-text > .menu-2 li {
+    position: relative;
+    display: inline-block;
+    padding: 0 8px;
+    font-size: 12px;
+    line-height: 17px;
+    color: #585a62;
+    vertical-align: top;
+}
+.bottom-bar > .in-text > .menu-2 > .list-box-2::before
+.bottom-bar > .in-text > .menu-2 > .list-box-3::before{
+    position: absolute;
+    display: block;
+    content: '';
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 1px;
+    background: #585a62;
+} 
+.bottom-bar > .in-text > .menu-3{
+    display: block;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #a9a9a9;
+    text-align:center;
+}
+
+/*맨아래 바 끝*/
