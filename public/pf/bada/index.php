@@ -57,7 +57,7 @@
             </li>
         </ul>
         <div class="lang-select">
-            <ul class="flex flex-column-nowrap">                
+            <ul class="flex flex-column-nowrap">
                 <li class="flex-order-m1"><a class="flex flex-ai-c flex-jc-c"><span>ENG</span><span>▼</span></a></li>
                 <li><a class="flex flex-ai-c flex-jc-c"><span>KOR</span><span>▼</span></a></li>
             </ul>
@@ -67,47 +67,49 @@
 </div>
 
 <div class="main-page">
-    <div class="main-icon">
-        <div class="main-text">
-            <div>Bada Platform</div>
-            <div>Powerful IoT/Big Data Platform</div>
-            <div>for Ship and Shipbuilding Industry</div>
-        </div>
-        <div class="main-img flex">
-            <div class="img-box flex-jc-end">
-                <img src="https://her2237.github.io/img1/pf/bada/main_visual.png" alt="">
+    <div class="inner">
+        <div class="main-icon">
+            <div class="main-text">
+                <div>Bada Platform</div>
+                <div>Powerful IoT/Big Data Platform</div>
+                <div>for Ship and Shipbuilding Industry</div>
+            </div>
+            <div class="main-img flex">
+                <div class="img-box flex-jc-end">
+                    <img src="https://her2237.github.io/img1/pf/bada/main_visual.png" alt="">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="bodo flex">
-        <div class="text-box flex flex-jc-start">
-            <ul>
-                <li><a href="#">[언론보도]요동치는 원유시장... 조선업계,</a></li>
-                <li><a href="#">VLCC 수주 정조준(EBN,2019.08.28)</a>
+        <div class="bodo flex flex-jc-c flex-ai-end">
+            <div class="text-box flex flex-jc-start flex-ai-c">
+                <ul>
+                    <li><a href="#">[언론보도]요동치는 원유시장... 조선업계,</a></li>
+                    <li><a href="#">VLCC 수주 정조준(EBN,2019.08.28)</a>
 
-                </li>
-                <li><a href="#">2019.08.29</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">[언론보도]선박 수주, 석달연속 중국 제치고</a></li>
-                <li><a href="#">1위(동아닷컴,2019.08.14)</a>
-                </li>
-                <li><a href="#">2019.08.29</a></li>
-            </ul>
-            <ul>
-                <li><a href="#">[언론보도]"삼성중공업, 아프라막급 탱커</a></li>
-                <li><a href="#">수주 긍정적"(한국경제,2019,08,22)</a>
+                    </li>
+                    <li><a href="#">2019.08.29</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">[언론보도]선박 수주, 석달연속 중국 제치고</a></li>
+                    <li><a href="#">1위(동아닷컴,2019.08.14)</a>
+                    </li>
+                    <li><a href="#">2019.08.29</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">[언론보도]"삼성중공업, 아프라막급 탱커</a></li>
+                    <li><a href="#">수주 긍정적"(한국경제,2019,08,22)</a>
 
-                </li>
-                <li><a href="#">2019.08.29</a></li>
-            </ul>
-        </div>
-        <div class="btn-icon flex flex-ai-c ">
-            <a href="#">
-                <span class="img-box flex flex-jc-c">
-                    <img src="https://her2237.github.io/img1/pf/bada/btn_go_notice.png" alt="">
-                </span>
-            </a>
+                    </li>
+                    <li><a href="#">2019.08.29</a></li>
+                </ul>
+            </div>
+            <div class="btn-icon flex flex-ai-c ">
+                <a href="#">
+                    <span class="img-box flex flex-jc-c">
+                        <img src="https://her2237.github.io/img1/pf/bada/btn_go_notice.png" alt="">
+                    </span>
+                </a>
+            </div>
         </div>
     </div>
 </div>
