@@ -20,9 +20,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="/pf/밀알복지재단/index.css">
+    <link rel="stylesheet" href="/pf/mile/index.css">
 
-    <script src="/pf/밀알복지재단/index.js"></script>
+    <script src="/pf/mile/index.js"></script>
 </head>
 
 <body>
