@@ -455,7 +455,6 @@ label[for] {
 
 .main-page {
     top: 0;
-    height: 1000px;
     min-width: 1196px;
     padding: 0 80px;
     background-image: linear-gradient(to bottom right, #2e3797, #18b4e6);
@@ -500,30 +499,36 @@ label[for] {
 
 .main-page> .inner >.bodo {
     position:absolute;
-    top:88%;
+    top:83%;
     height:145px;  
-    border:1px solid red;
+    border-top:1px solid rgba(255,255,255,.25);
 }
 
 .bodo ul{
-    border:1px solid blue;
-    padding:30px 100px; 
+    padding:12px 100px; 
     color:white;
 }
 
+.main-page> .inner >.bodo > .text-box >.line-1{
+    border-right: 1px solid rgba(255,255,255,.25);
+    border-left: 1px solid rgba(255,255,255,.25);
+}
+
 .btn-icon {
-    border:1px solid black;
     padding-right:0;
     padding:0 100px;
 }
+
+
+
 .btn-icon .img-box{
     width:54px;
     height:54px;
 }
 
 /*페이지 -2 시작*/
-.page-2 > .sub-page-1 {
-    padding:135px 0px;
+.page-2 {
+    padding: 135px 0;
 }
 
 .page-2 > .sub-page-1 >.big-title > div:nth-child(1){
@@ -542,6 +547,10 @@ label[for] {
     line-height: 60px;
     color: #293459;
     text-align:center;
+}
+
+.page-2 >.sub-page-2 > .menu > div  {
+    padding:0 50px;
 }
 .page-2 >.sub-page-2 > .menu >.line > .sub-title {
     display: block;
@@ -887,6 +896,12 @@ label[for] {
     width: 1196px;
     padding:20px;
 }
+.bottom-bar > .in-text > .menu-1 {
+    padding:5px 0;
+}
+.bottom-bar > .in-text > .menu-2 {
+    padding:10px 0;
+}
 .bottom-bar > .in-text > .menu-1 li {
     display: block;
     padding: 0 7.5px;
@@ -923,5 +938,4 @@ label[for] {
     color: #a9a9a9;
     text-align:center;
 }
-
 /*맨아래 바 끝*/
