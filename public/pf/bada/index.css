@@ -885,10 +885,11 @@ label[for] {
 
 /*맨아래 바 시작*/
 .bottom-bar {
-    height: 182px;
+    height: 180px;
     padding: 56px 0;
     background-color: #fff;
-    text-align: center;
+    text-align: center
+    border:1px solid red;
 }
 
 .bottom-bar > .in-text {
