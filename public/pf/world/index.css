@@ -1,0 +1,489 @@
+html {
+    /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
+    font-family: "Roboto", "Noto Sans KR", sans-serif;
+  }
+  
+  /* 노말라이즈 */
+  body, ul, li, h1 {
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+  
+  a {
+    color:inherit;
+    text-decoration:none;
+  }
+  
+  label[for] {
+    cursor:pointer;
+    user-select:none;
+  }
+  
+  /* 라이브러리 */
+  .block {
+    display:block;
+  }
+  
+  .inline-block {
+    display:inline-block;
+  }
+  
+  .absolute-left {
+    position:absolute;
+    left:0;
+  }
+  
+  .absolute-right {
+    position:absolute;
+    right:0;
+  }
+  
+  .absolute-bottom {
+    position:absolute;
+    bottom:0;
+  }
+  
+  .absolute-top {
+    position:absolute;
+    top:0;
+  }
+  
+  .absolute-center {
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+  }
+  
+  .absolute-middle {
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+  }
+  
+  .absolute-middle.absolute-center {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+  }
+  
+  .relative {
+    position:relative;
+  }
+  
+  .cell {
+    float:left;
+    box-sizing:border-box;
+  }
+  
+  .cell-right {
+    float:right;
+    box-sizing:border-box;
+  }
+  
+  .row::after {
+    content:"";
+    display:block;
+    clear:both;
+  }
+  
+  .clear-both {
+    clear:both;
+  }
+  
+  .img-box > img {
+    width:100%;
+    display:block;
+  }
+  
+  .con {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  .margin-0-auto {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  
+  .text-align-center {
+    text-align:center;
+  }
+  
+  .text-align-right {
+    text-align:right;
+  }
+  
+  .line-height-0 {
+    line-height:0;
+  }
+  
+  .line-height-0 > * {
+    line-height:normal;
+  }
+  
+  .width-30px {
+    width:30px;
+  }
+  
+  .width-35px {
+    width:35px;
+  }
+  
+  .width-40px {
+    width:35px;
+  }
+  
+  .width-45px {
+    width:35px;
+  }
+  
+  .width-50px {
+    width:50px;
+  }
+  
+  .width-80px {
+    width:80px;
+  }
+  
+  .width-100px {
+    width:100px;
+  }
+  
+  .width-100p {
+    width:100%;
+  }
+  
+  .width-60p {
+    width:60%;
+  }
+  
+  .width-55p {
+    width:55%;
+  }
+  
+  .width-50p {
+    width:50%;
+  }
+  
+  .width-45p {
+    width:45%;
+  }
+  
+  .width-40p {
+    width:40%;
+  }
+  
+  .width-30p {
+    width:30%;
+  }
+  
+  .width-35p {
+    width:35%;
+  }
+  
+  .width-100p-except-30px {
+    width:calc(100% - 30px);
+  }
+  
+  .width-100p-except-35px {
+    width:calc(100% - 35px);
+  }
+  
+  .width-100p-except-40px {
+    width:calc(100% - 40px);
+  }
+  
+  .width-100p-except-50px {
+    width:calc(100% - 50px);
+  }
+  
+  .width-100p-except-80px {
+    width:calc(100% - 80px);
+  }
+  
+  .width-100p-except-100px {
+    width:calc(100% - 100px);
+  }
+  
+  .height-100p {
+    height:100%;
+  }
+  
+  .height-50p {
+    height:50%;
+  }
+  
+  .border-box {
+    box-sizing:border-box;
+  }
+  
+  .font-size-dot-8rem {
+    font-size:.8rem;
+  }
+  
+  .table-row {
+    display:table;
+  }
+  
+  .table-row.row::after {
+    display:inline;
+    clear:non;
+  }
+  
+  .table-row > .cell {
+    float:none;
+    display:table-cell;
+  }
+  
+  .border-red {
+    border:10px solid red;
+  }
+  
+  .border-green {
+    border:10px solid green;
+  }
+  
+  .border-blue {
+    border:10px solid blue;
+  }
+  
+  .border-gold {
+    border:10px solid gold;
+  }
+  
+  .border-pink {
+    border:10px solid pink;
+  }
+  
+  /* 라이브러리 - flex */
+  * > .flex {
+    display:flex;
+  }
+  
+  * > .flex-grow-1 {
+    flex-grow:1;
+  }
+  
+  * > .flex-jc-c {
+    justify-content:center;
+  }
+  
+  * > .flex-jc-s {
+    justify-content:flex-start;
+  }
+  
+  * > .flex-jc-e {
+    justify-content:flex-end;
+  }
+  
+  * > .flex-jc-sb {
+    justify-content:space-between;
+  }
+  
+  * > .flex-ai-c {
+    align-items:center;
+  }
+  
+  * > .flex-ai-s {
+    align-items:flex-start;
+  }
+  
+  * > .flex-ai-e {
+    align-items:flex-end;
+  }
+  
+  * > .flex-as-s {
+    align-self:stretch;
+  }
+  
+  * > .flex-as-c {
+    align-self:center;
+  }
+  
+  * > .flex-as-s {
+    align-self:flex-start;
+  }
+  
+  * > .flex-as-e {
+    align-self:flex-end;
+  }
+  
+  * > .flex-column-nowrap {
+    flex-flow:column nowrap;
+  }
+  
+  * > .flex-column-wrap {
+    flex-flow:column wrap;
+  }
+  
+  * > .flex-row-wrap {
+    flex-flow:row wrap;
+  }
+  
+  .flex-ch-basis-0 > * {
+    flex-basis:0;
+  }
+  
+  * > .flex-1-0-0 {
+    flex:1 0 0;
+  }
+  
+  /* 커스텀 */
+  
+  /* 고정형 .con 시작 */
+  .con-min-width {
+    min-width:1370px;
+  }
+  
+  .con {
+    width:1370px;
+  }
+  /* 고정형 .con 끝 */
+  
+  /* 반응형 타입 1 .con 시작 */
+  /*
+  .con {
+    max-width:1370px;
+  }
+  */
+  /* 반응형 타입 1 .con 끝 */
+  
+  /* 반응형 타입 2(넓을때만 반응형) .con 시작 */
+  /*
+  .con-min-width {
+    min-width:1370px;
+  }
+  
+  .con {
+    margin-left:50px;
+    margin-right:50px;
+  }
+  */
+  /* 반응형 타입 2(넓을때만 반응형) .con 끝 */
+  }
+  .min-top-bar  {
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      width: 100%;
+  }
+  .min-top-bar > .inner { 
+      height:40px;
+      padding: 0 20px;
+  }
+  .min-top-bar > .inner > ul {
+      position:relative;
+      left:300px;
+  }
+  .min-top-bar > .inner > ul > li {
+      padding-right:10px;
+      color:#333333;
+      font-size:13px;
+      
+  }
+  
+  .top-bar {
+      position:relative;
+      top:0;
+      background-color:transparent;
+  }
+  .top-bar > .inner {
+      border:2px solid blue;
+  }
+  .top-bar > .logo {
+      position:relative;
+      padding: 0 50px;
+  }
+  .menu-box > ul {
+      
+  }
+  .menu-box > ul > li{
+      border:1px solid red;
+      position:relative;
+      left:20px;
+      padding:30px;
+  }
+  .menu-box > ul > li > div {
+      color: #161616;
+      line-height: 30px;
+      font-size: 17px;
+      text-align: center;
+      font-family: '__NanumGothicBold_5';
+      font-weight: 600;
+  }
+  
+  .top-bar > .inner > .btn-box {
+      border:1px solid red;
+      margin-left:400px;
+  } 
+  
+  .top-bar > .inner > .btn-box > .btn {
+      margin-top:8px;
+      display: block;
+      width: 150px;
+      height: 50px;
+      background-color:#ff6600;
+      border-radius:2px;
+      text-align: center;
+  }
+  .top-bar > .inner > .btn-box > .btn > a{
+      position:relative;
+      top:15px;
+       font-family: '__NanumGothic_5';
+      font-weight: 400;
+      color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+  }
+  
+  .main-slider .text-box {
+    border:10px solid red;
+    height:500px;
+    display:flex;
+  }
+  .main-slider > ul > li { 
+      height:300px;
+      width:800px;
+  } 
+  .main-slider .text-box > div{
+      line-height:60px;
+      text-align:center;
+      font-weight:600;
+      font-size:50px;
+  }
+  .main-slider .text-box > div > div{
+      font-size:20px;
+      line-height:26px;
+      margin-top:20px;
+      font-weight:400;
+      text-align:center;
+  }
+  
+  .btn-detail {
+      display: block;
+      position:relative;
+      width: 200px;
+      height: 70px;
+      margin-left:40%;
+      top:50px;
+      background-color:#ff6600;
+      border-radius:2px;
+      text-align: center;
+  }
+  .btn-detail > div {
+      position:relative;
+      top:25px;
+      font-family: '__NanumGothic_5';
+      font-weight: 400;
+      color: #fff;
+      font-size: 25px;
+      font-weight: bold;
+  }
+  .main-slider > .owl-carousel> .owl-dots {
+      position: absolute;
+      top:90%;
+      left: 45%;
+      border:1px solid red;
+  }
