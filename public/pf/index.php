@@ -69,16 +69,16 @@
             <a href="https://her2237.github.io/img1/pf/artworks/2/x-2.png">나이키 클럽-2</a>
         </li>
         <li>
-            <a href="https://her2237.github.io/img1/pf/artworks/2/x-3.png">나이키 클럽-3</a>
+            <a href="https://her2237.github.io/img1/pf/artworks/2/x-3.jpg">나이키 클럽-3</a>
         </li>
         <li>
-            <a href="https://her2237.github.io/img1/pf/artworks/2/x-4.png">나이키 클럽-4</a>
+            <a href="https://her2237.github.io/img1/pf/artworks/2/x-4.jpg">나이키 클럽-4</a>
         </li>
         <li>
-            <a href="https://her2237.github.io/img1/pf/artworks/2/x-5.png">나이키 클럽-5</a>
+            <a href="https://her2237.github.io/img1/pf/artworks/2/x-5.jpg">나이키 클럽-5</a>
         </li>
         <li>
-            <a href="https://her2237.github.io/img1/pf/artworks/2/x-6.png">나이키 클럽-6</a>
+            <a href="https://her2237.github.io/img1/pf/artworks/2/x-6.jpg">나이키 클럽-6</a>
         </li>
     </ul>
 </body>
