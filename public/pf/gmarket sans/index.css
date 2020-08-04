@@ -367,6 +367,8 @@ label[for] {
   */
 /* 반응형 타입 2(넓을때만 반응형) .con 끝 */
 
+
+/* 탑바 만들기 */
 .top-bar {
     position: fixed;
     top:0;
@@ -398,6 +400,15 @@ label[for] {
     color: #151515;
     font-weight:500;
 }
+/*비디오 박스 변환 이미지*/
+.container  {
+    background-image:url(https://her2237.github.io/img1/pf/gmarket%20sans/top.gif);
+    background-attachment:fixed;
+    height:100vh;
+    background-size:cover;
+    background-position:center;
+}
+
 /*고정 초록색 버튼*/
 .btn-box {
     position: fixed;
@@ -414,8 +425,8 @@ label[for] {
 }
 .button {
     position: relative;
-    left: 0px;
     float: right;
+    left:200px;
     width: 150px;
     height: 150px;
     background-color: #00C218;
@@ -432,41 +443,74 @@ label[for] {
     padding: 0;
     text-align: center;
     border: 0;
-    font-size: 17px;
+}
+.btn {
+    position:relative;
+    top:25%;
+    font-size:25px;
     line-height: 23px;
     color: #fff;
     font-weight: 500;
     outline: 0;
 }
 
-/*비디오 박스 변환 이미지*/
-.container  {
-    background-image:url(https://her2237.github.io/img1/pf/gmarket%20sans/top.gif);
-    background-attachment:fixed;
-    height:100vh;
-    background-size:cover;
-    background-position:center;
-}
-.page-2 {
-    position: absolute;
+/* 페이지 2 시작 */
+.page-box > .section > .page-2{
     left: 40%;
     padding: 176px 0 186px;
     text-align: center;
+    background-color: #FFF;
 }
-.page-2 > div {
+
+.page-box >.section >.page-2 > div {
     position: relative;
 
 }
-.page-2 > .intro-title {
+.page-box >.section > .page-2 > .intro-title {
     font-size: 75px;
     color: #00c01e;
     font-weight: 700;
     margin-bottom: 45px;
 }
-.page-2 > .intro-sub {
+.page-box >.section >.page-2 > .intro-sub {
     margin-top: 13px;
     font-size: 20px;
     color: #303030;
     line-height: 34px;
     font-weight: 500;
+}
+
+/*페이지 3 시작 */
+.page-box >.section > .page { 
+    height: 710px;
+    color:#fff;
+    text-align: center;
+    background-color:#0028ac;
+}
+.page-box >.section > .page >.blue-slider .font-box {
+  border:10px solid red;
+    height:600px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+
+.page-box >.section >.page-3 {
+    background-color:#0028ac;
+}
+
+.page-box >.section > .page >.img-slider .font-box {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.owl-stage-outer .item > img{
+    height: 700px;
+}
+
+/*페이지 6 시작 */
+.page-6 {
+    height: 710px;
 }

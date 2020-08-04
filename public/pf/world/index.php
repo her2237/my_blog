@@ -131,7 +131,53 @@
         </div>
     </div>
 </div>
+<div class="sang">
+    <div class="inner">
+        <div class="title flex flex-ai-c flex-jc-c">
+            지구촌 모든 어린의 풍성한 삶을 위해
+            <br>
+            가장 작은 부분까지 투명하게
+        </div>
+        <div class="line"></div>
+        <div class="box flex flex-ai-c">
+            <div class="img-box flex flex-ai-c flex-jc-c">
+                <li class="flex-ai-c">
+                    <img src="https://her2237.github.io/img1/pf/world/tr_award_2020_03.png" alt="">
+                    <br>
+                    UN세계식량계획
+                    <br>
+                    최대규모협력
+                </li>
+                <li>
+                    <img src="https://her2237.github.io/img1/pf/world/tr_award_2020_03.png" alt="">
+                    <br>
+                    삼일회계법인
+                    <br>
+                    투명경영대상 수상
+                </li>
+                <li>
+                    <img src="https://her2237.github.io/img1/pf/world/tr_award_2020_03.png" alt="">
+                    <br>
+                    호암상 사회봉사상 수상
+                </li>
+            </div>
 
+            <div class="money">
+                <div>월드비전은 국내 58만 정기후원자가 선택한, 세계 최대 아동후원 NGO로서</div>
+                <div>국내외 NGO 투명성과 책무성 표준 준슬 선도합니다.</div>
+                <ul>
+                    <div class="bogoseo flex flex-ai-c flex-jc-start">
+                       <img src="https://her2237.github.io/img1/pf/world/icon_money.png" alt="">2019년 사업/재무 보고서 확인하기
+                    </div>
+                    <div class="bogoseo flex flex-ai-c flex-jc-start">
+                         <img src="https://her2237.github.io/img1/pf/world/icon_check.png" alt="">
+                        내 후원금 잘 관리되고 있나요?
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 </body>
