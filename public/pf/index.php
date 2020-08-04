@@ -63,10 +63,10 @@
     </ul>
     <ul>
         <li>
-            <a href="https://her2237.github.io/img1/pf/artworks/2/x-1.png">나이키 클럽-1</a>
+            <a href="https://her2237.github.io/img1/pf/artworks/2/x-1.jpg">나이키 클럽-1</a>
         </li>
         <li>
-            <a href="https://her2237.github.io/img1/pf/artworks/2/x-2.png">나이키 클럽-2</a>
+            <a href="https://her2237.github.io/img1/pf/artworks/2/x-2.jpg">나이키 클럽-2</a>
         </li>
         <li>
             <a href="https://her2237.github.io/img1/pf/artworks/2/x-3.jpg">나이키 클럽-3</a>
