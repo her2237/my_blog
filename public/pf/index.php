@@ -63,7 +63,7 @@
                             <img src="https://her2237.github.io/img1/pf/artworks/portfolio/hy.png" alt="">
                         </li>
                         <li class="text-box">
-                            <a href="/pf/HYUNDAI> 현대자동차 </a>
+                            <a href="/pf/HYUNDAI"> 현대자동차 </a>
                             <a href="https://www.hyundai.com/kr/ko/e"> 현대자동차 원본 </a>
                         </li>
                     </ul>
