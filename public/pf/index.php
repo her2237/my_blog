@@ -27,7 +27,7 @@
     <div class="page-pf ">
         <div class="inner">
             <div class="pf-title">
-                <a href="#">포트폴리오의
+                <a href="#">포트폴리오
                     <br>
                     그 동안의 작업기록물</a>
             </div>
