@@ -5,82 +5,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>PORTFOLIO</title>
+
+    <link rel="stylesheet" href="/pf/index.css">
+    <link rel="stylesheet" href="/pf/index.js">
 </head>
 
 <body>
-    <h1> Coding </h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="/pf/duotone">듀오톤</a>
-            </li>
-            <ul><li><a href="https://duotone.io/">duotone 원본</a></li></ul>
+    
+    <div class="side-bar">
+        <div class="logo-bar">
+            <img src="https://her2237.github.io/img1/h-logo/main-logo.jpg">
+        </div>
+        <ul class="menu-bar">
+            <li><a href="/profile.php">profilo</a></li>
+            <li><a href="/list.php">blog</a></li>
+            <li><a href="/pf/index.php">portfolio</a></li>
         </ul>
-        <ul>
-            <li>
-                <a href="/pf/HYUNDAI">현대자동차</a>
-            </li>
-            <ul><li><a href="https://www.hyundai.com/kr/ko/e">현대자동차 원본</a></li></ul>
-        </ul>
-        <ul>
-            <li>
-                <a href="/pf/mile">밀알복지재단</a>
-            </li>
-            <ul><li><a href="http://www.miral.org/main/main.asp">밀알복지재단 원본</a></li></ul>
-        </ul>
-        <ul>
-            <li>
-                <a href="/pf/bada">bada platform</a>
-            </li>
-            <ul><li><a href="http://www.badaplatform.org/"> bada flatform 원본 </a></li></ul>
-        </ul>
-        <ul>
-            <li>
-                <a href="/pf/cell">celltrion</a>
-            </li>
-            <ul><li><a href="http://celltrion.com/ko-kr/home/index"> celltrion 원본 </a></li></ul>
-        </ul>
-        <ul>
-            <li>
-                <a href="/pf/gmarket sans">gmarket sans</a>
-            </li>
-            <ul><li><a href="http://company.gmarket.co.kr/company/about/company/company--font.asp"> gmarket sans 원본 </a></li></ul>
-        </ul>
-        <ul>
-            <li>
-                <a href="/pf/world">world vision</a>
-            </li>
-            <ul><li><a href="https://www.worldvision.or.kr/?_ga=2.182776166.1952304079.1596268453-1496857402.1596268453"> wold vision 원본 </a></li></ul>
-        </ul>
-    </nav>
+    </div>
 
-<h1>Design</h1>
-    <ul>
-        <li>
-            <a href="https://her2237.github.io/img1/pf/artworks/1/1.png">팜플렛 해녀</a>
-        </li>
-    </ul>
-    <ul>
-        <li>
-            <a href="https://her2237.github.io/img1/pf/artworks/2/1.png">나이키 클럽-1</a>
-        </li>
-        <li>
-            <a href="https://her2237.github.io/img1/pf/artworks/2/2.png">나이키 클럽-2</a>
-        </li>
-        <li>
-            <a href="https://her2237.github.io/img1/pf/artworks/2/3.png">나이키 클럽-3</a>
-        </li>
-        <li>
-            <a href="https://her2237.github.io/img1/pf/artworks/2/4.png">나이키 클럽-4</a>
-        </li>
-        <li>
-            <a href="https://her2237.github.io/img1/pf/artworks/2/5.png">나이키 클럽-5</a>
-        </li>
-        <li>
-            <a href="https://her2237.github.io/img1/pf/artworks/2/6.png">나이키 클럽-6</a>
-        </li>
-    </ul>
+    <div class="page-pf ">
+        <div class="inner">
+            <div class="pf-title">
+                <a href="#">포트폴리오의
+                    <br>
+                    그 동안의 작업기록물</a>
+            </div>
+            <div class="pf-menu">
+                <ul class="flex flex-ai-c">
+                    <li><a href="#">ALL</a></li>
+                    <li><a href="#">PORTFOLIO</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                </ul>
+            </div>
+            <div class="pf-list">
+                <div class="list-bar">
+                    <ul class="list-box list-1">
+                        <li class="img-box">
+                            <img src="https://her2237.github.io/img1/pf/artworks/portfolio/duotone.png" alt="">
+                        </li>
+                        <li class="text-box">
+                            <a href="/pf/bada">duotone</a>
+                            <a href="http://www.badaplatform.org/"> duotone 원본 </a>
+                        </li>
+                    </ul>
+                    <ul class="list-box list-2">
+                        <li class="img-box">
+                            <img src="https://her2237.github.io/img1/pf/artworks/portfolio/mile.png" alt="">
+                        </li>
+                        <li class="text-box">
+                            <a href="/pf/bada"> 밀알복지재단</a>
+                            <a href="http://www.badaplatform.org/"> 밀알복지재단 원본 </a>
+                        </li>
+                    </ul>
+                    <ul class="list-box list-2">
+                        <li class="img-box">
+                            <img src="https://her2237.github.io/img1/pf/artworks/portfolio/hy.png" alt="">
+                        </li>
+                        <li class="text-box">
+                            <a href="/pf/bada"> 현대자동차 </a>
+                            <a href="http://www.badaplatform.org/"> 현대자동차 원본 </a>
+                        </li>
+                    </ul>
+                    <ul class="list-box list-2">
+                        <li class="img-box">
+                            <img src="https://her2237.github.io/img1/pf/artworks/portfolio/bada.png" alt="">
+                        </li>
+                        <li class="text-box">
+                            <a href="/pf/bada">bada platform</a>
+                            <a href="http://www.badaplatform.org/"> bada flatform 원본 </a>
+                        </li>
+                    </ul>
+                    <ul class="list-box list-2">
+                        <li class="img-box">
+                            <img src="https://her2237.github.io/img1/pf/artworks/portfolio/g.png" alt="">
+                        </li>
+                        <li class="text-box">
+                            <a href="/pf/bada">gmarket sans</a>
+                            <a href="http://www.badaplatform.org/"> gmarket sans 원본 </a>
+                        </li>
+                    </ul>
+                    <ul class="list-box list-2">
+                        <li class="img-box">
+                            <img src="https://her2237.github.io/img1/pf/artworks/portfolio/w.png" alt="">
+                        </li>
+                        <li class="text-box">
+                            <a href="/pf/bada">world vision</a>
+                            <a href="http://www.badaplatform.org/"> world vision 원본 </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

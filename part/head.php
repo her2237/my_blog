@@ -92,7 +92,7 @@
     </div>
     <div class="menu-box-1">
       <ul class="flex flex-jc-c flex-ai-c">
-        <li><a href="#">profilo</a></li>
+        <li><a href="/profile.php">profile</a></li>
         <li>
           <a href="/list.php" class="flex flex-ai-c flex-jc-c">blog</a>
           <ul>
