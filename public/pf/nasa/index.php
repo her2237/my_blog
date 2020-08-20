@@ -4,223 +4,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>NASA</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap"
-        rel="stylesheet">
+    <title>nasa</title>
 
-    <!-- 폰트어썸 불러오기 -->
+    <!-- 로딩화면 비디오 -->
+    <link rel="preload" as="video" href="https://her2237.github.io/img1/pf/space/Space%20-%202381.mp4" type="video/mp4">
+    <!-- 메인화면 비디오 -->
+    <link rel="preload" as="video" href="https://her2237.github.io/img1/pf/space/Space%20Ship%20-%203.mp4"
+        type="video/mp4">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"></script>
     <link rel="stylesheet" href="/pf/nasa/index.css">
-   
     <script src="/pf/nasa/index.js"></script>
-    <link rel="preload" as="video" href="https://her2237.github.io/img1/pf/space/Space%20-%202381.mp4">
-    <link rel="preload" as="video" href="https://her2237.github.io/img1/pf/space/Space%20Ship%20-%203.mp4">
-
-    
-
-
-
-    <script>
-        function PreloadJs__load(srcs, handleProcess, handleComplete) {
-            var total = srcs.length;
-            var loadedCount = 0;
-            for (var i = 0; i < srcs.length; i++) {
-                var id = 'PreloadJs__el__' + i;
-                if (srcs[i].substr(-4).toLowerCase() == '.mp4') {
-                    var video = document.createElement("video");
-                    video.setAttribute("src", srcs[i]);
-                    video.oncanplay = function () {
-                        loadedCount++;
-                        handleProcess(loadedCount, total);
-                        if (loadedCount == total) {
-                            handleComplete();
-                        }
-                    };
-                } else {
-                    var img = new Image();
-                    img.src = srcs[i];
-                    img.onload = function () {
-                        loadedCount++;
-                        handleProcess(loadedCount, total);
-                        if (loadedCount == total) {
-                            handleComplete();
-                        }
-                    }
-                }
-            }
-        }
-
-        function Loading__init() {
-            var $progressBarStick = $('.loading .process-bar > .stick');
-            PreloadJs__load(["https://her2237.github.io/img1/pf/space/Space%20-%202381.mp4",
-                "https://her2237.github.io/img1/pf/space/Space%20Ship%20-%203.mp4"
-            ], function (i, total) {
-                var percent = Math.ceil(i * 100 / total);
-                $progressBarStick.css('width', percent + '%');
-            }, function () {
-                var fakeLoadingSeconds = 1000; /*인트로 재생시간 바꾸기*/
-                setTimeout(function () {
-                    $('.page-1 > .bg > video').get(0).currentTime = 0;
-                }, fakeLoadingSeconds - 1000);
-                setTimeout(function () {
-                    $('.loading').fadeOut(1000, function () {
-                        $('.loading').remove();
-                    });
-                }, fakeLoadingSeconds);
-            });
-        }
-        Loading__init();
-    </script>
 </head>
 
 <body>
+
+
     <style>
-        .loading {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: white;
-            z-index: 10;
-        }
-
-        .loading .process-bar {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-        }
-
-        .loading .process-bar>.stick {
-            height: 10px;
-            width: 0;
-            transition: width 0.2s;
-            background-color: red;
-        }
-
-        .loading>video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            display: block;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .intro-logo {
+        .loading-icon {
             position: fixed;
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 100;
+            transform: translateX(-50%) translateY(-50%);
+            z-index: 30;
+        }
+
+        .loading-icon.fancy-spinner {
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            width: 5rem;
+            height: 5rem;
+        }
+
+        .loading-icon.fancy-spinner div {
+            position: absolute;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+        }
+
+        .loading-icon.fancy-spinner div.ring {
+            border-width: 0.5rem;
+            border-style: solid;
+            border-color: transparent;
+            -webkit-animation: 2s fancy infinite alternate;
+            animation: 2s fancy infinite alternate;
+        }
+
+        .loading-icon.fancy-spinner div.ring:nth-child(1) {
+            border-left-color: #676767;
+            border-right-color: #676767;
+        }
+
+        .loading-icon.fancy-spinner div.ring:nth-child(2) {
+            border-top-color: #676767;
+            border-bottom-color: #676767;
+            -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+        }
+
+        .loading-icon.fancy-spinner div.dot {
+            width: 1rem;
+            height: 1rem;
+            background: #676767;
+        }
+
+        @-webkit-keyframes fancy {
+            to {
+                -webkit-transform: rotate(360deg) scale(0.5);
+                transform: rotate(360deg) scale(0.5);
+            }
+        }
+
+        @keyframes fancy {
+            to {
+                -webkit-transform: rotate(360deg) scale(0.5);
+                transform: rotate(360deg) scale(0.5);
+            }
         }
     </style>
-    <div class="loading">
-        <div class="preload-counter">
-            <div class="process-bar">
-                <div class="stick"></div>
-            </div>
-        </div>
-        <div class="intro-logo">
-            <img src="https://her2237.github.io/img1/pf/space/4f80c352f6a8ba221055fdc179dcf5e5%201.png
-                  " alt="">
-        </div>
-        <video autoplay muted src="https://her2237.github.io/img1/pf/space/Space%20-%202381.mp4"></video>
+    <div class="loading loading-icon fancy-spinner">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="dot"></div>
+    </div>
+    <div class="loading loading-logo-box flex flex-ai-c flex-jc-c">
+        <video autoplay="autoplay" muted="muted" loop="loop"
+            src="https://her2237.github.io/img1/pf/space/Space%20-%202381.mp4"></video>
+        <img src="https://her2237.github.io/img1/pf/space/4f80c352f6a8ba221055fdc179dcf5e5%201.png" alt="">
     </div>
 
-    <div class="my-slider-1 swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <div class="page-1">
-                    <div class="bg">
-                        <video autoplay muted
+    <div class="page-1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+        <div class="top-bar flex">
+            <div class="logo">
+                <img src="https://her2237.github.io/img1/pf/space/4f80c352f6a8ba221055fdc179dcf5e5 2.png" alt="">
+            </div>
+            <div class="menu-bar flex flex-ai-c">
+                <ul class="flex flex-jc-e">
+                    <li><a href="/pf/nasa/detail.php">MISSION</a></li>
+                    <li><a href="#">GALLERIES</a></li>
+                    <li><a href="#">FOLLOW NASA</a></li>
+                    <li><a href="#">AUDIENCES</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="menu-icon visible-on-sm-down flex">
+            <a href="#" class="btn-icon-bar flex flex-ai-c flex-jc-e">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+
+        <div class="menu-page flex flex-jc-c flex-ai-c visible-on-sm-down">
+            <div class="menu-box flex flex-ai-c">
+                <ul class="list-box-1">
+                    <li>
+                        <a href="./index.php">Main
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./detail.php">
+                            Missions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Galleries
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">NASA TV
+
+                        </a>
+                    </li>
+                </ul>
+                <ul class="list-box-2">
+                    <li>
+                        <a href="#">About NASA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Downloads
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Follow NASA
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">NASA Audience</a>
+                    </li>
+                </ul>
+
+                <div class="sns-box">
+                    <div class="menu-logo flex flex-jc-c">
+                        <img src="https://her2237.github.io/img1/pf/space/nasa-logo.svg" alt="">
+                    </div>
+                    <ul class="list-1 flex flex-jc-c">
+                        <li>
+                            <a href="#">No Fear Act
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">FOIA</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy </a>
+                        </li>
+                    </ul>
+                    <ul class="list-2 flex flex-jc-c">
+                        <li>
+                            <a href="#">Office of Inspector General</a>
+                        </li>
+                        <li>
+                            <a href="#">Office of Special Counsel </a>
+                        </li>
+                    </ul>
+                    <ul class="list-3 flex flex-ai-c flex-jc-c">
+                        <li>
+                            <a href="#">Agency Financial Reports</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact NASA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-box-1">
+            <div class="slick">
+                <div>
+                    <div class="item item-1">
+                        <div class="progress-arrow-bar">
+                            <div></div>
+                        </div>
+                        <video loop muted
                             src="https://her2237.github.io/img1/pf/space/Space%20Ship%20-%203.mp4"></video>
-                    </div>
-                    <div class="top-bar flex">
-                        <div class="logo">
-                            <img src="https://her2237.github.io/img1/pf/space/4f80c352f6a8ba221055fdc179dcf5e5 2.png"
-                                alt="">
+                        <div class="title">
+                            <div class="tracking-in-expand-fwd-top">
+                                <a href="#">Artemis
+                                    Four Down, Four to Go:
+                                    <br>
+                                    Artemis I Rocket Moves Closer to Hot Fire Test</a>
+                            </div>
                         </div>
-                        <div class="menu-bar flex flex-ai-c">
-                            <ul class="flex flex-jc-e">
-                                <li><a href="#">MISSION</a></li>
-                                <li><a href="#">GALLERIES</a></li>
-                                <li><a href="#">FOLLOW NASA</a></li>
-                                <li><a href="#">AUDIENCES</a></li>
-                            </ul>
-                        </div>
-                        <div class="menu-icon">
-                            <i class="fas fa-bars"></i>
+                        <div class="section">
+                            <div class="section__item">
+                                <a href="/pf/nasa/detail.php" class="sm-link sm-link_padding-all sm-link1">
+                                    <span class="sm-link__label">Detail More</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="page-1">
-                    <div class="bg">
-                        <video autoplay muted
-                            src="https://her2237.github.io/img1/pf/space/Rocket Launch - 236.mp4"></video>
-                    </div>
-                    <div class="top-bar flex">
-                        <div class="logo">
-                            <img src="https://her2237.github.io/img1/pf/space/4f80c352f6a8ba221055fdc179dcf5e5 2.png"
-                                alt="">
+                <div>
+                    <div class="item item-2">
+                        <div class="progress-arrow-bar">
+                            <div></div>
                         </div>
-                        <div class="menu-bar flex flex-ai-c">
-                            <ul class="flex flex-jc-e">
-                                <li><a href="#">MISSION</a></li>
-                                <li><a href="#">GALLERIES</a></li>
-                                <li><a href="#">FOLLOW NASA</a></li>
-                                <li><a href="#">AUDIENCES</a></li>
-                            </ul>
+                        <video loop muted src="https://her2237.github.io/img1/pf/space/Moon%20-%2030960.mp4"></video>
+                        <div class="title">
+                            <div class="tracking-in-expand-fwd-top">
+                                <a href="#">Humanity’s Return to the Moon:
+                                    <br>
+                                    The How and Why of Artemis</a>
+                            </div>
                         </div>
-                        <div class="menu-icon">
-                            <i class="fas fa-bars"></i>
+                        <div class="section">
+                            <div class="section__item">
+                                <a href="/pf/nasa/detail.php" class="sm-link sm-link_padding-all sm-link1">
+                                    <span class="sm-link__label">Detail More</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="page-1">
-                    <div class="bg">
-                        <video autoplay muted src="https://her2237.github.io/img1/pf/space/iss_docking_sim.mp4"></video>
-                    </div>
-                    <div class="top-bar flex">
-                        <div class="logo">
-                            <img src="https://her2237.github.io/img1/pf/space/4f80c352f6a8ba221055fdc179dcf5e5 2.png"
-                                alt="">
+
+                <div>
+                    <div class="item item-3">
+                        <div class="progress-arrow-bar">
+                            <div></div>
                         </div>
-                        <div class="menu-bar flex flex-ai-c">
-                            <ul class="flex flex-jc-e">
-                                <li><a href="#">MISSION</a></li>
-                                <li><a href="#">GALLERIES</a></li>
-                                <li><a href="#">FOLLOW NASA</a></li>
-                                <li><a href="#">AUDIENCES</a></li>
-                            </ul>
+                        <video loop muted src="https://her2237.github.io/img1/pf/space/Rocket Launch - 236.mp4"></video>
+                        <div class="title">
+                            <div class="tracking-in-expand-fwd-top">
+                                <a href="#">NASA Perseveres Through Pandemic,
+                                    <br>
+                                    Looks Ahead in 2020, 2021</a>
+                            </div>
                         </div>
-                        <div class="menu-icon">
-                            <i class="fas fa-bars"></i>
+                        <div class="section">
+                            <div class="section__item">
+                                <a href="/pf/nasa/detail.php" class="sm-link sm-link_padding-all sm-link1">
+                                    <span class="sm-link__label">Detail More</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
     </div>
+
 </body>
 
 </html>
