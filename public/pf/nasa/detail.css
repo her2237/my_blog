@@ -95,7 +95,7 @@ label[for] {
     clear: both;
 }
 
-.img-box > img {
+.img-box>img {
     width: 100%;
     display: block;
 }
@@ -122,7 +122,7 @@ label[for] {
     line-height: 0;
 }
 
-.line-height-0 > * {
+.line-height-0>* {
     line-height: normal;
 }
 
@@ -235,7 +235,7 @@ label[for] {
     clear: non;
 }
 
-.table-row > .cell {
+.table-row>.cell {
     float: none;
     display: table-cell;
 }
@@ -261,75 +261,75 @@ label[for] {
 }
 
 /* 라이브러리 - flex */
-* > .flex {
+*>.flex {
     display: flex;
 }
 
-* > .flex-grow-1 {
+*>.flex-grow-1 {
     flex-grow: 1;
 }
 
-* > .flex-jc-c {
+*>.flex-jc-c {
     justify-content: center;
 }
 
-* > .flex-jc-s {
+*>.flex-jc-s {
     justify-content: flex-start;
 }
 
-* > .flex-jc-e {
+*>.flex-jc-e {
     justify-content: flex-end;
 }
 
-* > .flex-jc-sb {
+*>.flex-jc-sb {
     justify-content: space-between;
 }
 
-* > .flex-ai-c {
+*>.flex-ai-c {
     align-items: center;
 }
 
-* > .flex-ai-s {
+*>.flex-ai-s {
     align-items: flex-start;
 }
 
-* > .flex-ai-e {
+*>.flex-ai-e {
     align-items: flex-end;
 }
 
-* > .flex-as-s {
+*>.flex-as-s {
     align-self: stretch;
 }
 
-* > .flex-as-c {
+*>.flex-as-c {
     align-self: center;
 }
 
-* > .flex-as-s {
+*>.flex-as-s {
     align-self: flex-start;
 }
 
-* > .flex-as-e {
+*>.flex-as-e {
     align-self: flex-end;
 }
 
-* > .flex-column-nowrap {
+*>.flex-column-nowrap {
     flex-flow: column nowrap;
 }
 
-* > .flex-column-wrap {
+*>.flex-column-wrap {
     flex-flow: column wrap;
 }
 
-* > .flex-row-wrap {
+*>.flex-row-wrap {
     flex-flow: row wrap;
 }
 
-.flex-ch-basis-0 > * {
+.flex-ch-basis-0>* {
     flex-basis: 0;
 }
 
-* > .flex-1-0-0 {
+*>.flex-1-0-0 {
     flex: 1 0 0;
 }
 
@@ -354,9 +354,10 @@ label[for] {
     height: 70px;
 }
 
-.top-bar > .logo > img {
+.top-bar>.logo>img {
     width: 120px;
 }
+
 /*탑바 끝*/
 /*메인 페이지 끝*/
 .page {
@@ -366,7 +367,7 @@ label[for] {
     color: white;
 }
 
-.page > .bg {
+.page>.bg {
     position: absolute;
     left: 0;
     width: 100%;
@@ -374,7 +375,7 @@ label[for] {
     z-index: -1;
 }
 
-.page > .bg > video {
+.page>.bg>video {
     top: 70px;
     display: block;
     width: 100%;
@@ -384,25 +385,29 @@ label[for] {
 
 /*메인 페이지 끝*/
 /* 첫번째 아티클*/
-.article > .article-text {
+.article>.article-text {
     width: 700px;
     padding: 40px;
     font-size: 20px;
 }
+
 /*첫번째 아티클 끝*/
 /*레드  시작*/
 .red-banner {
     color: #fff;
     background-color: #be1e2d;
 }
-.red-banner > .red-inner {
+
+.red-banner>.red-inner {
     padding: 0.5em 16px;
 }
-.red-banner > .red-inner > .title {
+
+.red-banner>.red-inner>.title {
     margin-top: 10px;
     font-size: 36px;
     font-weight: bold;
 }
+
 /*레드 제목 끝*/
 /*달이미지1 시작*/
 .moon-img-1 {
@@ -410,47 +415,61 @@ label[for] {
     top: 0;
     width: 100%;
 }
-.moon-img-1 > .img-box > img {
+
+.moon-img-1>.img-box>img {
     width: 100%;
 }
+
 /*이미지텍스트박스 시작*/
-.moon-img-1 > .img-box > .img-text-box {
+.moon-img-1>.img-box>.img-text-box {
     position: absolute;
     top: 5%;
     left: 55%;
 }
 
-.moon-img-1 > .img-box > .img-text-box > ul > li {
+.moon-img-1>.img-box>.img-text-box>ul {
+    height: 68px;
+}
+
+.moon-img-1>.img-box>.img-text-box>ul>li {
     color: white;
     padding: 10px 20px;
-    height:100%;
+    height: 100%;
+    box-sizing: border-box;
 }
-.moon-img-1 > .img-box > .img-text-box > ul > li:nth-child(2) {
+
+.moon-img-1>.img-box>.img-text-box>ul>li:nth-child(2) {
     background-color: #be1e2d;
 }
 
-.moon-img-1 > .img-box > .img-text-box > ul > li > a {
+.moon-img-1>.img-box>.img-text-box>ul>li>a {
     font-size: 2.5rem;
     font-weight: bold;
 }
-.moon-img-1 > .img-box > .img-text-box > ul > li:last-child {
-    height:100%;
+
+.moon-img-1>.img-box>.img-text-box>ul>li:last-child {
+    height: 100%;
     color: #be1e2d;
     font-size: 1.5rem;
 }
 
+
+
 /* 배경 호버 효과 넣기 */
-.img-text-box:hover > ul > li:not(:nth-child(2)) {
-    background-color:rgb(255,255,255, .6);
+.img-text-box:hover>ul>li:not(:nth-child(2)) {
+    background-color: rgb(255, 255, 255, .6);
 }
 
-.img-text-box > .hide-text {
-    color:white;
-    padding-right:250px;
-    font-size:18px;
-    opacity:0;
+.img-text-box>.hide-text {
+    margin-top: 10px;
+    color: white;
+    padding-right: 250px;
+    font-size: 18px;
+    opacity: 0;
 }
-.img-text-box:hover > .hide-text {
-    opacity:1;
+
+.img-text-box:hover>.hide-text {
+    opacity: 1;
 }
+
 /*달이미지1 끝*/

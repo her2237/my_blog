@@ -51,7 +51,7 @@
                 <ul class="flex flex-ai-c">
                     <li><a href="#">TO</a></li>
                     <li><a href="#">LEARN</a></li>
-                    <li>
+                    <li class="flex flex-ai-c">
                         <i class="fas fa-plus"></i>
                     </li>
                 </ul>
