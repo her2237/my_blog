@@ -368,9 +368,11 @@ label[for] {
     padding:15px;
     
 }
+/*
 .pf-list > .list-bar >.list-box:nth-of-type(2n-1) {
     margin-left:60%;
 }
+*/
 
 .pf-list > .list-bar >.list-box > .text-box > a {
     margin-right:50px;

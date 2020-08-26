@@ -27,6 +27,16 @@ function PreloadJs__load(srcs, handleProcess, handleComplete) {
     }
 }
 
+function SwiperContainer__init(){(
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        mousewheel: true,
+    });
+    
+)}
+
 $(function () {
     PreloadJs__load__init();
+    SwiperContainer__init();
 });

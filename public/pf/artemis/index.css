@@ -341,7 +341,7 @@ label[for] {
 }
 
 .con {
-    width: 1370px;
+    width: 1200px;
 }
 
 /* 커스텀 */
@@ -409,6 +409,25 @@ label[for] {
 }
 
 /*레드 제목 끝*/
+
+/*슬라이드 시작*/
+.my-slider-1 .swiper-slide {
+    height: 100%;
+}
+
+.my-slider-1 .swiper-slide {
+    color: transparent;
+    transform: translatey(0);
+    transition: color 3s, transform 10s;
+}
+
+.my-slider-1 .swiper-slide.swiper-slide-active {
+    transform: translateX(0);
+    color: red;
+}
+
+/*슬라이드 끝*/
+
 /*달이미지1 시작*/
 .moon-img-1 {
     position: relative;
@@ -423,7 +442,7 @@ label[for] {
 /*이미지텍스트박스 시작*/
 .moon-img-1>.img-box>.img-text-box {
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 55%;
 }
 
@@ -453,16 +472,14 @@ label[for] {
     font-size: 1.5rem;
 }
 
-
-
 /* 배경 호버 효과 넣기 */
 .img-text-box:hover>ul>li:not(:nth-child(2)) {
-    background-color: rgb(255, 255, 255, .6);
+    background-color: rgb(255, 255, 255, 0.6);
 }
 
 .img-text-box>.hide-text {
-    margin-top: 10px;
     color: white;
+    margin-top: 10px;
     padding-right: 250px;
     font-size: 18px;
     opacity: 0;
@@ -473,3 +490,91 @@ label[for] {
 }
 
 /*달이미지1 끝*/
+
+/*블루 시작*/
+.blue-banner {
+    color: #fff;
+    background-color: #002052;
+}
+
+.blue-banner>.blue-inner {
+    padding: 0.5em 16px;
+}
+
+.blue-banner>.blue-inner>.title {
+    margin-top: 10px;
+    font-size: 36px;
+}
+
+/*블루 제목 끝*/
+
+/*인사이드 배경 1*/
+.inside-container {
+    background-image: url(https://her2237.github.io/img1/pf/detail/foo-01.jpg);
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*인사이드 배경 끝*/
+
+/*part-2 시작*/
+
+.part-2 {
+    position: relative;
+    top:0;
+    left: 0;
+}
+
+.part-2 > img {
+    width: 100%;
+    height: 100%;
+}
+
+.part-2>.big-title {
+    position: absolute;
+    float: left;
+    top: 5%;
+    right: 0;
+    text-align: right;
+}
+
+.part-2>.big-title>li {
+    color: white;
+    font-size: 81px;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+
+.part-2>.big-title>li:first-child {
+    background-color: #be1e2d;
+}
+
+/*part-2 끝*/
+
+/*레드배너-1  시작*/
+.red-banner-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: -5px;
+    color: #fff;
+    background-color: #be1e2d;
+}
+
+.red-banner-1>.red-inner-1 {
+    text-align: center;
+    width: 800px;
+    padding: 0.5em 16px;
+    font-weight: 400;
+}
+
+.red-banner-1>.red-inner-1>.title-1 {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+/*레드베너-1 끝*/

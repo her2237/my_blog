@@ -224,7 +224,7 @@
                         </div>
                         <div class="section">
                             <div class="section__item">
-                                <a href="/pf/nasa/detail.php" class="sm-link sm-link_padding-all sm-link1">
+                                <a href="/pf/artemis" class="sm-link sm-link_padding-all sm-link1">
                                     <span class="sm-link__label">Detail More</span>
                                 </a>
                             </div>
@@ -246,7 +246,7 @@
                         </div>
                         <div class="section">
                             <div class="section__item">
-                                <a href="/pf/nasa/detail.php" class="sm-link sm-link_padding-all sm-link1">
+                                <a href="/pf/artemis" class="sm-link sm-link_padding-all sm-link1">
                                     <span class="sm-link__label">Detail More</span>
                                 </a>
                             </div>
@@ -269,7 +269,7 @@
                         </div>
                         <div class="section">
                             <div class="section__item">
-                                <a href="/pf/nasa/detail.php" class="sm-link sm-link_padding-all sm-link1">
+                                <a href="/pf/artemis" class="sm-link sm-link_padding-all sm-link1">
                                     <span class="sm-link__label">Detail More</span>
                                 </a>
                             </div>
