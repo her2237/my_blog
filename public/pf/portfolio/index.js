@@ -1,12 +1,4 @@
 
-function Wrapper__init() {
-  
-}
-
-$(function () {
-  
-})
-
 var $window = $(window);
 var $html = $('html');
 

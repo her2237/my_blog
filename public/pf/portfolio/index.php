@@ -24,26 +24,14 @@
     <div class="top-bar section-wrap font-1">
         <div class="con flex flex-jc-sb height-100p">
             <div class="section flex" data-section-name="studio">
-                <h1>profile</h1>
-
-                <div class="des visible-on-md-up">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos porro sunt esse alias enim nihil
-                    dignissimos aperiam maiores minus expedita, reprehenderit cupiditate aut fuga dolor fugiat
-                    repellendus ullam! Odit, error.
-                </div>
+                <h3>Portfolio</h3>
 
                 <div class="des visible-on-sm-down btn-to-chagne-section" data-section-name="films">
                     portfolio
                 </div>
             </div>
             <div class="section flex flex-jc-sb" data-section-name="films">
-                <h1>portfolio</h1>
-
-                <div class="des visible-on-md-up">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos porro sunt esse alias enim nihil
-                    dignissimos aperiam maiores minus expedita, reprehenderit cupiditate aut fuga dolor fugiat
-                    repellendus ullam! Odit, error.
-                </div>
+                <h3>Design</h3>
 
                 <div class="des visible-on-sm-down btn-to-chagne-section" data-section-name="studio">
                     studio
@@ -55,39 +43,64 @@
     <div class="lists-box section-wrap">
         <div class="con flex flex-jc-sb">
             <div class="section" data-section-name="studio">
-                <div class="list masonry-grid">
-                    <div class="profile-box">
+                <div class="grid-item">
+                    <div class="in-box flex flex-jc-c flex-ai-c">
                         <div>
                             <div class="img-box">
                                 <img src="https://sixnfive.com/wp-content/uploads/2020/08/visual7_web-1-1280x1280.jpg"
                                     alt="">
                             </div>
+                        </div>
+                        <div class="text-box">
                             <div class="title-box">
-                                제목
+                                <h3>제목</h3>
                             </div>
                             <div class="writer-box">
-                                작성자
+                                <h3>작성자</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-item">
+                    <div class="in-box flex flex-jc-c flex-ai-c">
+                        <div>
+                            <div class="img-box">
+                                <img src="https://sixnfive.com/wp-content/uploads/2020/08/visual7_web-1-1280x1280.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="text-box">
+                            <div class="title-box">
+                                <h3>제목</h3>
+                            </div>
+                            <div class="writer-box">
+                                <h3>작성자</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="in-box flex flex-jc-c flex-ai-c">
+                        <div>
+                            <div class="img-box">
+                                <img src="https://sixnfive.com/wp-content/uploads/2020/08/visual7_web-1-1280x1280.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                        <div class="text-box">
+                            <div class="title-box">
+                                <h3>제목</h3>
+                            </div>
+                            <div class="writer-box">
+                                <h3>작성자</h3>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="section" data-section-name="films">
-                <div class="list masonry-grid">
-                    <div class="grid-item">
-                        <div>
-                            <div class="img-box">
-                                <img src="https://sixnfive.com/wp-content/uploads/2020/08/visual7_web-1-1280x1280.jpg"
-                                    alt="">
-                            </div>
-                            <div class="title-box">
-                                제목
-                            </div>
-                            <div class="writer-box">
-                                작성자
-                            </div>
-                        </div>
-                    </div>
+                <div class="list masonry-grid">                  
                     <div class="grid-item">
                         <div>
                             <div class="img-box">
