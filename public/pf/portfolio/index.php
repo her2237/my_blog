@@ -47,7 +47,7 @@
                     <div class="in-box flex flex-jc-c flex-ai-c">
                         <div>
                             <div class="img-box">
-                                <img src="https://sixnfive.com/wp-content/uploads/2020/08/visual7_web-1-1280x1280.jpg"
+                                <img src="https://her2237.github.io/img1/pf/artworks/portfolio/blog.png"
                                     alt="">
                             </div>
                         </div>
