@@ -41,71 +41,75 @@
     </div>
 
     <div class="lists-box section-wrap">
-        <div class="con flex flex-jc-sb">
+        <div class="con flex ">
             <div class="section" data-section-name="studio">
                 <div class="grid-item">
-                    <div class="in-box flex flex-jc-c flex-ai-c">
+                    <div class="in-box">
                         <div>
                             <div class="img-box">
-                                <img src="https://her2237.github.io/img1/pf/artworks/portfolio/blog.png"
-                                    alt="">
-                            </div>
-                        </div>
-                        <div class="text-box">
-                            <div class="title-box">
-                                <h3>제목</h3>
-                            </div>
-                            <div class="writer-box">
-                                <h3>작성자</h3>
+                                <img src="https://her2237.github.io/img1/pf/artworks/portfolio/nasa.jpg" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="grid-item">
-                    <div class="in-box flex flex-jc-c flex-ai-c">
+                    <div class="in-box">
                         <div>
                             <div class="img-box">
-                                <img src="https://sixnfive.com/wp-content/uploads/2020/08/visual7_web-1-1280x1280.jpg"
+                                <img src="https://her2237.github.io/img1/pf/artworks/portfolio/bada.png"
                                     alt="">
-                            </div>
-                        </div>
-                        <div class="text-box">
-                            <div class="title-box">
-                                <h3>제목</h3>
-                            </div>
-                            <div class="writer-box">
-                                <h3>작성자</h3>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="grid-item">
-                    <div class="in-box flex flex-jc-c flex-ai-c">
+                    <div class="in-box">
+                        <div>
+                            <div class="img-box">
+                                <img src="https://her2237.github.io/img1/pf/artworks/portfolio/cell.png"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="in-box">
                         <div>
                             <div class="img-box">
                                 <img src="https://sixnfive.com/wp-content/uploads/2020/08/visual7_web-1-1280x1280.jpg"
                                     alt="">
                             </div>
                         </div>
-                        <div class="text-box">
-                            <div class="title-box">
-                                <h3>제목</h3>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="in-box">
+                        <div>
+                            <div class="img-box">
+                                <img src="https://sixnfive.com/wp-content/uploads/2020/08/visual7_web-1-1280x1280.jpg"
+                                    alt="">
                             </div>
-                            <div class="writer-box">
-                                <h3>작성자</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="in-box">
+                        <div>
+                            <div class="img-box">
+                                <img src="https://sixnfive.com/wp-content/uploads/2020/08/visual7_web-1-1280x1280.jpg"
+                                    alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="section" data-section-name="films">
-                <div class="list masonry-grid">                  
+                <div class="list masonry-grid">
                     <div class="grid-item">
                         <div>
                             <div class="img-box">
-                                <img src="https://her2237.github.io/img1/pf/artworks/portfolio/blog.png"
-                                    alt="">
+                                <img src="https://her2237.github.io/img1/pf/artworks/portfolio/blog.png" alt="">
                             </div>
                             <div class="title-box">
                                 제목1
