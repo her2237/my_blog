@@ -8,6 +8,15 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- 제이쿼리 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- 아울 캐러셀 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
 
@@ -19,152 +28,144 @@
 </head>
 
 <body>
+
     <div class="loading"></div>
 
-    <div class="top-bar section-wrap font-1">
-        <div class="con flex flex-jc-sb height-100p">
-            <div class="section flex" data-section-name="studio">
-                <h3>Portfolio</h3>
-
-                <div class="des visible-on-sm-down btn-to-chagne-section" data-section-name="films">
-                    portfolio
-                </div>
-            </div>
-            <div class="section flex flex-jc-sb" data-section-name="films">
-                <h3>Design</h3>
-
-                <div class="des visible-on-sm-down btn-to-chagne-section" data-section-name="studio">
-                    studio
-                </div>
-            </div>
+    <div class="bg-lines con">
+        <div class="lines">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
     </div>
 
-    <div class="lists-box section-wrap">
-        <div class="con flex ">
-            <div class="section" data-section-name="studio">
-                <div class="grid-item">
-                    <div class="in-box">
-                        <div>
-                            <div class="img-box">
-                                <img src="https://her2237.github.io/img1/pf/artworks/portfolio/nasa.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="title-box">
+        <div class="title">
+            <a href="#"> Portfolio</a>
+        </div>
+        <div class="title-text flex ">
+            <div><a href="#">ALL</a></div>
+            <div><a href="#">PORTFOLIO</a></div>
+            <div><a href="#">DESIGN</a></div>
+        </div>
+    </div>
 
-                <div class="grid-item">
-                    <div class="in-box">
-                        <div>
-                            <div class="img-box">
-                                <img src="https://her2237.github.io/img1/pf/artworks/portfolio/bada.png"
-                                    alt="">
-                            </div>
-                        </div>
-                    </div>
+    <div class="portfolio">
+        <div class="box-1 con">
+            <div class="list-box flex flex-jc-c flex-ai-c">
+                <div class="img-box">
+                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/bada.png" alt="">
                 </div>
-                <div class="grid-item">
-                    <div class="in-box">
-                        <div>
-                            <div class="img-box">
-                                <img src="https://her2237.github.io/img1/pf/artworks/portfolio/cell.png"
-                                    alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="in-box">
-                        <div>
-                            <div class="img-box">
-                                <img src="https://sixnfive.com/wp-content/uploads/2020/08/visual7_web-1-1280x1280.jpg"
-                                    alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="in-box">
-                        <div>
-                            <div class="img-box">
-                                <img src="https://sixnfive.com/wp-content/uploads/2020/08/visual7_web-1-1280x1280.jpg"
-                                    alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid-item">
-                    <div class="in-box">
-                        <div>
-                            <div class="img-box">
-                                <img src="https://sixnfive.com/wp-content/uploads/2020/08/visual7_web-1-1280x1280.jpg"
-                                    alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section" data-section-name="films">
-                <div class="list masonry-grid">
-                    <div class="grid-item">
-                        <div>
-                            <div class="img-box">
-                                <img src="https://her2237.github.io/img1/pf/artworks/portfolio/blog.png" alt="">
-                            </div>
-                            <div class="title-box">
-                                제목1
-                            </div>
-                            <div class="writer-box">
-                                작성자1
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div>
-                            <div class="img-box">
-                                <img src="https://sixnfive.com/wp-content/uploads/2020/03/visual4_06-1280x1584.jpg"
-                                    alt="">
-                            </div>
-                            <div class="title-box">
-                                제목2
-                            </div>
-                            <div class="writer-box">
-                                작성자2
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div>
-                            <div class="img-box">
-                                <img src="https://sixnfive.com/wp-content/uploads/2019/12/pa_black_4k-scaled-1-1280x853.jpg"
-                                    alt="">
-                            </div>
-                            <div class="title-box">
-                                제목3
-                            </div>
-                            <div class="writer-box">
-                                작성자3
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div>
-                            <div class="img-box">
-                                <img src="https://sixnfive.com/wp-content/uploads/2019/12/thumbnail1-1280x1280.jpg"
-                                    alt="">
-                            </div>
-                            <div class="title-box">
-                                제목4
-                            </div>
-                            <div class="writer-box">
-                                작성자4
-                            </div>
-                        </div>
-                    </div>
+                <div class="text-box">
+                    <div class="number">01</div>
+                    <div class="min-title">NASA</div>
+                    <div class="detail-text">리뉴얼페이지</div>
                 </div>
             </div>
         </div>
+        <div class="box-1 con">
+            <div class="list-box flex flex-jc-c flex-ai-c">
+                <div class="text-box">
+                    <div class="number">02</div>
+                    <div class="min-title">NASA</div>
+                    <div class="detail-text">리뉴얼페이지</div>
+                </div>
+                <div class="img-box">
+                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/bada.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="box-1 con">
+            <div class="list-box flex flex-jc-c flex-ai-c">
+                <div class="img-box">
+                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/bada.png" alt="">
+                </div>
+                <div class="text-box">
+                    <div class="number">03</div>
+                    <div class="min-title">NASA</div>
+                    <div class="detail-text">리뉴얼페이지</div>
+                </div>
+            </div>
+        </div>
+        <div class="box-1 con">
+            <div class="list-box flex flex-jc-c flex-ai-c">
+                <div class="text-box">
+                    <div class="number">04</div>
+                    <div class="min-title">NASA</div>
+                    <div class="detail-text">리뉴얼페이지</div>
+                </div>
+                <div class="img-box">
+                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/bada.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="box-1 con">
+            <div class="list-box flex flex-jc-c flex-ai-c">
+                <div class="img-box">
+                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/bada.png" alt="">
+                </div>
+                <div class="text-box">
+                    <div class="number">05</div>
+                    <div class="min-title">NASA</div>
+                    <div class="detail-text">리뉴얼페이지</div>
+                </div>
+            </div>
+        </div>
+        <div class="box-1 con">
+            <div class="list-box flex flex-jc-c flex-ai-c">
+                <div class="text-box">
+                    <div class="number">06</div>
+                    <div class="min-title">NASA</div>
+                    <div class="detail-text">리뉴얼페이지</div>
+                </div>
+                <div class="img-box">
+                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/bada.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="box-1 con">
+            <div class="list-box flex flex-jc-c flex-ai-c">
+                <div class="img-box">
+                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/bada.png" alt="">
+                </div>
+                <div class="text-box">
+                    <div class="number">07</div>
+                    <div class="min-title">NASA</div>
+                    <div class="detail-text">리뉴얼페이지</div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <div class="page-box ">
+        <div class="section">
+            <div class="page">
+                <div class="img-slider">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item font-box" style="width: 500px;">
+                            <img src="https://her2237.github.io/img1/pf/gmarket%20sans/galleryimg-1.png" alt="">
+                        </div>
+                        <div class="item font-box" style="width:500px;">
+                            <img src=https://her2237.github.io/img1/pf/gmarket%20sans/galleryimg-2.png alt="">
+                        </div>
+                        <div class="item font-box" style="width: 500px;">
+                            <img src="https://her2237.github.io/img1/pf/gmarket%20sans/galleryimg-3.png" alt="">
+                        </div>
+                        <div class="item font-box" style="width: 500px;">
+                            <img src="https://her2237.github.io/img1/pf/gmarket%20sans/galleryimg-4.png" alt="">
+                        </div>
+                        <div class="item font-box" style="width: 500px;">
+                            <img src="https://her2237.github.io/img1/pf/gmarket%20sans/galleryimg-5.png" alt="">
+                            <div class="item font-box" style="width: 500px;">
+                                <img src="https://her2237.github.io/img1/pf/gmarket%20sans/galleryimg-6.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 </body>
 
 </html>

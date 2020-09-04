@@ -1,26 +1,7 @@
-@font-face {
-    font-family: 'MapoFlowerIsland';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+html {
+    /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
+    font-family: "Roboto", "Noto Sans KR", sans-serif;
 }
-
-
-.font-1 {
-    font-family: "MapoFlowerIsland";
-}
-
-html body {
-    font-family: "MapoFlowerIsland";
-}
-
-/* 스크롤바 없애기 */
-::-webkit-scrollbar {
-    display: none;
-    /* Chrome, Safari, Opera*/
-}
-
-
 
 /* 노말라이즈 */
 body,
@@ -360,7 +341,7 @@ label[for] {
 }
 
 .con {
-    width: 1370px;
+    width: 66.667%;
 }
 
 /* 고정형 .con 끝 */
@@ -386,16 +367,7 @@ label[for] {
   */
 /* 반응형 타입 2(넓을때만 반응형) .con 끝 */
 
-/* 스크롤바 없애기 */
-::-webkit-scrollbar {
-    display: none;
-    /* Chrome, Safari, Opera*/
-}
-
-
 /* 커스텀 */
-
-/* 로딩 페이지 */
 .loading {
     position: fixed;
     top: 0;
@@ -413,8 +385,6 @@ label[for] {
     content: "로딩중...";
 }
 
-/*로딩 페이지 끝*/
-
 @media (min-width:701px) {
     .visible-on-sm-down {
         display: none;
@@ -427,118 +397,141 @@ label[for] {
     }
 }
 
-.con {
-    margin-left: 30px;
-    margin-right: 30px;
-}
 
 html {
     transition: background-color 1s, color 1s;
 }
 
-[data-section-mode="films"] {
-    background-color: black;
-    color: white;
+.text {
+    text-align: center;
+    font-size: 4rem;
 }
 
-/* 리스트 박스 크기 비율 */
-.section-wrap>.con>.section {
-    width: 5%;
-}
 
-.section-wrap>.con>.section.active {
-    width: 95%;
-}
-
-@media (min-width:701px) {
-    .section-wrap>.con>.section {
-        transition: width 1s;
-    }
-}
-
-@media (max-width:700px) {
-    .section-wrap>.con>.section {
-        visibility: hidden;
-        width: 0;
-    }
-
-    .section-wrap>.con>.section.active {
-        width: 100%;
-        visibility: visible;
-    }
-}
- 
-/* 탑바 꾸미기 */
-.top-bar {
-    height: 200px;
-}
-
-/* 탑바 title */
-.top-bar>.con>.section>h3{
-    display: flex;
-    align-items: center;
-    transition: font-size 1s;
-}
-
-/* 탑바 타이틀 위치 */
-.top-bar>.con>.section:last-child > h3{
-    padding-left: 4%;
-}
-
-.top-bar>.con>.section.active>h3{
-    font-size: 3.5rem;
-}
-
-/* 리스트 박스 */
-.lists-box {
-    position: relative;
+/*배경 라인 넣기 시작*/
+.bg-lines {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; 
+    height: 100%;
 }
 
-/* active 실행후 반대 사라지기 */
-.lists-box>.con>.section {
-    opacity:0;
-}
-.lists-box>.con>.section.active {
-    opacity:1;
-   
-}
-
-/* design list-box img 크기*/
-.lists-box>.con>.section>.masonry-grid>.grid-item {
-    width: 300px;
-    margin: 20px;
+.bg-lines>.lines>div {
+    position: absolute;
+    top: 0;
+    left: 16.6666667%;
+    width: 1.5px;
+    height: 8060px;
+    background-color: rgba(45, 45, 45, 0.1);
+    z-index: -1;
 }
 
-@media (max-width:1200px) {
-    .lists-box>.con>.section>.masonry-grid>.grid-item {
-        width: 200px;
-    }
+.bg-lines>.lines>div:nth-child(2) {
+    left: 33.3333333%;
 }
 
+.bg-lines>.lines>div:nth-child(3) {
+    left: 50%;
+}
 
-/* portfolio 리스트 위치 선정*/
-.lists-box>.con>.section >.grid-item > .in-box > div {
-    margin:0px 30px;
+.bg-lines>.lines>div:nth-child(4) {
+    left: 66.6666667%;
+}
+
+.bg-lines>.lines>div:nth-child(5) {
+    left: 83.333333%;
+}
+
+/*배경라인넣기 끝*/
+
+/*타이틀 시작*/
+.title-box {
+    position: absolute;
+    top: 30%;
+    left: 16.666666%;
+    height: 100%;
+}
+
+.title-box>.title {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.title-box>.title-text {
+    font-size: 1.5rem;
+}
+
+.title-box>.title-text>div {
+    padding-right: 50px;
+}
+
+/*포폴시작*/
+.portfolio {
+    position: relative;
+    top: 300px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.box-1 {
+    margin-top: 10%;
+}
+
+.box-1>.list-box {
+    width: 100%;
+}
+
+.box-1>.list-box>.img-box {
+    width: 50%;
+}
+
+.box-1>.list-box>.text-box {
+    width: 50%;
+    text-align: right;
+}
+
+.box-1>.list-box>.text-box:nth-of-type(2n-1) {
+    text-align: left;
+}
+
+.box-1>.list-box>.text-box>.number {
+    margin-top: -10%;
+    font-size: 15rem;
+    font-weight: bold;
+    color: gray;
+}
+
+.box-1>.list-box>.text-box>.min-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.box-1>.list-box>.text-box>.detail-text {
+    font-size: 1.3rem;
+}
+
+/* 슬라이드 시작 */
+/*페이지 3 시작 */
+.page-box {
+    position: relative;
+    width: 100%;
+    margin-top: 40%;
+    margin-left: 16.6667%;
+}
+
+.page-box>.section>.page>.img-slider .font-box {
+    border: 5px solid red;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-box>.section>.page {
+    height: 700px;
     text-align: center;
 }
-.lists-box>.con>.section >.grid-item:nth-of-type(2n-1){
-    margin-left:50%;
-}
 
-/* portfolio 이미지 최대 최소 크기*/
-.img-box > img {
-    max-width:400px;
-    min-width: 0px;
-}
-
-
-.text-box {
-    background-color:bisque;
-    width: 400px;
-    height: 400px;
-}
-
+.owl-stage-outer .item {}
