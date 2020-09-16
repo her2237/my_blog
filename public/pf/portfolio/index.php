@@ -31,6 +31,9 @@
 
     <div class="loading"></div>
 
+    <div class="menu-page flex flex-jc-c flex-ai-c visible-on-sm-down">
+    </div>
+
     <div class="bg-lines con">
         <div class="lines">
             <div></div>
@@ -40,6 +43,19 @@
             <div></div>
         </div>
     </div>
+
+    <div class="btn-next">
+        <div class="btn-page">
+            <div class="next-line"></div>
+            <a href="#">B</a>
+        </div>
+    </div>
+
+    <div class="coding">
+        <a href="#">A</a>
+    </div>
+
+
 
     <div class="title-box">
         <div class="title">
@@ -54,86 +70,99 @@
 
     <div class="portfolio">
         <div class="box-1 con">
-            <div class="list-box flex flex-jc-c flex-ai-c">
-                <div class="img-box">
-                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/bada.png" alt="">
+            <div class="list-box flex flex-jc-c">
+                <div class="img-box active-on-visible">
+                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/nasa.jpg" alt="">
                 </div>
                 <div class="text-box">
-                    <div class="number">01</div>
+                    <div class="number active-on-visible">01</div>
                     <div class="min-title">NASA</div>
                     <div class="detail-text">리뉴얼페이지</div>
                 </div>
             </div>
         </div>
         <div class="box-1 con">
-            <div class="list-box flex flex-jc-c flex-ai-c">
+            <div class="list-box flex flex-jc-c">
                 <div class="text-box">
-                    <div class="number">02</div>
-                    <div class="min-title">NASA</div>
-                    <div class="detail-text">리뉴얼페이지</div>
+                    <div class="number-1 active-on-visible">02</div>
+                    <div class="min-title">NASA Artemis</div>
+                    <div class="detail-text">모작</div>
                 </div>
-                <div class="img-box">
-                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/bada.png" alt="">
+                <div class="img-box-1 active-on-visible">
+                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/nasa.jpg" alt="">
                 </div>
             </div>
         </div>
         <div class="box-1 con">
-            <div class="list-box flex flex-jc-c flex-ai-c">
-                <div class="img-box">
+            <div class="list-box flex flex-jc-c">
+                <div class="img-box active-on-visible">
                     <img src="https://her2237.github.io/img1/pf/artworks/portfolio/bada.png" alt="">
                 </div>
+
                 <div class="text-box">
-                    <div class="number">03</div>
-                    <div class="min-title">NASA</div>
-                    <div class="detail-text">리뉴얼페이지</div>
+                    <div class="number active-on-visible">03</div>
+                    <div class="min-title">BADA Flatform</div>
+                    <div class="detail-text">모작</div>
                 </div>
             </div>
         </div>
         <div class="box-1 con">
-            <div class="list-box flex flex-jc-c flex-ai-c">
+            <div class="list-box flex flex-jc-c">
                 <div class="text-box">
-                    <div class="number">04</div>
-                    <div class="min-title">NASA</div>
-                    <div class="detail-text">리뉴얼페이지</div>
+                    <div class="number-1 active-on-visible">04</div>
+                    <div class="min-title">GMARKET SANS</div>
+                    <div class="detail-text">모작</div>
                 </div>
-                <div class="img-box">
-                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/bada.png" alt="">
+                <div class="img-box-1 active-on-visible">
+                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/g.png" alt="">
                 </div>
             </div>
         </div>
         <div class="box-1 con">
-            <div class="list-box flex flex-jc-c flex-ai-c">
-                <div class="img-box">
-                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/bada.png" alt="">
+            <div class="list-box flex flex-jc-c">
+                <div class="img-box active-on-visible">
+                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/duotone.png" alt="">
                 </div>
                 <div class="text-box">
-                    <div class="number">05</div>
-                    <div class="min-title">NASA</div>
-                    <div class="detail-text">리뉴얼페이지</div>
+                    <div class="number active-on-visible">05</div>
+                    <div class="min-title">DUOTONE</div>
+                    <div class="detail-text">모작</div>
                 </div>
             </div>
         </div>
         <div class="box-1 con">
-            <div class="list-box flex flex-jc-c flex-ai-c">
+            <div class="list-box flex flex-jc-c">
                 <div class="text-box">
-                    <div class="number">06</div>
-                    <div class="min-title">NASA</div>
-                    <div class="detail-text">리뉴얼페이지</div>
+                    <div class="number-1 active-on-visible">06</div>
+                    <div class="min-title">CELLTRON</div>
+                    <div class="detail-text">모작</div>
                 </div>
-                <div class="img-box">
-                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/bada.png" alt="">
+                <div class="img-box-1 active-on-visible">
+                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/cell.png" alt="">
                 </div>
             </div>
         </div>
         <div class="box-1 con">
-            <div class="list-box flex flex-jc-c flex-ai-c">
-                <div class="img-box">
-                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/bada.png" alt="">
+            <div class="list-box flex flex-jc-c">
+                <div class="img-box active-on-visible">
+                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/mile.png" alt="">
                 </div>
                 <div class="text-box">
-                    <div class="number">07</div>
-                    <div class="min-title">NASA</div>
-                    <div class="detail-text">리뉴얼페이지</div>
+                    <div class="number active-on-visible">07</div>
+                    <div class="min-title">밀알복지재단</div>
+                    <div class="detail-text">모작</div>
+                </div>
+            </div>
+        </div>
+        <div class="box-1 con">
+            <div class="list-box flex flex-jc-c">
+                <div class="text-box">
+                    <div class="number-1 active-on-visible">08</div>
+                    <div class="min-title">WORLDVISION</div>
+                    <div class="detail-text">모작</div>
+                </div>
+                <div class="img-box-1 active-on-visible">
+                    <img src="https://her2237.github.io/img1/pf/artworks/portfolio/w.png" alt="">
                 </div>
             </div>
         </div>
@@ -141,6 +170,9 @@
     </div>
 
     <div class="page-box ">
+        <div class="design">
+            <a href="#">Design</a>
+        </div>
         <div class="section">
             <div class="page">
                 <div class="img-slider">
@@ -166,6 +198,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 </body>
 
 </html>
