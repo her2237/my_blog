@@ -491,7 +491,7 @@ label[for] {
 
 /*달이미지1 끝*/
 
-/*블루 시작*/
+/*블루 배너 시작*/
 .blue-banner {
     color: #fff;
     background-color: #002052;
@@ -506,7 +506,7 @@ label[for] {
     font-size: 36px;
 }
 
-/*블루 제목 끝*/
+/*블루 배너 끝*/
 
 /*인사이드 배경 1*/
 .inside-container {
@@ -524,11 +524,11 @@ label[for] {
 
 .part-2 {
     position: relative;
-    top:0;
-    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
-.part-2 > img {
+.part-2>img {
     width: 100%;
     height: 100%;
 }
@@ -578,3 +578,317 @@ label[for] {
 }
 
 /*레드베너-1 끝*/
+
+/*파트 3 시작*/
+.part-3 {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: black;
+}
+
+.list-box {
+    position: relative;
+    padding: 10px;
+    top: 0;
+}
+
+.container-box {
+    margin: 10px;
+}
+
+.part-3 .img-box {
+    width: 320px;
+}
+
+.part-3 .title-box {
+    width: 320px;
+    color: white;
+}
+
+.title-box>div>div {
+    padding: 10px;
+}
+
+
+.title-box>.inside>.space-text {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 24px;
+}
+
+.title-box>.inside>.space-text:hover {
+    background-color: rgb(170, 170, 170);
+}
+
+.title-box>.inside>.space-text>.icon {
+    margin-top: 10px;
+    font-size: 25px;
+    padding: 20px 0px;
+    color: #BE1E2D;
+}
+
+.title-box>.inside>.text {
+    text-align: center;
+    margin: 8px;
+    font-size: 16px;
+}
+
+.title-box>.inside>.space-text>.article {
+    text-align: left;
+}
+
+/*호버 효과*/
+.inside>.article {
+    opacity: 0;
+}
+
+.inside:hover>.article {
+    opacity: 1;
+}
+
+.btn-box {
+    position: relative;
+    padding: 10px;
+    left: 65%;
+    text-align: right;
+}
+
+.btn {
+    display: block;
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #0b3d91;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 12px;
+}
+
+.btn:hover {
+    background-color: rgb(170, 170, 170);
+}
+
+/*파트 3 끝*/
+
+/*블루 배너 시작*/
+.blue-banner-1 {
+    color: #fff;
+    background-color: #002052;
+}
+
+.blue-banner-1>.blue-inner-1 {
+    padding: 0.5em 16px;
+    margin: 10px 0;
+}
+
+.blue-banner-1>.blue-inner-1>.title-1 {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center
+}
+
+/*블루 제목 끝*/
+
+/*인사이드 배경 2*/
+.inside-container-2 {
+    background-image: url(https://her2237.github.io/img1/pf/detail/foo-02a.jpg);
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*인사이드 배경 2 끝*/
+
+
+/*파트 4 시작*/
+.part-4 {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #dfdfdf;
+}
+
+.part-4>img {
+    text-align: center;
+    bottom: 0;
+}
+
+.part-4>.inner>.main-title {
+    padding-top: 20px;
+    padding: 40px;
+}
+
+.part-4>.inner>.main-title>div {
+    font-size: 36px;
+    color: #3a3a3a;
+    font-weight: 700;
+}
+
+.part-4 .list-box {
+    position: relative;
+    padding: 10px;
+    top: 0;
+}
+
+.part-4 .container-box {
+    margin: 10px;
+    padding: 25px;
+}
+
+.part-4 .img-box {
+    width: 225px;
+    height: 225px;
+}
+
+.part-4 .title-box {
+    width: 250px;
+    color: black;
+}
+
+.part-4 .title-box>div>div {
+    padding: 10px;
+}
+
+.part-4.inside>div {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 24px;
+}
+
+.part-4 .inside>div:nth-child(1):hover {
+    background-color: rgb(170, 170, 170);
+}
+
+.part-4 .inside .icon {
+    margin-top: 10px;
+    font-size: 25px;
+    padding: 20px 0px;
+    color: #BE1E2D;
+}
+
+.part-4 .inside>div>img {
+    width: 250px;
+
+}
+
+/*호버 효과*/
+.inside>.article {
+    opacity: 0;
+}
+
+.inside:hover>.article {
+    opacity: 1;
+}
+
+.btn-box {
+    position: relative;
+    padding: 10px;
+    left: 65%;
+    text-align: right;
+}
+
+.btn {
+    display: block;
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #0b3d91;
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 12px;
+}
+
+.btn:hover {
+    background-color: rgb(170, 170, 170);
+}
+
+/*파트 4 끝*/
+
+/*인사이드 배경 3*/
+.inside-container-3 {
+    background-image: url(https://her2237.github.io/img1/pf/detail/foo-03.jpg);
+    min-height: 400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*인사이드 배경 2 끝*/
+
+/*part-5 시작*/
+.part-5 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*part-5 끝*/
+
+/*레드베너-2 시작*/
+.red-banner-2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: -5px;
+    color: #fff;
+    background-color: #be1e2d;
+}
+
+.red-banner-2>.red-inner-2 {
+    text-align: center;
+    width: 800px;
+    padding: 0.5em 16px;
+}
+
+.red-banner-2>.red-inner-2>.title-2 {
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 2.5rem;
+}
+
+/*레드베너-2 끝*/
+
+/*part-6 시작*/
+.part-6 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.part-6 .title-box {
+    width: 320px;
+    color: white;
+}
+
+/*part-6 끝*/
+
+/*part-7 시작*/
+
+.part-7 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.part-7>.img-box {
+    width: 80%;
+
+}
+
+/*part-7 끝*/

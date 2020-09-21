@@ -147,6 +147,415 @@
             </div>
         </div>
     </div>
+
+    <div class="part-3">
+        <div class="inner con">
+            <div class="list-box  flex flex-jc-c">
+                <div class="container-box container-1">
+                    <div class="img-box">
+                        <img src="https://her2237.github.io/img1/pf/detail/w-01a.jpg" alt="">
+                    </div>
+                    <div class="title-box">
+                        <div class="inside">
+                            <div class="space-text">
+                                Exploration Ground
+                                <br>
+                                Systems
+                                <div class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                All the Structures on the Ground Required to Support Launch
+                            </div>
+                            <div class="article">
+                                NASA is upgrading all the launch facilities at Kennedy Space Center in Florida to
+                                support Artemis missions to the Moon and beyond.
+                                <div class="btn-box">
+                                    <div class="btn">
+                                        more...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="container-box">
+                    <div class="img-box">
+                        <img src="https://her2237.github.io/img1/pf/detail/w-01.jpg" alt="">
+                    </div>
+                    <div class="title-box">
+                        <div class="inside">
+                            <div class="space-text">
+                                Space Launch System
+                                <div class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                The Most Powerful Rocket in the World
+                            </div>
+                            <div class="article">
+                                NASA'S powerful new rocket will send humans and cargo to the Moon and beyond. The Space
+                                Launch System is designed to be flexible and evolvable and is the agency’s first deep
+                                space rocket since Saturn V.
+                                <div class="btn-box">
+                                    <div class="btn">
+                                        more...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-box">
+                    <div class="img-box">
+                        <img src="https://her2237.github.io/img1/pf/detail/w-02.jpg" alt="">
+                    </div>
+                    <div class="title-box">
+                        <div class="inside">
+                            <div class="space-text">
+                                Orion
+                                <div class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                Spacecraft for Lunar Missions
+                            </div>
+                            <div class="article">
+                                NASA’s Orion spacecraft will carry crew to lunar orbit where they will transfer to a
+                                human landing system or the Gateway. Crew will use the spacecraft to return safely home
+                                to Earth, which has been built to withstand the extreme heat experienced upon re-entry
+                                into the atmosphere.
+                                <div class="btn-box">
+                                    <div class="btn">
+                                        more...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="list-box  flex flex-jc-c">
+                <div class="container-box">
+                    <div class="img-box">
+                        <img src="https://her2237.github.io/img1/pf/detail/w-03.jpg" alt="">
+                    </div>
+                    <div class="title-box">
+                        <div class="inside">
+                            <div class="space-text">
+                                Gareway
+                                <div class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                Lunar Outpost Around the Moon
+                            </div>
+                            <div class="article">
+                                The Gateway is an outpost around the Moon to support human and scientific exploration in
+                                deep space. Built with commercial and international partners, the Gateway is critical to
+                                sustainable lunar exploration and will serve as a model for future missions to Mars.
+                                <div class="btn-box">
+                                    <div class="btn">
+                                        more...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container-box">
+                    <div class="img-box">
+                        <img src="https://her2237.github.io/img1/pf/detail/w-04.jpg" alt="">
+                    </div>
+                    <div class="title-box">
+                        <div class="inside">
+                            <div class="space-text">
+                                Lanar Landers
+                                <div class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                Modern Human Landing Systems
+                            </div>
+                            <div class="article">
+                                NASA is partnering with American companies to land astronauts on the lunar surface.
+                                These systems will dock with Orion or the Gateway in lunar orbit and take crew safely to
+                                the lunar surface and back to lunar orbit.
+                                <div class="btn-box">
+                                    <div class="btn">
+                                        more...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container-box">
+                    <div class="img-box">
+                        <img src="https://her2237.github.io/img1/pf/detail/w-05.jpg" alt="">
+                    </div>
+                    <div class="title-box">
+                        <div class="inside">
+                            <div class="space-text">
+                                Artemis Generation
+                                <br>
+                                Spacesuits
+                                <div class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                Modern Spacesuits for Deep Space
+                            </div>
+                            <div class="article">
+                                In the harsh environment of space, astronauts need new spacesuits to explore more of the
+                                surface than ever before. NASA’s advanced exploration extravehicular mobility unity or
+                                xEMU will support lunar surface expeditions and during launch and re-entry, astronauts
+                                will wear the Orion crew survival system suit.
+                                <div class="btn-box">
+                                    <div class="btn">
+                                        more...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blue-banner-1 flex flex-jc-c flex-ai-c">
+        <div class="blue-inner-1">
+            <div class="title-1">
+                All that we build, all that we study, all that we do,
+                <br>
+                prepares us to go.
+            </div>
+        </div>
+    </div>
+
+    <div class="inside-container-2">
+    </div>
+
+    <div class="part-4">
+        <div class="inner con">
+            <div class="main-title flex flex-jc-c flex-ai-c">
+                <div>MISSION PATCHES</div>
+            </div>
+            <div class="list-box flex flex-jc-c">
+                <div class="container-box container-1">
+                    <div class="img-box">
+                        <img src="https://her2237.github.io/img1/pf/detail/time-01.png" alt="">
+                    </div>
+                    <div class="title-box">
+                        <div class="inside">
+                            <div>
+                                <img src="https://her2237.github.io/img1/pf/detail/artemis-II.png" alt="">
+                                <div class="icon flex flex-jc-c">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+
+                            </div>
+
+                            <div class="article">
+                                NASA is upgrading all the launch facilities at Kennedy Space Center in Florida to
+                                support Artemis missions to the Moon and beyond.
+                                <div class="btn-box">
+                                    <div class="btn">
+                                        more...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-box">
+                    <div class="img-box">
+                        <img src="https://her2237.github.io/img1/pf/detail/time-02.png" alt="">
+                    </div>
+                    <div class="title-box">
+                        <div class="inside">
+                            <div>
+                                <img src="https://her2237.github.io/img1/pf/detail/artemis-II.png" alt="">
+                                <div class="icon flex flex-jc-c">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+
+                            </div>
+
+                            <div class="article">
+                                NASA is upgrading all the launch facilities at Kennedy Space Center in Florida to
+                                support Artemis missions to the Moon and beyond.
+                                <div class="btn-box">
+                                    <div class="btn">
+                                        more...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="container-box">
+                    <div class="img-box">
+                        <img src="https://her2237.github.io/img1/pf/detail/time-03.png" alt="">
+                    </div>
+                    <div class="title-box">
+                        <div class="inside">
+                            <div>
+                                <img src="https://her2237.github.io/img1/pf/detail/artemis-II.png" alt="">
+                                <div class="icon flex flex-jc-c">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+
+                            </div>
+
+                            <div class="article">
+                                NASA is upgrading all the launch facilities at Kennedy Space Center in Florida to
+                                support Artemis missions to the Moon and beyond.
+                                <div class="btn-box">
+                                    <div class="btn">
+                                        more...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="https://her2237.github.io/img1/pf/detail/we-go.png" alt="">
+    </div>
+
+    <div class="inside-container-3">
+    </div>
+
+    <div class="part-5">
+        <div class="video-box">
+            <img src="https://her2237.github.io/img1/pf/detail/video-play.jpg" alt="">
+        </div>
+    </div>
+    <div class="red-banner-2 flex flex-jc-c flex-ai-c">
+        <div class="red-inner-2">
+            <div class="title-2">
+                Latest Updates
+            </div>
+        </div>
+    </div>
+    <div class="part-6">
+        <div class="inner con">
+            <div class="list-box  flex flex-jc-c">
+                <div class="container-box container-1">
+                    <div class="img-box">
+                        <img src="https://her2237.github.io/img1/pf/detail/latest-01.jpg" alt="">
+                    </div>
+                    <div class="title-box">
+                        <div class="inside">
+                            <div class="space-text">
+                                Exploration Ground
+                                <br>
+                                Systems
+                                <div class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                All the Structures on the Ground Required to Support Launch
+                            </div>
+                            <div class="article">
+                                NASA is upgrading all the launch facilities at Kennedy Space Center in Florida to
+                                support Artemis missions to the Moon and beyond.
+                                <div class="btn-box">
+                                    <div class="btn">
+                                        more...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-box container-1">
+                    <div class="img-box">
+                        <img src="https://her2237.github.io/img1/pf/detail/latest-02.jpg" alt="">
+                    </div>
+                    <div class="title-box">
+                        <div class="inside">
+                            <div class="space-text">
+                                Exploration Ground
+                                <br>
+                                Systems
+                                <div class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                All the Structures on the Ground Required to Support Launch
+                            </div>
+                            <div class="article">
+                                NASA is upgrading all the launch facilities at Kennedy Space Center in Florida to
+                                support Artemis missions to the Moon and beyond.
+                                <div class="btn-box">
+                                    <div class="btn">
+                                        more...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="container-box container-1">
+                    <div class="img-box">
+                        <img src="https://her2237.github.io/img1/pf/detail/latest-03.jpg" alt="">
+                    </div>
+                    <div class="title-box">
+                        <div class="inside">
+                            <div class="space-text">
+                                Exploration Ground
+                                <br>
+                                Systems
+                                <div class="icon">
+                                    <i class="fas fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="text">
+                                All the Structures on the Ground Required to Support Launch
+                            </div>
+                            <div class="article">
+                                NASA is upgrading all the launch facilities at Kennedy Space Center in Florida to
+                                support Artemis missions to the Moon and beyond.
+                                <div class="btn-box">
+                                    <div class="btn">
+                                        more...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="part-7">
+        <div class="img-box">
+            <img src="https://her2237.github.io/img1/pf/detail/logo-for-annotations.png" alt="">
+        </div>
+    </div>
 </body>
 
 </html>

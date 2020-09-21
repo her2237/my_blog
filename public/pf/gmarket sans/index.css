@@ -1,6 +1,42 @@
 html {
     /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
-    font-family: "Gmarket Sans Medium", "Gmarket Sans Light", sans-serif;
+    font-family: "GmarketSansMedium", "GmarketSansLight", "GmarketSansBold",
+        sans-serif;
+}
+
+/*폰트 여러개 지정하는 방법*/
+@font-face {
+    font-family: "GmarketSansLight";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GmarketSansMedium";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GmarketSansBold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*폰트만들기*/
+.font-GmarketSansLight {
+    font-family: "GmarketSansLight";
+}
+
+.font-GmarketSansMedium {
+    font-family: "GmarketSansMedium";
+}
+
+.font-GmarketSansBold {
+    font-family: "GmarketSansBold";
 }
 
 /* 노말라이즈 */
@@ -95,10 +131,6 @@ label[for] {
     clear: both;
 }
 
-.img-box>img {
-    width: 100%;
-    display: block;
-}
 
 .con {
     margin-left: auto;
@@ -223,7 +255,7 @@ label[for] {
 }
 
 .font-size-dot-8rem {
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
 
 .table-row {
@@ -333,6 +365,11 @@ label[for] {
     flex: 1 0 0;
 }
 
+.img-box>img {
+    width: 100%;
+    display: block;
+}
+
 /* 커스텀 */
 
 /* 고정형 .con 시작 */
@@ -367,75 +404,108 @@ label[for] {
   */
 /* 반응형 타입 2(넓을때만 반응형) .con 끝 */
 
-
-/* 탑바 만들기 */
 .top-bar {
-    position: fixed;
-    top:0;
-    left:0;
-    width: 1800px;
-    height: 90px;
-    margin: 0px 51.5px;
-    z-index: 200;
-    border: 1px solid red;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    transform: translatex(-50%);
+    color: white;
+    background-color: black;
+    z-index: 100;
 }
-.top-bar >.top-box{
+
+.top-bar.active {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translatex(-50%);
+    color: black;
+    background-color: white;
+    z-index: 100;
+}
+
+.top-bar.active>.top-box>li>a {
+    color: black;
+}
+
+.top-bar>.top-box {
     width: auto;
     height: 90px;
 }
-.top-bar >.top-box {
+
+.top-bar>.top-box {
     position: relative;
-    max-width: 1800px;
-    width: 1200px;
-    height: 93px;
     margin: 0 auto;
     overflow: hidden;
     zoom: 1;
 }
-.top-bar >.top-box > li {
+
+.top-bar>.top-box>li {
     padding: 10px 30px;
 }
-.top-bar >.top-box > li > a{
-    font-size: 25px;
-    color: #151515;
-    font-weight:500;
+
+.top-bar>.top-box>li>a {
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 500;
 }
+
+.top-bar>.top-box>li:hover>a {
+    color: #00c01e;
+    border-bottom: 0.15rem solid #00c01e;
+}
+
+.top-bar>.top-box>li:first-child>a {
+    color: #00c01e;
+    border-bottom: 0.15rem solid #00c01e;
+}
+
 /*비디오 박스 변환 이미지*/
-.container  {
-    background-image:url(https://her2237.github.io/img1/pf/gmarket%20sans/top.gif);
-    background-attachment:fixed;
-    height:100vh;
-    background-size:cover;
-    background-position:center;
+.container {
+    background-image: url(https://her2237.github.io/img1/pf/gmarket%20sans/top.gif);
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/*사라지는 버튼에 필요한 박스*/
+.active+.btn-box {
+    transform: translateX(100%);
 }
 
 /*고정 초록색 버튼*/
 .btn-box {
     position: fixed;
-    bottom: 230px;
-    right: 80px;
+    top: 70%;
+    right: 13%;
     left: 0;
-    height: 0;
     z-index: 200;
+    transform: translateX(0);
+    transition: transform .2s;
 }
-.btn-box > .btn-one {
+
+.btn-box>.btn-one {
     position: relative;
     width: 1200px;
     margin: 0 auto;
 }
+
 .button {
     position: relative;
     float: right;
-    left:200px;
+    left: 10%;
     width: 150px;
     height: 150px;
-    background-color: #00C218;
+    background-color: #00c218;
     border-radius: 50%;
     z-index: 20;
     transition: all 0.3s ease-out;
     -webkit-transition: all 0.3s ease-out;
 }
-.btn-box > .btn-one > .button {
+
+.btn-box>.btn-one>.button {
     display: block;
     width: 150px;
     height: 150px;
@@ -444,35 +514,36 @@ label[for] {
     text-align: center;
     border: 0;
 }
+
 .btn {
-    position:relative;
-    top:25%;
-    font-size:25px;
+    position: relative;
+    top: 25%;
+    font-size: 1.2rem;
     line-height: 23px;
     color: #fff;
     font-weight: 500;
     outline: 0;
 }
 
-/* 페이지 2 시작 */
-.page-box > .section > .page-2{
+.section-page>.page-2 {
     left: 40%;
     padding: 176px 0 186px;
     text-align: center;
-    background-color: #FFF;
+    background-color: #fff;
 }
 
-.page-box >.section >.page-2 > div {
+.section-page>.page-2>div {
     position: relative;
-
 }
-.page-box >.section > .page-2 > .intro-title {
+
+.section-page>.page-2>.intro-title {
     font-size: 75px;
     color: #00c01e;
     font-weight: 700;
     margin-bottom: 45px;
 }
-.page-box >.section >.page-2 > .intro-sub {
+
+.section-page>.page-2>.intro-sub {
     margin-top: 13px;
     font-size: 20px;
     color: #303030;
@@ -481,36 +552,219 @@ label[for] {
 }
 
 /*페이지 3 시작 */
-.page-box >.section > .page { 
-    height: 710px;
-    color:#fff;
+.section>.page {
+    color: #fff;
     text-align: center;
-    background-color:#0028ac;
-}
-.page-box >.section > .page >.blue-slider .font-box {
-  border:10px solid red;
-    height:600px;
-  display:flex;
-  justify-content:center;
-  align-items:center;
 }
 
-
-.page-box >.section >.page-3 {
-    background-color:#0028ac;
+.section>.page>.blue-slider .font-box {
+    height: 600px;
+    align-items: center;
 }
 
-.page-box >.section > .page >.img-slider .font-box {
-  display:flex;
-  justify-content:center;
-  align-items:center;
+.section>.page-3 {
+    background-color: #0028ac;
 }
 
-.owl-stage-outer .item > img{
+.section>.page-3>.blue-slider .font-box {
+    margin-top: 7%;
+    font-size: 3rem;
+}
+
+.section>.page-3>.blue-slider .font-box>.font {
+    font-size: 4.5rem;
+    padding: 2% 0px;
+}
+
+/*페이지 4*/
+.section>.page-4 {
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #227BFF;
+}
+
+.section>.page-4 .font-box {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin-top: 15%;
+}
+
+.section>.page-4 .font-box>.img-box {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*페이비 3,4*/
+
+
+.owl-stage-outer .item>img {
     height: 700px;
 }
 
-/*페이지 6 시작 */
-.page-6 {
-    height: 710px;
+.owl-carousel .owl-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 63px;
+    width: 100%;
+    text-align: center;
+    height: 24px;
+}
+
+.owl-carousel .owl-dots>.owl-dot {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/*테스트 박스 시작*/
+.test-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+}
+
+/*폰트 테스트 박스 시작*/
+.type-test-box {
+    position: relative;
+    margin-top: 15%;
+}
+
+.type-test-box>.typing-area {
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 2rem;
+    height: 400px;
+    overflow: hidden;
+}
+
+/*커서 넣기*/
+.type-test-box>.typing-area>i {
+    position: relative;
+}
+
+/*커서 넣기*/
+.type-test-box>.typing-area>i {
+    position: relative;
+}
+
+.type-test-box>.typing-area>i::after {
+    content: "";
+    font-style: normal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background-color: green;
+    animation-name: cursor;
+    animation-duration: 0.8s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.type-test-box>.typing-area:focus {
+    outline: 0;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.test-box input[name="font-name"] {
+    opacity: 0.5;
+    background-color: green;
+}
+
+.test-box input[name="font-name"]:checked {
+    opacity: 1;
+}
+
+.test-box>.font-change {
+    position: absolute;
+    top: 90%;
+    left: 30%;
+}
+
+
+.test-box>.font-change-line {
+    position: absolute;
+    top: 90%;
+    left: 60%;
+}
+
+/*폰트 테스트 박스 끝*/
+
+/*맨아래 */
+.sans-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url(https://her2237.github.io/img1/pf/gmarket%20sans/download-bg.png);
+    min-height: 710px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #00C218;
+}
+
+.sans-container>.download-box {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    text-align: center;
+    color: white;
+}
+
+.sans-container>.download-box>div {
+    padding: 20px 0;
+}
+
+.sans-container>.download-box>.download-title {
+    font-size: 4.8rem;
+}
+
+.sans-container>.download-box>.download-text {
+    font-size: 1.3rem;
+}
+
+.download-btn-box>.download-btn {
+    display: inline-block;
+    width: 150px;
+    height: 66px;
+    margin: 0 9px 0 8px;
+    color: #00c01e;
+    font-size: 22px;
+    line-height: 68px;
+    font-weight: 700;
+    vertical-align: middle;
+    background-color: #fff;
+    border-radius: 33px;
+    box-sizing: border-box;
+}
+
+.download-btn-box>.download-btn>i {
+    display: inline-block;
+    background-image: url(https://her2237.github.io/img1/pf/gmarket%20sans/sprite-font.svg);
+    background-size: auto 100px;
+    vertical-align: top;
+    width: 17px;
+    height: 20px;
+    margin-top: 23px;
+    background-position: -50px -20px;
 }
