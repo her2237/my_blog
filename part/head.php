@@ -19,38 +19,20 @@
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="/resource/common.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
+  <link rel="stylesheet" href="/resource/font/font.css">
 
+  <script src="/resource/head.js"></script>
 </head>
 
 <body>
-
-
-  <div class="wrapper font-1">
-    <div class="content-text">
-      <div class="first__name">
-        <div class="text__name font-1">
-          웹퍼블리셔
-          <br>
-          허내윤</div>
-        <div class="btn font-1">
-          <a href="/pf/profile">
-            profile
-          </a>
-        </div>
-      </div>
-      <div class="second__name">
-        <div class="text__name font-1">
-          Designer
-          <br>
-          HEONAEYUN</div>
-        <div class="btn-1 font-1">
-          <a href="/pf/portfolio">
-            portfolio
-          </a>
-        </div>
-      </div>
+  <div class="loader font-apple">
+    <div class="inner">
+      <h1> HEONAEYUN PORTFOLIO</h1>
+    </div>
+    <div class="start">
+      <a href="/pf/portfolio">START</a>
     </div>
   </div>
+</body>

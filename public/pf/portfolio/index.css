@@ -1,8 +1,3 @@
-html {
-    /* 영문이면 roboto가 적용되고, 한글이면 Noto Sans KR가 적용되도록 아래와 같은 순서로 배치 */
-    font-family: "Roboto", "Noto Sans KR", sans-serif;
-}
-
 /* 노말라이즈 */
 body,
 ul,
@@ -341,6 +336,10 @@ label[for] {
 /* 커스텀 */
 
 /* 고정형 .con 시작 */
+body {
+    overflow-x: hidden;
+}
+
 .con-min-width {
     min-width: 1370px;
 }
@@ -372,54 +371,25 @@ label[for] {
 */
 /* 반응형 타입 2(넓을때만 반응형) .con 끝 */
 
-/* 커스텀 */
-.loading {
+/*배경선 시작*/
+.bg-lines {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    z-index: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.loading::after {
-    content: "로딩중...";
-}
-
-@media (min-width: 701px) {
-    .visible-on-sm-down {
-        display: none;
-    }
-}
-
-@media (max-width: 700px) {
-    .visible-on-md-up {
-        display: none;
-    }
-}
-
-
-/*배경 라인 넣기 시작*/
-.bg-lines {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    overflow: hidden;
 }
 
 .bg-lines>.lines>div {
     position: absolute;
     top: 0;
     left: 16.6666667%;
-    width: 1.5px;
-    height: 8060px;
-    background-color: rgba(45, 45, 45, 0.1);
-    z-index: -1;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(100, 100, 100, 0.3);
+    z-index: 1;
 }
 
 .bg-lines>.lines>div:nth-child(2) {
@@ -438,136 +408,203 @@ label[for] {
     left: 83.333333%;
 }
 
-/*배경라인넣기 끝*/
-
-.btn-next {
-    position: absolute;
-    top: 0;
-    right: 0;
+/*사이드바 시작*/
+.side-bar {
+    position: fixed;
+    top: 72%;
+    left: 0;
+    margin-left: -10%;
+    font-size: 1.5rem;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
 }
 
-.btn-next>.btn-page {
+.side-bar>ul {
+    display: flex;
+}
+
+.side-bar>ul>li {
+    padding-left: 20px;
+}
+
+.side-bar.active>ul>li>a {
+    color: black;
+}
+
+.side-bar>ul>li>a.active {
+    color: grey;
+}
+
+.sections>.section {
     position: relative;
+    width: 100%;
+}
+
+.sections>.section:nth-child(2n) {
+    height: 50vh;
+}
+
+body {
+    transition: background-color 1s;
+}
+
+.middle-bar-passed>body {
     background-color: black;
-    width: 200px;
-    height: 200px;
-    border-radius: 5px;
-    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 1.5);
-}
-
-.btn-next>.btn-page>.next-line {
-    position: relative;
-    top: -18%;
-    left: 50%;
-    width: 1px;
-    height: 280px;
-    transform: rotate(-45deg);
-    background-color: rgba(255, 255, 255, 0.4);
-    box-shadow: 0 0 0.5cm rgba(255, 255, 255, 1.3);
-}
-
-.btn-next>.btn-page>a {
-    position: absolute;
-    top: 40px;
-    left: 60%;
-    font-size: 3rem;
-    font-weight: 600;
     color: white;
 }
 
-/*배경 글자넣기*/
-.coding {
-    position: absolute;
-    top: -20%;
-    right: 10%;
-    font-size: 50rem;
-    font-weight: 900;
-}
-
-.coding>a {
-    color: rgba(45, 45, 45, 0.1);
-}
-
-
 /*타이틀 시작*/
-.title-box {
+.sections>.section-1 {
+    height: 100vh;
+}
+
+.section-2 .title-box {
     position: absolute;
-    top: 30%;
+    top: -15%;
     left: 16.666666%;
-    height: 100%;
+    z-index: 1;
 }
 
-.title-box>.title {
+
+
+.section-1 .title {
+    position: absolute;
+    top: 15%;
+    left: 16.7%;
+    color: black;
     font-size: 5rem;
-    font-weight: bold;
+    font-weight: 550;
 }
 
-.title-box>.title-text {
-    font-size: 1.5rem;
-}
-
-.title-box>.title-text>div {
-    padding-right: 50px;
-}
-
-.title-box>.title-text>div:hover {
-    text-decoration: underline;
-}
-
-/*포폴시작*/
-.portfolio {
+.section .title-box>.title>a {
+    transform: translateX(-50%);
+    display: block;
+    float: left;
+    left: 50%;
     position: relative;
-    top: 300px;
-    left: 0;
+}
+
+/*섹션-1 프로필 시작*/
+.sections>.section-1>.profile {
+    position: absolute;
+    top: 40%;
+    left: 18%;
     width: 100%;
     height: 100%;
 }
 
-.box-1 {
+.sections>.section-1>.profile>ul>div>.font-b {
+    font-size: 2rem;
+}
+
+.sections>.section-1>.profile>ul>div>div {
+    font-size: 1.3rem;
+}
+
+.sections>.section-1>.profile>ul>div:nth-of-type(2n) {
+    margin-left: 33.4%;
+}
+
+.sections>.section-1>.profile>ul>.myprofile {
+    width: 50%;
+}
+
+.sections>.section-1>.profile>ul>.eduction {
+    width: 50%;
+}
+
+/*섹션-1 프로필 끝*/
+.section-2 {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.section-2 .title {
+    color: white;
+    font-size: 5rem;
+    font-weight: 550;
+}
+
+/*포폴시작*/
+.section-2 .portfolio {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.section-2>.portfolio>.box-1 {
     margin-top: 15%;
 }
 
-.box-1>.list-box {
+.section-2>.portfolio>.box-1>.list-box {
+    position: relative;
     width: 100%;
     overflow: hidden;
 }
 
-.box-1>.list-box>.img-box {
+.section-2>.portfolio>.box-1>.list-box>.img-box {
     width: 50%;
 }
 
-.box-1>.list-box>.img-box-1 {
+.section-2>.portfolio>.box-1>.list-box>.img-box-1 {
     width: 50%;
 }
 
-.box-1>.list-box>.img-box>img,
-.box-1>.list-box>.img-box-1>img {
-    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
-}
 
-.box-1>.list-box>.text-box {
+.section-2>.portfolio>.box-1>.list-box>.text-box {
+    position: relative;
+    right: 0;
     width: 50%;
     text-align: right;
 }
 
-.box-1>.list-box>.text-box:nth-of-type(2n-1) {
+.section-2>.portfolio>.box-1>.list-box>.text-box:nth-of-type(2n-1) {
     text-align: left;
 }
 
-.box-1>.list-box>.text-box>.number,
-.box-1>.list-box>.text-box>.number-1 {
-    font-size: 15rem;
-    font-weight: bold;
-    color: gray;
+.section-2>.portfolio>.box-1>.list-box>.text-box>.number>div,
+.section-2>.portfolio>.box-1>.list-box>.text-box>.number-1>div {
+    padding: 20px 0;
 }
 
-.box-1>.list-box>.text-box>.min-title {
-    font-size: 3rem;
-    font-weight: bold;
+.section-2>.portfolio>.box-1>.list-box>.text-box>.number>.min-title,
+.box-1>.list-box>.text-box>.number-1>.min-title {
+    font-size: 3.5rem;
 }
 
-.box-1>.list-box>.text-box>.detail-text {
-    font-size: 1.3rem;
+
+/*모작페이지연결버튼*/
+.box-1>.list-box>.text-box>.number>.btn-more {
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+
+.box-1>.list-box>.text-box>.number-1>.btn-more {
+    position: absolute;
+    left: 0;
+    text-align: left;
+}
+
+.section-2>.portfolio>.box-1>.list-box>.text-box>.number>.btn-more>.more,
+.section-2>.portfolio>.box-1>.list-box>.text-box>.number-1>.btn-more>.more {
+    display: block;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(225, 225, 225, 0.2);
+    line-height: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 12px;
 }
 
 /*움직이는 효과*/
@@ -597,32 +634,78 @@ label[for] {
     transform: translateY(0);
 }
 
-/*디자인*/
 
-/* 슬라이드 시작 */
-/*페이지 3 시작 */
-.page-box {
+
+/*section-3 시작*/
+.section-3 {
     position: relative;
-    width: 85%;
-    margin-top: 40%;
-    margin-left: 16.6667%;
+    top:0;
+    left:0;
+    height: 800px;
+}
+.section-3 .title-box {
+    position: absolute;
+    top: 15%;
+    left: 16.666666%;
+    z-index: 1;
+}
+.section-3 .title {
+    color: white;
+    font-size: 5rem;
+    font-weight: 550;
 }
 
-.design {
-    position: relative;
-    font-size: 12rem;
-    font-weight: 900;
-    color: rgba(45, 45, 45, 0.1);
+.section-3 > .contact-box {
+    position: absolute;
+    top:40%;
+    left: 16.7%;
 }
 
-.page-box>.section>.page>.img-slider .font-box {
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.text-box > input[type="text"],
+.text-box > input[type="email"] {
+    width: 100%; /* 원하는 너비 설정 */
+    height: auto; /* 높이값 초기화 */
+    line-height: normal; /* line-height 초기화 */
+    padding: 1em 0.5em; /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
+    border: 1px solid #999;
+    border-radius: 0; /* iSO 둥근모서리 제거 */
+    outline-style: none; /* 포커스시 발생하는 효과 제거를 원한다면 */
+    -webkit-appearance: none; /* 브라우저별 기본 스타일링 제거 */
+    -moz-appearance: none;
+    appearance: none;
 }
 
-.page-box>.section>.page {
-    height: 500px;
+textarea[name="body"] {
+    width: 100%; /* 원하는 너비 설정 */
+    height: auto; /* 높이값 초기화 */
+    line-height: normal; /* line-height 초기화 */
+    padding: 5em 0.5em; /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
+    border: 1px solid #999;
+    border-radius: 0; /* iSO 둥근모서리 제거 */
+    outline-style: none; /* 포커스시 발생하는 효과 제거를 원한다면 */
+    -webkit-appearance: none; /* 브라우저별 기본 스타일링 제거 */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.text-box > input[type="submit"],
+.text-box > input[type="reset"] {
+    position:relative;
+    left:70%;
     text-align: center;
+    width: 70px; /* 원하는 너비 설정 */
+    height: auto; /* 높이값 초기화 */
+    line-height: normal; /* line-height 초기화 */
+    border: 1px solid #999;
+    padding:0.8em 0.5em;
+    background-color:#fff;
+    border-radius: 50px; /* iSO 둥근모서리 제거 */
+    outline-style: none; /* 포커스시 발생하는 효과 제거를 원한다면 */
+    -webkit-appearance: none; /* 브라우저별 기본 스타일링 제거 */
+    -moz-appearance: none;
+    appearance: none;
 }
+
+
+
+/*section-3 끝*/

@@ -36,7 +36,7 @@ function SwiperContainer__init(){(
     
 )}
 
-$(function () {
+$(function() {
     PreloadJs__load__init();
     SwiperContainer__init();
 });

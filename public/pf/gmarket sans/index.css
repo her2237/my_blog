@@ -131,7 +131,6 @@ label[for] {
     clear: both;
 }
 
-
 .con {
     margin-left: auto;
     margin-right: auto;
@@ -479,11 +478,10 @@ label[for] {
 .btn-box {
     position: fixed;
     top: 70%;
-    right: 13%;
-    left: 0;
+    right: 150px;
     z-index: 200;
     transform: translateX(0);
-    transition: transform .2s;
+    transition: transform 0.2s;
 }
 
 .btn-box>.btn-one {
@@ -495,7 +493,7 @@ label[for] {
 .button {
     position: relative;
     float: right;
-    left: 10%;
+    left: 50px;
     width: 150px;
     height: 150px;
     background-color: #00c218;
@@ -571,9 +569,66 @@ label[for] {
     font-size: 3rem;
 }
 
+.section>.page-3>.blue-slider .font-box:nth-child(1)>div:nth-child(4) {
+    font-size: 1.3rem;
+}
+
+.section>.page-3>.blue-slider .font-box:nth-child(1)>div {
+    padding: 1% 0px;
+}
+
 .section>.page-3>.blue-slider .font-box>.font {
     font-size: 4.5rem;
     padding: 2% 0px;
+}
+
+/*페이지 3 끝*/
+
+.section>.page-3>.blue-slider>.owl-carousel>.owl-nav>.owl-prev {
+    position: absolute;
+    background-image: url(https://her2237.github.io/img1/pf/gmarket%20sans/sprite-font.svg);
+    background-size: auto 100px;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 40px;
+    text-indent: -999em;
+    margin-left: -570px;
+    background-position: 0 0;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.blue-slider>.owl-carousel>.owl-nav {
+    margin: 0;
+}
+
+.section>.page-3>.blue-slider>.owl-carousel>.owl-nav>.owl-next {
+    position: absolute;
+    background-image: url(https://her2237.github.io/img1/pf/gmarket%20sans/sprite-font.svg);
+    background-size: auto 100px;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 40px;
+    text-indent: -999em;
+    margin-left: 550px;
+    background-position: -25px 0;
+    overflow: hidden;
+    zoom: 1;
+}
+
+
+
+/*페이지 공통*/
+.section>.page {
+    color: #fff;
+    text-align: center;
+}
+
+.section>.page>.blue-slider .font-box {
+    height: 600px;
+    align-items: center;
 }
 
 /*페이지 4*/
@@ -581,7 +636,7 @@ label[for] {
     position: relative;
     top: 0;
     left: 0;
-    background-color: #227BFF;
+    background-color: #227bff;
 }
 
 .section>.page-4 .font-box {
@@ -599,27 +654,64 @@ label[for] {
 
 /*페이비 3,4*/
 
-
 .owl-stage-outer .item>img {
     height: 700px;
 }
 
-.owl-carousel .owl-dots {
+.section>.page-4>.blue-slider>.owl-carousel>.owl-nav>.owl-prev {
     position: absolute;
+    background-image: url(https://her2237.github.io/img1/pf/gmarket%20sans/sprite-font.svg);
+    background-size: auto 100px;
+    top: 50%;
     left: 50%;
-    bottom: 63px;
-    width: 100%;
-    text-align: center;
-    height: 24px;
+    width: 20px;
+    height: 40px;
+    text-indent: -999em;
+    margin-left: -570px;
+    background-position: 0 0;
+    overflow: hidden;
+    zoom: 1;
 }
 
-.owl-carousel .owl-dots>.owl-dot {
+.section>.page-4>.blue-slider>.owl-carousel>.owl-nav>.owl-next {
     position: absolute;
-    top: 20%;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    -webkit-tap-highlight-color: transparent;
+    background-image: url(https://her2237.github.io/img1/pf/gmarket%20sans/sprite-font.svg);
+    background-size: auto 100px;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 40px;
+    text-indent: -999em;
+    margin-left: 550px;
+    background-position: -25px 0;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.blue-slider .owl-theme .owl-dots,
+.img-slider .owl-theme .owl-dots {
+    position: absolute;
+    top: 90%;
+    left: 45%;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    border: 1px solid white;
+}
+
+.blue-slider .owl-theme .owl-dots .owl-dot span,
+.img-slider .owl-theme .owl-dots .owl-dot span {
+    background-color: transparent;
+}
+
+.blue-slider .owl-theme .owl-dots .owl-dot.active span,
+.img-slider .owl-theme .owl-dots .owl-dot.active span {
+    background-color: #fff;
+}
+
+.blue-slider .owl-theme .owl-dots .owl-dot:hover span,
+.img-slider .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: #fff;
 }
 
 /*테스트 박스 시작*/
@@ -699,7 +791,6 @@ label[for] {
     left: 30%;
 }
 
-
 .test-box>.font-change-line {
     position: absolute;
     top: 90%;
@@ -720,7 +811,7 @@ label[for] {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #00C218;
+    background-color: #00c218;
 }
 
 .sans-container>.download-box {

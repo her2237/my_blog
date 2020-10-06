@@ -36,21 +36,26 @@
     <div>
         <div class="top-bar flex-jc-c">
             <ul class="top-box flex flex-ai-c flex-jc-c">
-                <li data-menuanchor="section1" class="active">
-                    <a href="#section1">Gmarket Sans</a></li>
-                <li data-menuanchor="section2">
-                    <a href="#section2">Character</a>
+                <li class="active">
+                    <a class="one-page-link" href="#page1">Gmarket Sans</a></li>
+                <li>
+                    <a class="one-page-link" href="#page2">Character</a>
                 </li>
-                <li data-menuanchor="section3"><a href="#section3">Gallery</a></li>
-                <li data-menuanchor="section4"><a href="#section4">Try it</a></li>
-                <li data-menuanchor="section5"><a href="#section5">Download</a></li>
+                <li>
+                    <a class="one-page-link" href="#page3">Gallery</a>
+                </li>
+                <li>
+                    <a class="one-page-link" href="#page4">Try it</a>
+                </li>
+                <li>
+                    <a class="one-page-link" href="#page5">Download</a>
+                </li>
             </ul>
         </div>
-        <div class="container">
+        <div class="container section" data-one-page-link="page1">
             <div></div>
         </div>
     </div>
-
 
     <div class="section-page">
         <div class="page-2">
@@ -70,7 +75,7 @@
             </div>
         </div>
     </div>
-    <div class="section">
+    <div class="section" data-one-page-link="page2" data-one-page-menu-target-diff-y="120">
         <div class="page page-3">
             <div class="blue-slider">
                 <div class="owl-carousel owl-theme">
@@ -179,7 +184,7 @@
             </div>
         </div>
     </div>
-    <div class="section">
+    <div class="section" data-one-page-link="page3">
         <div class="page page-5">
             <div class="img-slider">
                 <div class="owl-carousel owl-theme">
@@ -222,7 +227,7 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section" data-one-page-link="page4">
         <div class="test-box">
             <form class="type-test-box" onsubmit="return false;">
                 <div class="typing-area" contenteditable="true">
@@ -241,7 +246,7 @@
             </div>
         </div>
     </div>
-    <div class="sans-container">
+    <div class="sans-container section" data-one-page-link="page5">
         <div class="download-box">
             <div class="download-title font-GmarketSansBold">
                 Download
@@ -263,8 +268,7 @@
             </div>
         </div>
     </div>
-
-
+    
 </body>
 
 </html>

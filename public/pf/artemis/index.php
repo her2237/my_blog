@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>detail</title>
+    <title>Artemis</title>
 
     <link rel="preload" as="video" href="https://her2237.github.io/img1/pf/space/Space%20-%202381.mp4">
     <link rel="preload" as="video" href="https://her2237.github.io/img1/pf/space/Space%20Ship%20-%203.mp4">

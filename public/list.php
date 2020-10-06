@@ -7,11 +7,11 @@ ORDER BY id DESC
 ";
 
 /// 전화번호 세팅
-$dbHost = "site10.blog.oa.gg"; // 컴퓨터 까지 접근 가능
+$dbHost = "heonaeyun.com"; // 컴퓨터 까지 접근 가능
 $dbPort = 3306; // 컴퓨터 안에 있는 MySQL에게 까지 접근가능
-$dbId = 'site10';
+$dbId = 'sbsst';
 $dbPw = 'sbs123414'; //' MySQL안으로 통과까지 가능
-$dbName = 'site10'; // 알맞은 DB까지 접근가능
+$dbName = 'blog'; // 알맞은 DB까지 접근가능
 
 /// 전화걸기
 $dbConn = mysqli_connect($dbHost, $dbId, $dbPw, $dbName, $dbPort) or die("DB CONNECTION ERROR");
