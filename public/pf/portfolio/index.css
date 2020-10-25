@@ -573,6 +573,7 @@ body {
     line-height:300%;
     font-size: 1.2rem;
 }
+
 .section-1 > .info-box >.my-box > .my-text-box > ul > div.active {
     visibility: visible;
     opacity: 1;

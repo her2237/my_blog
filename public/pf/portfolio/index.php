@@ -69,7 +69,7 @@
                                 <a href="#">책임감</a>
                             </li>
                             <li class="circle circle-3" data-tab-name="box-1" data-tab-head-item-name="3">
-                                <a href="#">적응력</a>
+                                <a href="#">탐구성</a>
                             </li>
                         </ul>
                     </div>
