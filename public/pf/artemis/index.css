@@ -878,17 +878,3 @@ label[for] {
 
 /*part-6 끝*/
 
-/*part-7 시작*/
-
-.part-7 {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.part-7>.img-box {
-    width: 80%;
-
-}
-
-/*part-7 끝*/

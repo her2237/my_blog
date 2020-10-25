@@ -551,11 +551,6 @@
             </div>
         </div>
     </div>
-    <div class="part-7">
-        <div class="img-box">
-            <img src="https://her2237.github.io/img1/pf/detail/logo-for-annotations.png" alt="">
-        </div>
-    </div>
 </body>
 
 </html>

@@ -8,23 +8,47 @@ function Loader__init() {
   });
 }
 
-function ImgSlider__init() {
-  $(".page-box >.section>.page>.img-slider .owl-carousel").owlCarousel({
-    center: true,
-    autoWidth: true,
-    responsive: {
-      0: {
-        items: 2
-      }
+function CircleTime__init() {
+  var CircleTime = 600;
+  $(".circle-1").animate({
+      opacity: "1"
     },
-    loop: true,
-    dots: true
+    CircleTime,
+    function () {
+      $(".circle-2").animate({
+          opacity: "1"
+        },
+        CircleTime,
+        function () {
+          $(".circle-3").animate({
+              opacity: "1"
+            },
+            CircleTime
+          );
+        }
+      );
+    }
+  );
+}
+
+function TabBox__init() {
+  $('[data-tab-head-item-name]').click(function () {
+    var $this = $(this);
+    var tabName = $this.attr('data-tab-name');
+    var itemName = $this.attr('data-tab-head-item-name');
+    // [for]
+    // 모든 것을 숨기고
+    $('[data-tab-name="' + tabName + '"]').removeClass('active');
+
+    $('[data-tab-name="' + tabName + '"][data-tab-head-item-name="' + itemName + '"]').addClass('active');
+    $('[data-tab-name="' + tabName + '"][data-tab-body-item-name="' + itemName + '"]').addClass('active');
   });
 }
 
 $(function () {
   Loader__init();
-  ImgSlider__init();
+  CircleTime__init();
+  TabBox__init();
 });
 
 var OnePageMenu__data = [];

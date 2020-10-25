@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'NanumGothicCoding-Regular';
+    src: url(NanumGothicCoding-Regular.ttf) format("ttf");
+}
+
 /* 노말라이즈 */
 body,
 ul,
@@ -377,6 +382,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
+
     bottom: 0;
     pointer-events: none;
     overflow: hidden;
@@ -407,13 +413,14 @@ body {
 .bg-lines>.lines>div:nth-child(5) {
     left: 83.333333%;
 }
+/*배경선 끝*/
 
 /*사이드바 시작*/
 .side-bar {
     position: fixed;
     top: 72%;
     left: 0;
-    margin-left: -10%;
+    margin-left: -7%;
     font-size: 1.5rem;
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
@@ -436,7 +443,9 @@ body {
 .side-bar>ul>li>a.active {
     color: grey;
 }
+/* side-bar 끝*/
 
+/* 공통 section 시작 */
 .sections>.section {
     position: relative;
     width: 100%;
@@ -445,31 +454,33 @@ body {
 .sections>.section:nth-child(2n) {
     height: 50vh;
 }
-
+.section .title-box >.title > a {
+    transform: translateX(-50%);
+    display: block;
+    float: left;
+    left: 50%;
+    position: relative;
+}
 body {
     transition: background-color 1s;
 }
 
+/*배경색 변경*/
 .middle-bar-passed>body {
     background-color: black;
     color: white;
 }
 
-/*타이틀 시작*/
+/* section-1 시작 */
 .sections>.section-1 {
     height: 100vh;
 }
-
-.section-2 .title-box {
-    position: absolute;
-    top: -15%;
-    left: 16.666666%;
-    z-index: 1;
+.section-1 > .info-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
-
-
-
-.section-1 .title {
+.section-1 > .info-box > .title-box > .title {
     position: absolute;
     top: 15%;
     left: 16.7%;
@@ -478,48 +489,113 @@ body {
     font-weight: 550;
 }
 
-.section .title-box>.title>a {
-    transform: translateX(-50%);
-    display: block;
-    float: left;
-    left: 50%;
-    position: relative;
-}
 
-/*섹션-1 프로필 시작*/
-.sections>.section-1>.profile {
+/* my-box 시작*/
+.section-1 > .info-box > .my-box {
     position: absolute;
-    top: 40%;
-    left: 18%;
-    width: 100%;
-    height: 100%;
+    width: 66.6%;
+    height: 70%;
+    top: 30%;
+    left: 16.7%;
 }
 
-.sections>.section-1>.profile>ul>div>.font-b {
-    font-size: 2rem;
+.section-1 > .info-box > .my-box > .name {
+    position: absolute;
+    width: 66.7%;
+    top: 10%;
+    left: 16.7%;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
 }
-
-.sections>.section-1>.profile>ul>div>div {
-    font-size: 1.3rem;
+.section-1 > .info-box > .my-box > .name > div {
+    font-style:oblique;
 }
-
-.sections>.section-1>.profile>ul>div:nth-of-type(2n) {
-    margin-left: 33.4%;
-}
-
-.sections>.section-1>.profile>ul>.myprofile {
-    width: 50%;
-}
-
-.sections>.section-1>.profile>ul>.eduction {
-    width: 50%;
-}
-
-/*섹션-1 프로필 끝*/
-.section-2 {
+.section-1 > .info-box > .my-box > .circle-box >.my-one {
     position: relative;
+    width: 100%;
+}
+.section-1 > .info-box > .my-box >.circle-box > .my-one > .circle {
+    position: relative;
+    width: 30vh;
+    height: 30vh;
+    border-radius: 150px;
+    margin:20% 5%;
+    background-color: #efefef;
+    border:1px solid black;
+    opacity: 0;
+}
+.section-1 > .info-box > .my-box >.circle-box > .my-one > .circle:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+.section-1 > .info-box > .my-box > .circle-box > .my-one > .circle > a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    align-items: center;
+    font-size:2rem;
+    font-weight: 600;
+}
+
+.section-1 > .info-box > .my-box > .my-text-box  {
+    position: absolute;
+    top:85%;
+}
+.section-1 > .info-box > .my-box > .my-text-box > ul > .my-text {
+    position:absolute;
+    width: 100%;
+    top: 40% ;
+    left:16.7%;
+    opacity: 0;
+}
+.section-1 > .info-box > .my-box >.circle-box > .my-one > .circle.active {
+    color: white;
+    background-color: black;
+}
+.section-1 > .info-box >.my-box > .my-text-box > ul > div {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    filter: blur(10px);
+}
+.section-1 > .info-box >.my-box > .my-text-box > ul > .my-text > div  {
+    margin: 5%;
+    text-align: center;
+    font-style: oblique;
+    line-height: 150%;
+}
+.section-1 > .info-box >.my-box > .my-text-box > ul > .my-text > div > .my-title {
+    font-weight: 700;
+    line-height:300%;
+    font-size: 1.2rem;
+}
+.section-1 > .info-box >.my-box > .my-text-box > ul > div.active {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    filter: blur(0);
+    transition: visibility 1s, opacity 1s, filter 1s;
+}
+
+
+/* my-box 끝*/
+
+/* section-2 시작 */
+.section-2 {
+    position:relative;
     top: 0;
-    left: 0;
+    left:0;  
+}
+
+.section-2 .title-box {
+    position: absolute;
+    top: -15%;
+    left: 16.666666%;
+    z-index: 1;
 }
 
 .section-2 .title {
@@ -570,14 +646,19 @@ body {
 
 .section-2>.portfolio>.box-1>.list-box>.text-box>.number>div,
 .section-2>.portfolio>.box-1>.list-box>.text-box>.number-1>div {
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .section-2>.portfolio>.box-1>.list-box>.text-box>.number>.min-title,
-.box-1>.list-box>.text-box>.number-1>.min-title {
+.section-2>.portfolio>.box-1>.list-box>.text-box>.number-1>.min-title {
     font-size: 3.5rem;
 }
 
+.section-2>.portfolio>.box-1>.list-box>.text-box>.number>.detail-text>div:first-child,
+.section-2>.portfolio>.box-1>.list-box>.text-box>.number-1>.detail-text>div:first-child {
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
 
 /*모작페이지연결버튼*/
 .box-1>.list-box>.text-box>.number>.btn-more {
@@ -605,6 +686,13 @@ body {
     font-weight: bold;
     text-align: center;
     margin-right: 12px;
+
+}
+
+.section-2>.portfolio>.box-1>.list-box>.text-box>.number>.btn-more:hover>.more, 
+.section-2>.portfolio>.box-1>.list-box>.text-box>.number-1>.btn-more:hover >.more{
+    background-color: white;
+    color: black;
 }
 
 /*움직이는 효과*/
@@ -633,79 +721,99 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
-
-
+/*section-2 끝*/
 
 /*section-3 시작*/
 .section-3 {
     position: relative;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     height: 800px;
 }
+
 .section-3 .title-box {
     position: absolute;
     top: 15%;
     left: 16.666666%;
     z-index: 1;
 }
+
 .section-3 .title {
     color: white;
     font-size: 5rem;
     font-weight: 550;
 }
 
-.section-3 > .contact-box {
+.section-3>.contact-box {
     position: absolute;
-    top:40%;
+    top: 40%;
     left: 16.7%;
 }
 
-.text-box > input[type="text"],
-.text-box > input[type="email"] {
-    width: 100%; /* 원하는 너비 설정 */
-    height: auto; /* 높이값 초기화 */
-    line-height: normal; /* line-height 초기화 */
-    padding: 1em 0.5em; /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
+/* 이메일 박스 꾸미기 */
+.text-box>input[type="text"],
+.text-box>input[type="email"] {
+    width: 100%;
+    /* 원하는 너비 설정 */
+    height: auto;
+    /* 높이값 초기화 */
+    line-height: normal;
+    /* line-height 초기화 */
+    padding: 1em 0.5em;
+    /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
     border: 1px solid #999;
-    border-radius: 0; /* iSO 둥근모서리 제거 */
-    outline-style: none; /* 포커스시 발생하는 효과 제거를 원한다면 */
-    -webkit-appearance: none; /* 브라우저별 기본 스타일링 제거 */
+    border-radius: 0;
+    /* iSO 둥근모서리 제거 */
+    outline-style: none;
+    /* 포커스시 발생하는 효과 제거를 원한다면 */
+    -webkit-appearance: none;
+    /* 브라우저별 기본 스타일링 제거 */
     -moz-appearance: none;
     appearance: none;
 }
 
 textarea[name="body"] {
-    width: 100%; /* 원하는 너비 설정 */
-    height: auto; /* 높이값 초기화 */
-    line-height: normal; /* line-height 초기화 */
-    padding: 5em 0.5em; /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
+    width: 100%;
+    /* 원하는 너비 설정 */
+    height: auto;
+    /* 높이값 초기화 */
+    line-height: normal;
+    /* line-height 초기화 */
+    padding: 5em 0.5em;
+    /* 원하는 여백 설정, 상하단 여백으로 높이를 조절 */
     border: 1px solid #999;
-    border-radius: 0; /* iSO 둥근모서리 제거 */
-    outline-style: none; /* 포커스시 발생하는 효과 제거를 원한다면 */
-    -webkit-appearance: none; /* 브라우저별 기본 스타일링 제거 */
+    border-radius: 0;
+    /* iSO 둥근모서리 제거 */
+    outline-style: none;
+    /* 포커스시 발생하는 효과 제거를 원한다면 */
+    -webkit-appearance: none;
+    /* 브라우저별 기본 스타일링 제거 */
     -moz-appearance: none;
     appearance: none;
 }
 
-.text-box > input[type="submit"],
-.text-box > input[type="reset"] {
-    position:relative;
-    left:70%;
+.text-box>input[type="submit"],
+.text-box>input[type="reset"] {
+    position: relative;
+    left: 70%;
     text-align: center;
-    width: 70px; /* 원하는 너비 설정 */
-    height: auto; /* 높이값 초기화 */
-    line-height: normal; /* line-height 초기화 */
+    width: 70px;
+    /* 원하는 너비 설정 */
+    height: auto;
+    /* 높이값 초기화 */
+    line-height: normal;
+    /* line-height 초기화 */
     border: 1px solid #999;
-    padding:0.8em 0.5em;
-    background-color:#fff;
-    border-radius: 50px; /* iSO 둥근모서리 제거 */
-    outline-style: none; /* 포커스시 발생하는 효과 제거를 원한다면 */
-    -webkit-appearance: none; /* 브라우저별 기본 스타일링 제거 */
+    padding: 0.8em 0.5em;
+    background-color: #fff;
+    border-radius: 50px;
+    /* iSO 둥근모서리 제거 */
+    outline-style: none;
+    /* 포커스시 발생하는 효과 제거를 원한다면 */
+    -webkit-appearance: none;
+    /* 브라우저별 기본 스타일링 제거 */
     -moz-appearance: none;
     appearance: none;
 }
-
-
 
 /*section-3 끝*/
