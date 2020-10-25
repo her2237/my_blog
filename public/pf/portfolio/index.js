@@ -3,7 +3,6 @@ var $html = $("html");
 
 function Loader__init() {
   $(".loader >.start>a").click(function () {
-    alert("hi");
     $(".loader").fadeOut(5000);
   });
 }
