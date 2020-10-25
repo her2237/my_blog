@@ -144,7 +144,7 @@
                                 <div class="min-title">NASA</div>
                                 <div class="detail-text">
                                     <div>
-                                        < 리뉴얼>
+                                        < 리뉴얼 >
                                     </div>
                                     <div>
                                         나사의 페이지를 동영상을 이용해 깔끔하게 만들었습니다.
@@ -168,7 +168,7 @@
                                 <div class="min-title">ARTEMIS</div>
                                 <div class="detail-text">
                                     <div>
-                                        < 모작>
+                                        < 모작 >
                                     </div>
                                     <div>
                                         나사의 달에 관한 프로젝트 페이지인 artemis의 페이지 입니다
@@ -199,7 +199,7 @@
                                 <div class="min-title"> BADA Flatform </div>
                                 <div class="detail-text">
                                     <div>
-                                        < 모작>
+                                        < 모작 >
                                     </div>
                                     <div> 해양과 관련된 IoT 기술들을 만드는 회사의 홈페이지 입니다.</div>
                                 </div>
@@ -221,7 +221,7 @@
                                 <div class="min-title">GMARKET SANS</div>
                                 <div class="detail-text">
                                     <div>
-                                        < 모작>
+                                        < 모작 >
                                     </div>
                                     <div>
                                         지마켓에서 만든 다양한 한글폰트들을 만날수 있는 홈페이지 입니다.
@@ -251,7 +251,7 @@
                                 <div class="min-title NanumGothicCoding-Regular">밀알복지재단</div>
                                 <div class="detail-text">
                                     <div>
-                                        < 모작>
+                                        < 모작 >
                                     </div>
                                     <div>
                                         교회에서 운영하는 교회복지재단 입니다.
@@ -275,7 +275,7 @@
                                 <div class="min-title">WORLDVISION</div>
                                 <div class="detail-text">
                                     <div>
-                                        < 모작>
+                                        < 모작 >
                                     </div>
                                     <div>
                                         세계의 도움이 필요한 아이들에게 후원해주고 도움을 주는 재단입니다.
