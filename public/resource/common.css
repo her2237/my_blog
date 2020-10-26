@@ -1,17 +1,21 @@
 @font-face {
-    font-family: 'MapoFlowerIsland';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'NanumGothicCoding-Regular';
+    src: url(NanumGothicCoding-Regular.ttf) format("ttf"),
+}
+
+@font-face {
+    font-family: 'MYRIADPRO-BOLD';
+    src: url(myraid-pro/MYRIADPRO-BOLD.OTF) format("OTF"),
+        url(myraid-pro/MYRIADPRO-REGULAR.TTF) format("truetype");
 }
 
 
 .font-1 {
-    font-family: "MapoFlowerIsland";
+    font-family: "myraid-pro/MYRIADPRO-BOLD.OTF";
 }
 
 html body {
-    font-family: "MapoFlowerIsland";
+    font-family: "myraid-pro/MYRIADPRO-REGULAR.TTF";
 }
 
 

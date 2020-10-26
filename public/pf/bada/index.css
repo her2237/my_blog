@@ -645,6 +645,7 @@ label[for] {
 .page-3 >.menu-bar > .list-bar {
     width:1190px;
     height:663px;
+    bottom: 0;
 }
 
 .page-3 > .menu-bar > .list-bar > .list {
@@ -879,17 +880,14 @@ label[for] {
 .list-5 > div >li > div >.txt-box {
     text-align:left;
 }
-}
 
 /* 3번째 페이지 끝*/
 
 /*맨아래 바 시작*/
 .bottom-bar {
-    height: 180px;
     padding: 56px 0;
     background-color: #fff;
-    text-align: center
-    border:1px solid red;
+    text-align: center;
 }
 
 .bottom-bar > .in-text {
