@@ -1,30 +1,36 @@
+@font-face {
+    font-family: 'MYRIADPRO-REGULAR';
+    src: url(myraid-pro/MYRIADPRO-REGULAR.OTF) format("OTF"),
+        url(myraid-pro/MYRIADPRO-REGULAR.TTF) format("truetype");
+}
 
 @font-face {
-    font-family:'MYRIADPRO-REGULAR';
-    src: url(myraid-pro/MYRIADPRO-REGULAR.OTF) format("OTF");
+    font-family: 'MYRIADPRO-BOLD';
+    src: url(myraid-pro/MYRIADPRO-BOLD.OTF) format("OTF"),
+        url(myraid-pro/MYRIADPRO-REGULAR.TTF) format("truetype");
 }
+
 @font-face {
-    font-family:'MYRIADPRO-BOLD';
-    src: url(myraid-pro/MYRIADPRO-BOLD.OTF) format("OTF");
-}
-@font-face {
-    font-family:'NanumGothicCoding-Regular';
+    font-family: 'NanumGothicCoding-Regular';
     src: url(NanumGothicCoding-Regular.ttf) format("ttf");
 }
 
 body {
-    font-family:'MYRIADPRO-REGULAR';
+    font-family: 'MYRIADPRO-REGULAR';
 }
+
 .font-no {
-    font-family:'MYRIADPRO-REGULAR';
+    font-family: 'MYRIADPRO-REGULAR';
 }
 
 .font-b {
     font-family: 'MYRIADPRO-BOLD';
 }
+
 .font-korea {
-    font-family:'NanumGothicCoding-Regular';
+    font-family: 'NanumGothicCoding-Regular';
 }
+
 .font-apple {
-    font-family:'MYRIADPRO-REGULAR';
+    font-family: 'MYRIADPRO-REGULAR';
 }

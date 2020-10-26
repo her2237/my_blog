@@ -121,7 +121,6 @@
                 </div>
             </div>
         </div>
-
         <div class="section">
             <div style="color:white; margin:0;" data-active-on-visible-on-func-name="middleBarPassed"
                 data-active-on-visible-off-func-name="middleBarNoPassed" class="active-on-visible"
@@ -260,7 +259,7 @@
                                 <div class="btn-more">
                                     <div class="more">
                                         <a href="/pf/mile">
-                                            more
+                                            진행중 50%
                                         </a>
                                     </div>
                                 </div>
@@ -285,7 +284,7 @@
                                 <div class="btn-more">
                                     <div class="more">
                                         <a href="/pf/world">
-                                            more
+                                            진행중 50%
                                         </a>
                                     </div>
                                 </div>

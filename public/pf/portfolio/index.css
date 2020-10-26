@@ -521,7 +521,7 @@ body {
     height: 30vh;
     border-radius: 150px;
     margin:20% 5%;
-    background-color: #efefef;
+    background-color: white;
     border:1px solid black;
     opacity: 0;
 }
@@ -537,7 +537,7 @@ body {
     left: 50%;
     transform: translate(-50%,-50%);
     align-items: center;
-    font-size:2rem;
+    font-size:1.7rem;
     font-weight: 600;
 }
 
@@ -594,7 +594,7 @@ body {
 
 .section-2 .title-box {
     position: absolute;
-    top: -15%;
+    top: -7%;
     left: 16.666666%;
     z-index: 1;
 }
@@ -654,13 +654,17 @@ body {
 .section-2>.portfolio>.box-1>.list-box>.text-box>.number-1>.min-title {
     font-size: 3.5rem;
 }
-
+.section-2>.portfolio>.box-1>.list-box>.text-box>.number>.detail-text,
+.section-2>.portfolio>.box-1>.list-box>.text-box>.number-1>.detail-text {
+    font-size: 1rem;
+}
 .section-2>.portfolio>.box-1>.list-box>.text-box>.number>.detail-text>div:first-child,
 .section-2>.portfolio>.box-1>.list-box>.text-box>.number-1>.detail-text>div:first-child {
     font-size: 1.2rem;
-    padding-bottom: 10px;
 }
-
+.section-2>.portfolio>.box-1>.list-box>.text-box>.number>.detail-text>div{
+    line-height: 150%;
+}
 /*모작페이지연결버튼*/
 .box-1>.list-box>.text-box>.number>.btn-more {
     position: absolute;
@@ -687,7 +691,6 @@ body {
     font-weight: bold;
     text-align: center;
     margin-right: 12px;
-
 }
 
 .section-2>.portfolio>.box-1>.list-box>.text-box>.number>.btn-more:hover>.more, 
